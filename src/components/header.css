@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0px 40px;
+    height: 50px;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+#leftNav{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+#navTittle{
+    font-family: Roboto;
+}
+#search{
+    display: flex;
+    margin-left: 40px;
+    width: 250px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#searchBar{
+    padding-left: 10px;
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: large;
+}
+#searchBar:focus{
+    outline: none;
+}
+#searchBtn{
+    height: 100%;
+    width: 20%;
+    background: transparent;
+    color: black;
+    border: none;
+    border-left: 1px solid black;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+li a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+#rightNav{
+    width: 55%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+#navList{
+    font-size: large;
+}
+#profileIcon{
+    width: 30px;
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../public/Roboto-Medium.ttf);
+}

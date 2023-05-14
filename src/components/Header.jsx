@@ -1,37 +1,31 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import personLogo from "/person.svg"
+import personLogo from "/person.svg";
+import searchIcon from "/search.svg";
+import "./header.css";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">ANIMU</Navbar.Brand>
-        <Form className="d-flex">
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Search</Button>
-        </Form>
-        <Nav className="justify-content-end">
-          <Nav.Link href="#animeterbaru">
-            Anime Terbaru
-          </Nav.Link>
-          <Nav.Link href="#genre">Genre</Nav.Link>
-          <Nav.Link href="#komunitas">Komunitas</Nav.Link>
-          <Nav.Link href="#help">Help</Nav.Link>
-        </Nav>
-        <a href="" target="_blank">
-          <img src={personLogo} className="logo" alt="Vite logo" />
-        </a>
-      </Container>
-    </Navbar>
+    <nav>
+      <div id="leftNav">
+        <h2 id="navTittle">ANIMU</h2>
+        <form id="search">
+          <input type="text" placeholder="Search" id="searchBar"/>
+          <button id="searchBtn">
+            <img id="searchIcon" src={searchIcon} alt="Search icon" />
+          </button>
+        </form>
+      </div>
+      <div id="rightNav">
+        <ul id="navList">
+          <li> <a href="">Anime Terbaru</a></li>
+          <li> <a href="">Genre</a></li>
+          <li> <a href="">Komunitas</a></li>
+          <li> <a href="">Help</a></li>
+        </ul>
+        <a href="" target="_blank" className="me-5">
+          <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
+        </a>  
+      </div>
+    </nav>
   );
 }
 
