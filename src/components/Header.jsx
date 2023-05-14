@@ -1,24 +1,38 @@
-import Nav from 'react-bootstrap/Nav';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import personLogo from "/person.svg"
 
 function Header() {
   return (
-    <div className='Navbar'>
-        <Nav fill variant='tabs'>
-        <Nav.Item>
-            <Nav.Link eventKey="newAnime">Anime terbaru</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-            <Nav.Link eventKey="genre">Genre</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-            <Nav.Link eventKey="community">Komunitas</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-            <Nav.Link eventKey="help">Help</Nav.Link>
-        </Nav.Item>
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">ANIMU</Navbar.Brand>
+        <Form className="d-flex">
+          <Form.Control
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search"
+          />
+          <Button variant="outline-success">Search</Button>
+        </Form>
+        <Nav className="justify-content-end">
+          <Nav.Link href="#animeterbaru">
+            Anime Terbaru
+          </Nav.Link>
+          <Nav.Link href="#genre">Genre</Nav.Link>
+          <Nav.Link href="#komunitas">Komunitas</Nav.Link>
+          <Nav.Link href="#help">Help</Nav.Link>
         </Nav>
-    </div>
-  )
+        <a href="" target="_blank">
+          <img src={personLogo} className="logo" alt="Vite logo" />
+        </a>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default Header
+export default Header;
