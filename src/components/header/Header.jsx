@@ -16,14 +16,12 @@ function Header() {
       </div>
       <div id="rightNav">
         <ul id="navList">
-          <li> <a href="">Anime Terbaru</a></li>
-          <li> <a href="">Genre</a></li>
-          <li> <a href="">Komunitas</a></li>
-          <li> <a href="">Help</a></li>
+          <li> <a href="" id="navlist">Anime Terbaru</a></li>
+          <li> <a href="" id="navlist">Genre</a></li>
+          <li> <a href="" id="navlist">Komunitas</a></li>
+          <li> <a href="" id="navlist">Help</a></li>
         </ul>
-        <a href="" target="_blank" className="me-5">
           <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
-        </a>  
       </div>
     </nav>
   );
