@@ -1,8 +1,8 @@
-
+import "./content.css";
 
 function ProfileContent() {
   return (
-    <div>ProfileContent</div>
+    <div className="content-dev">ProfileContent</div>
   )
 }
 
