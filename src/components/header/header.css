@@ -70,14 +70,14 @@ li a{
     letter-spacing: -1px;
     width: 116px;
 }
-li:after{
+/* li:after{
     content: "";
     position: absolute;
     background-color: red;
     height: 3px;
     width: 50%;
     left: 0;
-}
+} */
 #rightNav{
     width: 55%;
     display: flex;
