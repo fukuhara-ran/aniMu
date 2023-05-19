@@ -1,0 +1,18 @@
+#profileAnim{
+    margin: 25px;
+    display: flex;
+    box-sizing: border-box;
+}
+.animeProfile{
+    display: flex;
+    flex-direction: column;
+}
+.animeImage{
+    display: flex;
+    width: 180px;
+    height: 300px;
+}
+.sinopsis{
+    display: flex;
+    flex-direction: column;
+}
