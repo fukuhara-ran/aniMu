@@ -31,10 +31,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="bottom">
-        
-      </div>
     </div>
   );
 }

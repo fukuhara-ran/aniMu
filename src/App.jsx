@@ -5,11 +5,12 @@ import Footer from'./components/footer/Footer.jsx'
 function App() {
 
   return (
-    <div>
+    // Klo mau preview halamannya bisa diubah ubah tagnya soalnya blm pake react router
+    <>
     <Header/>
     <Content/>
     <Footer/>
-    </div>
+    </>
   )
 }
 

@@ -3,11 +3,20 @@ import "./ProfileContent.css"
 function ProfileContent() {
   return (
     <section id="profileAnim">
-      <img src="/src/assets/kny.jpg" alt="" />
-      <div className="animeProfile">
-        <h3 className="judul">Kimetsu No Yaiba</h3>
-        <p className="sinopsis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe maxime neque, omnis beatae, consectetur, minima rem aliquid corporis ipsa nisi eveniet esse vero iure blanditiis dolor quasi aperiam. Totam, illum. Atque enim eum optio consequatur mollitia quidem aliquam non culpa a vero soluta, quas alias corporis aut facilis libero, obcaecati, iure nemo assumenda? Quia ullam, accusantium nihil optio magnam temporibus quae nam fugiat iure rerum. Excepturi fugit explicabo est natus amet sequi quibusdam quas porro cumque quod, alias dicta minus obcaecati rerum doloribus. Laboriosam commodi, eaque cupiditate, ducimus adipisci inventore amet nihil consequuntur ad quia sequi voluptatibus. Nesciunt, quam hic.</p>
+      <div className="pembatasKiri">
+        <img className="animeImage" src="/src/assets/kny.jpg" alt="" />
+        <div className="animeProfile">
+          <h2 className="judul">Kimetsu No Yaiba</h2>
+          <p className="sinopsis">Sejak dahulu kala, ada banyak rumor tentang iblis pemakan manusia yang bersembunyi di hutan. Karena itu, penduduk setempat tak pernah berani keluar saat malam hari. Legenda mengatakan bahwa Pemburu Iblis juga berkeliaran di malam hari dan memburu iblis yang haus darah. Bagi Tanjirou, hal itu adalah kenangan terburuknya.<br /><br />
+          Sejak kematian ayahnya, Tanjirou menggantikan ayahnya untuk memenuhi kebutuhan keluarganya. Meski kehidupan mereka sangat berat, mereka merasakan kebahagiaan yang luar biasa. Tapi, kebahagiaan itu hancur saat Tanjirou melihat keluarganya dibantai. Tidak hanya itu, satu-satunya keluarganya yang selamat, adik perempuannya, Nezuko, berubah menjadi Iblis. Tapi, Nezuko masih menunjukkan tanda-tanda emosi dan pemikiran manusia. Perjalanan Tanjirou untuk melawan iblis dan mengembalikan adiknya menjadi manusia akhirnya dimulai.</p>
+          <br />
+          <br />
+          <p className="genre"><b>Genre : </b>Action</p>
         </div>
+      </div>
+      <div className="pembatasKanan">
+        <h3 className="teks-window-kanan">te</h3>
+      </div>
     </section>
   )
 }
