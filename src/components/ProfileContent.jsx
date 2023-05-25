@@ -16,6 +16,9 @@ function ProfileContent() {
       </div>
       <div className="pembatasKanan">
         <h3 className="tittle">Anime Terbaru</h3>
+        <div className="animeCard">
+          
+        </div>
       </div>
     </section>
   )

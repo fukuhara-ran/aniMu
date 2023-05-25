@@ -2,14 +2,14 @@
     margin: 10px;
     display: flex;
     box-sizing: border-box;
-    height: 600px;
-    background-color: rgb(217, 217, 217);
+    height: 1000px;
 }
 .pembatasKiri{
     display: flex;
     left: 0%;
     width: 75%;
     border-right: 1px solid black; /*Untuk ngecek position*/
+    background-color: rgb(217, 217, 217);
 }
 .animeImage{
     position: relative;
@@ -60,9 +60,20 @@
     left: 14px;
 }
 .pembatasKanan{
-    left: 80%;
+    display: flex;
+    background-color: rgb(217, 217, 217);
+    margin-left: 25px;
+    width: 22%;
 }
 .tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
     color: rgb(0, 0, 0);
-    
+    border: 1.5px solid black;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
 }
