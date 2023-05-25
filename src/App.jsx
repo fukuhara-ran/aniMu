@@ -1,16 +1,21 @@
-import Header from './components/Header.jsx'
-import Content from './components/ProfileContent.jsx'
-import Footer from'./components/Footer.jsx'
+import { Home } from './routes/Home'
+import { ProfileContent } from './routes/ProfileContent'
+import { AnimeTerbaru } from './routes/AnimeTerbaru'
+import { Genre } from './routes/Genre'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
     // Klo mau preview halamannya bisa diubah ubah tagnya soalnya blm pake react router
-    <>
-    <Header/>
-    <Content/>
-    <Footer/>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/profile-content' element={<ProfileContent/>}/>
+        <Route path='/anime-terbaru' element={<AnimeTerbaru/>}/>
+        <Route path='/genre' element={<Genre/>}/>
+      </Routes>
+    </Router>  
   )
 }
 

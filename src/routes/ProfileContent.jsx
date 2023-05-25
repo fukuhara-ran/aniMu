@@ -1,7 +1,11 @@
-import "./ProfileContent.css"
+import "../components/ProfileContent.css"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-function ProfileContent() {
+export const ProfileContent = () => {
   return (
+    <>
+    <Header/>
     <section id="profileAnim">
       <div className="pembatasKiri">
         <img className="animeImage" src="/src/assets/kny.jpg" alt="" />
@@ -17,11 +21,10 @@ function ProfileContent() {
       <div className="pembatasKanan">
         <h3 className="tittle">Anime Terbaru</h3>
         <div className="animeCard">
-          
         </div>
       </div>
     </section>
+    <Footer/>   
+    </>
   )
 }
-
-export default ProfileContent
