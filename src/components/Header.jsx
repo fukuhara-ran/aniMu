@@ -1,4 +1,4 @@
-import personLogo from "/person.svg";
+import personLogo from "../assets/person.svg"
 import searchIcon from "/search.svg";
 import "./header.css";
 

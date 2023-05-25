@@ -11,11 +11,11 @@ function ProfileContent() {
           Sejak kematian ayahnya, Tanjirou menggantikan ayahnya untuk memenuhi kebutuhan keluarganya. Meski kehidupan mereka sangat berat, mereka merasakan kebahagiaan yang luar biasa. Tapi, kebahagiaan itu hancur saat Tanjirou melihat keluarganya dibantai. Tidak hanya itu, satu-satunya keluarganya yang selamat, adik perempuannya, Nezuko, berubah menjadi Iblis. Tapi, Nezuko masih menunjukkan tanda-tanda emosi dan pemikiran manusia. Perjalanan Tanjirou untuk melawan iblis dan mengembalikan adiknya menjadi manusia akhirnya dimulai.</p>
           <br />
           <br />
-          <p className="genre"><b>Genre : </b>Action</p>
+          <p className="genre"><b>Genre : </b>Action, Fantasy, Adventure</p>
         </div>
       </div>
       <div className="pembatasKanan">
-        <h3 className="teks-window-kanan">te</h3>
+        <h3 className="tittle">Anime Terbaru</h3>
       </div>
     </section>
   )

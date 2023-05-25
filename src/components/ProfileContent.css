@@ -3,13 +3,13 @@
     display: flex;
     box-sizing: border-box;
     height: 600px;
-    background-color: black;
+    background-color: rgb(217, 217, 217);
 }
 .pembatasKiri{
     display: flex;
     left: 0%;
     width: 75%;
-    border-right: 1px solid white; /*Untuk ngecek position*/
+    border-right: 1px solid black; /*Untuk ngecek position*/
 }
 .animeImage{
     position: relative;
@@ -18,7 +18,7 @@
     display: flex;
     width: 230px;
     height: 330px;
-    border: 1px solid white;    /*Biar tau posisi gambar*/
+    border: 1px solid black;    /*Biar tau posisi gambar*/
 }
 .animeProfile{
     position: relative;
@@ -28,9 +28,9 @@
     top: 50px;
     left: 25px;
     width: 70%;
-    border: 1px solid white;
+    border: 1px solid black;
     height: 538px;
-    color: white;
+    color: black;
 }
 .judul{
     font-family: 'Inter', sans-serif;
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 0.5px;
     line-height: 1.5;
     margin-top: 15px;
@@ -52,13 +52,17 @@
     top: 15px;
     left: 14px;
     width: 95%;
+    font-weight: 500;
 }
 .genre{
     font-family: 'Inter', sans-serif;
+    position: relative;
+    left: 14px;
 }
 .pembatasKanan{
     left: 80%;
 }
-.teks-window-kanan{
-    color: aliceblue;
+.tittle{
+    color: rgb(0, 0, 0);
+    
 }
