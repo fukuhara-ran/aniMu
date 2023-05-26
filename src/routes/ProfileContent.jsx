@@ -8,7 +8,7 @@ export const ProfileContent = () => {
     <Header/>
     <section id="profileAnim">
       <div className="pembatasKiri">
-        <img className="animeImage" src="/src/assets/kny.jpg" alt="" />
+        <img className="animeImage" src="/src/assets/kny.jpg" alt="anime_image" />
         <div className="animeProfile">
           <h2 className="judul">Kimetsu No Yaiba</h2>
           <p className="sinopsis">Sejak dahulu kala, ada banyak rumor tentang iblis pemakan manusia yang bersembunyi di hutan. Karena itu, penduduk setempat tak pernah berani keluar saat malam hari. Legenda mengatakan bahwa Pemburu Iblis juga berkeliaran di malam hari dan memburu iblis yang haus darah. Bagi Tanjirou, hal itu adalah kenangan terburuknya.<br /><br />
@@ -20,8 +20,32 @@ export const ProfileContent = () => {
       </div>
       <div className="pembatasKanan">
         <h3 className="tittle">Anime Terbaru</h3>
-        <div className="animeCard">
-        </div>
+        <a className="cardLink" href="">
+          <div className="animeCard">
+            <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
+            <div className="sideText">
+              <h3>Kimetsu No Yaiba</h3>
+              <p><b>Genre : <i>Action, Fantasy, Adventure</i></b></p>
+              <p>Episode : 5</p>
+            </div>
+          </div>
+          <div className="animeCard">
+            <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
+            <div className="sideText">
+              <h3>Kimetsu No Yaiba</h3>
+              <p><b>Genre : <i>Action, Fantasy, Adventure</i></b></p>
+              <p>Episode : 5</p>
+            </div>
+          </div>
+          <div className="animeCard">
+            <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
+            <div className="sideText">
+              <h3>Kimetsu No Yaiba</h3>
+              <p><b>Genre : <i>Action, Fantasy, Adventure</i></b></p>
+              <p>Episode : 5</p>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
     <Footer/>   
