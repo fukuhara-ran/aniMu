@@ -36,6 +36,7 @@ section.container{
 
 .hero .headingOngoing{
     border: solid 1px black;
+    padding: 5px;
 }
 
 .hero .listOngoing{
@@ -63,6 +64,7 @@ section.container{
 
 .mainContent .headingNewAnime{
     border: solid 1px black;
+    padding: 5px;
 }
 
 .mainContent .listNewAnime{
@@ -88,11 +90,13 @@ section.container{
 aside{
     width: 30%;
     background-color: rgb(217, 217, 217);
+    margin-bottom: auto;
 }
 
 .headingTopAnime{
     border: solid 1px black;
     text-align: center;
+    padding: 5px;
 }
 
 .listTopAnime{
@@ -111,4 +115,23 @@ aside{
 .topAnime img{
     width: 120px;
     height: 160px;
+}
+
+.updateContent{
+    background-color: rgb(217, 217, 217);
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.updateContent a{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+
+.updateContent a:hover{
+    text-decoration: underline;
 }

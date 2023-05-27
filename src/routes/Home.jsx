@@ -150,8 +150,12 @@ export const Home = () => {
             </div>
 
           </div>
-        </div>
 
+          <div className="updateContent">
+            <a href="#">CLICK UNTUK MELIHAT UPDATE LAINNYA</a>
+          </div>
+        </div>
+        
         <aside>
           <div className="headingTopAnime">
             <h3>Top Anime</h3>
@@ -205,6 +209,7 @@ export const Home = () => {
           </div>
 
         </aside>
+        
       </section>
       <Footer />
     </>
