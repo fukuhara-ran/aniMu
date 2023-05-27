@@ -21,6 +21,10 @@
   display: contents;
 }
 
+.center ul li a {
+  color: white;
+}
+
 .right {
   padding-top: 80px;
 }
