@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(217, 217, 217);
+    border-radius: 15px;
+    height: 450px;
+    width: 450px;
+}
+.fill{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+}
+h2{
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-family: 'Judson', serif;
+    font-size: 30px;
+}
+.loginButton{
+    display: flex;
+    margin-top: 40px;
+    width: 80%;
+    height: 47px;
+    font-family: 'Judson', serif;
+    background-color: rgb(198, 198, 198);
+    font-size: 20px;
+    color: rgb(234, 234, 234);
+    border: 1.5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.fill input{
+    background-color: rgb(217, 217, 217);
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+input:focus{
+    outline: none;
+}
+p{
+    font-family: 'Judson', serif;
+    font-size: 15px;
+}
+.cekPrivasi{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 90%;
+    margin-top: 15px;
+}
+.cekPrivasi input{
+    margin: 2.5px;
+}
+p.cekKeterangan{
+    font-family: 'Judson', serif;
+    font-size: 13px;
+    margin-left: 10px;
+}
