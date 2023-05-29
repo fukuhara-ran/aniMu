@@ -135,3 +135,27 @@ aside{
 .updateContent a:hover{
     text-decoration: underline;
 }
+
+.ongoingAnime a {
+    text-decoration: none;
+    color: black;
+}
+.ongoingAnime a:hover{
+    text-decoration: underline;
+}
+
+.newAnime a{
+    text-decoration: none;
+    color: black;
+}
+.newAnime a:hover{
+    text-decoration: underline;
+}
+
+.descTopAnime a {
+    text-decoration: none;
+    color: black;
+}
+.descTopAnime a:hover{
+    text-decoration: underline;
+}
