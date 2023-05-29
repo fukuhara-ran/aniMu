@@ -163,7 +163,7 @@ export const Home = () => {
 
           <div className="listTopAnime">
             <div className="topAnime">
-              <img src="/src/assets/kny.jpg" alt="" />
+              <img src="/src/assets/tensura.jpg" alt="" />
               <div className="descTopAnime">
                 <h4><a href="#">Judul Anime</a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -172,7 +172,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/kny.jpg" alt="" />
+              <img src="/src/assets/tensura.jpg" alt="" />
               <div className="descTopAnime">
                 <h4><a href="#">Judul Anime</a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -181,7 +181,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/kny.jpg" alt="" />
+              <img src="/src/assets/tensura.jpg" alt="" />
               <div className="descTopAnime">
                 <h4><a href="#">Judul Anime</a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -190,7 +190,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/kny.jpg" alt="" />
+              <img src="/src/assets/tensura.jpg" alt="" />
               <div className="descTopAnime">
                 <h4><a href="#">Judul Anime</a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -199,7 +199,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/kny.jpg" alt="" />
+              <img src="/src/assets/tensura.jpg" alt="" />
               <div className="descTopAnime">
                 <h4><a href="#">Judul Anime</a></h4>
                 <p>Genre : Action, Adventure dll</p>
