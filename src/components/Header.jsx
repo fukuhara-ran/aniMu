@@ -1,6 +1,7 @@
 import personLogo from "../assets/person.svg"
 import searchIcon from "/search.svg";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -16,10 +17,10 @@ function Header() {
       </div>
       <div id="rightNav">
         <ul id="navList">
-          <li> <a href="" id="navlist">Anime Terbaru</a></li>
-          <li> <a href="" id="navlist">Genre</a></li>
-          <li> <a href="" id="navlist">Komunitas</a></li>
-          <li> <a href="" id="navlist">Help</a></li>
+          <li> <a href="" id="navlist"><Link to='/anime-terbaru'>Anime Terbaru</Link></a></li>
+          <li> <a href="" id="navlist"><Link to='/genre'>Genre</Link></a></li>
+          <li> <a href="" id="navlist"><Link to='/community'>Komunitas</Link></a></li>
+          <li> <a href="" id="navlist"><Link to='/help'>Help</Link></a></li>
         </ul>
           <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
       </div>
