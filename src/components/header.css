@@ -88,6 +88,10 @@ li a{
 #navList{
     font-size: large;
 }
+#navlist:hover{
+    font-weight: bold;
+}
+
 #profileIcon{
     width: 30px;
 }
