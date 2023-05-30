@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-section.container{
+section.containerCommunity{
     display: flex;
     padding: 60px 106px;
     gap: 106px;
 }
 
-.content{
+.contentCommunity{
     width: 70%;
 }
 
@@ -36,31 +36,32 @@ section.container{
     background: transparent;
 }
 
-.search{
+.searchCommunity{
     display: flex;
     border: 1px solid black;
     width: 300px;
     height: 35px;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 15px;
     
 }
 
-.search input.searchBar{
+.searchCommunity input.searchBar{
     outline: none;
     border: none;
     
 }
 
-.search button{
+.searchCommunity button{
     border: none;
 }
 
-.search img{
+.searchCommunity img{
     width: 25px;
 }
 
-aside{
+aside.asideCommunity{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -68,13 +69,13 @@ aside{
     background: transparent;
 }
 
-aside p:nth-child(1){
+aside.asideCommunity p:nth-child(1){
     text-align: center;
     font-size: 25px;
     padding: 2px;
 }
 
-aside p{
+aside.asideCommunity p{
     background-color: #ACB1D6;
     padding: 12px;
 }

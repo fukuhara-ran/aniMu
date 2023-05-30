@@ -7,8 +7,8 @@ export const Community = () => {
   return (
     <>
     <Header/>
-    <section className="container">
-      <div className="content">
+    <section className="containerCommunity">
+      <div className="contentCommunity">
         <div className="headingContent">
           <p>Welcome to Animu Discussions</p>
           <p>Kalian diundang! <span>Forum diskusi Animu bisa digunakan untuk semua orang.</span></p>
@@ -16,7 +16,7 @@ export const Community = () => {
         </div>
 
         <div className="mainContent">
-          <div className="search">
+          <div className="searchCommunity">
             <input type="text" placeholder="Search discussion" className="searchBar"/>
             <button>
               <img src={searchIcon} alt="" />
@@ -26,7 +26,7 @@ export const Community = () => {
         </div>
       </div>
 
-      <aside>
+      <aside className="asideCommunity">
         <p>INFO!</p>
         <p>Dikarenakan ini adalah website pertama kami maka dari itu untuk konten pada komunitas hanya sekedar forum. Nantikan fitur lainnya pada update berikutnya.!</p>
       </aside>
