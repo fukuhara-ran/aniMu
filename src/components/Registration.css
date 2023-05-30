@@ -3,20 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-.login{
+.register{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-.loginForm{
+.registerForm{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(217, 217, 217);
     border-radius: 15px;
-    height: 450px;
+    height: 600px;
     width: 450px;
 }
 .fill{
@@ -31,7 +31,7 @@ h2{
     font-family: 'Judson', serif;
     font-size: 30px;
 }
-.loginButton{
+.registerButton{
     display: flex;
     margin-top: 40px;
     width: 80%;
@@ -50,6 +50,16 @@ h2{
     height: 40px;
     border-radius: 10px;
     padding-left: 10px;
+}
+.verification{
+    display: flex;
+    justify-content: space-between;
+}
+.verification button{
+    padding: 10px 25px;
+    background-color: #636363;
+    border: none;
+    color: #fff;
 }
 input:focus{
     outline: none;
