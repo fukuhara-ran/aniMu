@@ -5,9 +5,15 @@ export const Community = () => {
   return (
     <>
     <Header/>
-    <div>
-        <b>INI PAGE COMMUNITY</b>
-    </div>
+    <section className="container">
+      <div className="content">
+        
+      </div>
+
+      <aside>
+
+      </aside>
+    </section>
     <Footer/>
     </>
   )
