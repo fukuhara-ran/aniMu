@@ -31,7 +31,7 @@ section.container{
 
 /* HERO */
 .hero{
-    background-color: rgb(217, 217, 217);
+    background-color: #A0C1D1;
 }
 
 .hero .headingOngoing{
@@ -59,7 +59,7 @@ section.container{
 
 /* MAIN CONTENT */
 .mainContent{
-    background-color: rgb(217, 217, 217);
+    background-color: #A0C1D1;
 }
 
 .mainContent .headingNewAnime{
@@ -89,7 +89,7 @@ section.container{
 /* ASIDE */
 aside{
     width: 30%;
-    background-color: rgb(217, 217, 217);
+    background-color: #A0C1D1;
     margin-bottom: auto;
 }
 
