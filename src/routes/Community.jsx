@@ -2,6 +2,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import searchIcon from "/search.svg";
 import "../components/community.css";
+import discussion from "../assets/dicussion.png";
 
 export const Community = () => {
   return (
@@ -23,6 +24,49 @@ export const Community = () => {
             </button>
           </div>
           <h3>Animu Forum Discussions</h3>
+
+          <div className="subHeadingDiscussion">
+            <p>Latest discussion</p>
+            <button>Start New Discussion</button>
+          </div>
+
+          <div className="listDicussion">
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>            
+
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+          </div>
         </div>
       </div>
 
