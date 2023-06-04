@@ -15,7 +15,7 @@ export const Community = () => {
           <p>Cari dulu! <span>Sebelum kalian post pertanyaan atau topik pembicaraan kalian bisa searching dulu apakah pertanyaan atau topik pembicaraan kalian sudah ada atau belum</span></p>
         </div>
 
-        <div className="mainContent">
+        <div className="mainContentCommunity">
           <div className="searchCommunity">
             <input type="text" placeholder="Search discussion" className="searchBar"/>
             <button>
