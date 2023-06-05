@@ -16,27 +16,27 @@ export const Home = () => {
 
             <div className="listOngoing">
               <div className="ongoingAnime">
-                <img src="/src/assets/kny.jpg" alt="anime thumbnail" />
+                <Link to='anime-terbaru'><img src="/src/assets/kny.jpg" alt="anime thumbnail"/></Link>
                 <h4><a href="#"><Link to='anime-terbaru'>Judul Anime</Link></a></h4>
               </div>
 
               <div className="ongoingAnime">
-                <img src="/src/assets/kny.jpg" alt="anime thumbnail" />
+                <Link to='anime-terbaru'><img src="/src/assets/kny.jpg" alt="anime thumbnail"/></Link>
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
               </div>
 
               <div className="ongoingAnime">
-                <img src="/src/assets/kny.jpg" alt="anime thumbnail" />
+                <Link to='anime-terbaru'><img src="/src/assets/kny.jpg" alt="anime thumbnail"/></Link>
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
               </div>
 
               <div className="ongoingAnime">
-                <img src="/src/assets/kny.jpg" alt="anime thumbnail" />
+                <Link to='anime-terbaru'><img src="/src/assets/kny.jpg" alt="anime thumbnail"/></Link>
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
               </div>
 
               <div className="ongoingAnime">
-                <img src="/src/assets/kny.jpg" alt="anime thumbnail" />
+                <Link to='anime-terbaru'><img src="/src/assets/kny.jpg" alt="anime thumbnail"/></Link>
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
               </div>
             </div>
@@ -49,7 +49,7 @@ export const Home = () => {
 
             <div className="listNewAnime">
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to='genre'><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to='anime-terbaru'>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -59,7 +59,7 @@ export const Home = () => {
               </div>
               
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -69,7 +69,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -79,7 +79,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -89,7 +89,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -99,7 +99,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -109,7 +109,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -119,7 +119,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -129,7 +129,7 @@ export const Home = () => {
               </div>
 
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -139,7 +139,7 @@ export const Home = () => {
               </div>
               
               <div className="newAnime">
-                <img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" />
+                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                   <p>Episode : 02</p>
@@ -164,7 +164,7 @@ export const Home = () => {
 
           <div className="listTopAnime">
             <div className="topAnime">
-              <img src="/src/assets/tensura.jpg" alt="" />
+              <Link to='community'><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -173,7 +173,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/tensura.jpg" alt="" />
+            <Link to=''><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
                 <h4><a href="#"><Link to='anime-terbaru'>Judul Anime</Link></a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -182,7 +182,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/tensura.jpg" alt="" />
+              <Link to=''><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -191,7 +191,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/tensura.jpg" alt="" />
+             <Link to=''><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                 <p>Genre : Action, Adventure dll</p>
@@ -200,7 +200,7 @@ export const Home = () => {
             </div>
 
             <div className="topAnime">
-              <img src="/src/assets/tensura.jpg" alt="" />
+              <Link to=''><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
                 <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
                 <p>Genre : Action, Adventure dll</p>

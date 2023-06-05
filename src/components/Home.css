@@ -144,6 +144,11 @@ aside{
     text-decoration: underline;
 }
 
+.ongoingAnime img:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transform: scale(0.99); 
+}
+
 .newAnime a{
     text-decoration: none;
     color: black;
@@ -152,10 +157,20 @@ aside{
     text-decoration: underline;
 }
 
+.newAnime img:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transform: scale(0.99); 
+}
+
 .descTopAnime a {
     text-decoration: none;
     color: black;
 }
 .descTopAnime a:hover{
     text-decoration: underline;
+}
+
+.topAnime img:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transform: scale(0.99); 
 }
