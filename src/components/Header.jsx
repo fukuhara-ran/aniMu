@@ -8,7 +8,7 @@ function Header() {
   return (
     <nav>
       <div id="leftNav">
-        <h2 id="navTittle"><Link to="/"><img src={logo} alt="" /></Link></h2>
+        <Link to="/"><img id="navTittle" src={logo} alt="" /></Link>
         <form id="search">
           <input type="text" placeholder="Search" id="searchBar"/>
           <button id="searchBtn">
