@@ -1,13 +1,14 @@
+import logo from "../assets/ANIMU_RILL2.png";
 import personLogo from "../assets/person.svg"
 import searchIcon from "/search.svg";
-import "./header.css";
 import { Link } from "react-router-dom";
+import "./header.css";
 
 function Header() {
   return (
     <nav>
       <div id="leftNav">
-        <h2 id="navTittle">ANIMU</h2>
+        <h2 id="navTittle"><Link to="/"><img src={logo} alt="" /></Link></h2>
         <form id="search">
           <input type="text" placeholder="Search" id="searchBar"/>
           <button id="searchBtn">

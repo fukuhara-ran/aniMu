@@ -22,6 +22,10 @@ nav{
     font-family: 'Arvo', serif;
     font-stretch: extra-expanded;
 }
+#navTittle img{
+    width: 110px;
+    padding-top: 30px;
+}
 #search{
     display: flex;
     margin-left: 50px;
