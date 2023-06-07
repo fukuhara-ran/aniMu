@@ -1,0 +1,23 @@
+.head-Container {
+    background-color: #A0C1D1;
+    padding: 85px;
+    padding-top: 10px;
+}
+.head-Container .logo {
+    text-align: center;
+}
+
+.head-Container .bottom-logo {
+    text-align: center;
+}
+.body-Container {
+    background-color: #ffffff;
+    padding: 85px;
+    padding-top: 10px;
+}
+
+.foot-Container {
+    background-color: #A0C1D1;
+    padding: 85px;
+    padding-top: 10px;
+}
