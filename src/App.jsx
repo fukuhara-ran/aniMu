@@ -7,6 +7,7 @@ import { Community } from './routes/Community'
 import { Help } from './routes/Help'
 import { Login } from './routes/Login'
 import { Registration } from './routes/Registration'
+import { ResultSearch } from './routes/ResultSearch'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/help' element={<Help/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Registration/>}/>
+        <Route path='/result-search' element={<ResultSearch/>} />
       </Routes>
     </Router>  
   )
