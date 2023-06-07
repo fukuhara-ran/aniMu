@@ -1,0 +1,44 @@
+#container {
+    margin :30px;
+    padding: 0;
+    background-color: #A0C1D1;
+    box-sizing: border-box;
+}
+
+.headingNewAnime {
+    background-color: #A0C1D1;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.headingNewAnime h4 {
+    padding-left: 20px;
+    font-family: jost;
+    font-style: italic;
+}
+
+.containerNewAnime {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.animeList {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.animeList img{
+    height: 255px;
+    width: 350px;
+}
+
+.animeList a {
+    text-decoration: none;
+    color: black;
+}
+
+.animeList a:hover{
+    text-decoration: underline;
+}

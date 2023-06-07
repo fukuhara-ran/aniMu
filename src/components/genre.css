@@ -1,0 +1,35 @@
+.backGenre {
+    background-color: #A0C1D1;
+    padding: 85px;
+    padding-top: 10px;
+}
+
+.containerGenre {
+    background-color: azure;
+    height: 560px;
+}
+
+.headerGenre {
+    border-bottom: 1px solid black;
+    margin: 50px;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.column {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 40px;
+  }
+
+.listGenre li {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 0px;
+    list-style-type:none ;
+}
+
+.listGenre li a:hover {
+    text-decoration: underline;
+}
