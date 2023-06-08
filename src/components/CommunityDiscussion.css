@@ -23,11 +23,10 @@ section.containerCommunity{
     margin-bottom: 30px;
 }
 
-.listDicussion{
+.containerDiscussion{
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .containerTopic{
@@ -67,6 +66,40 @@ section.containerCommunity{
     font-size: 18px;
 }
 
+
+.replySection{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.containerReply{
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    background-color: #ACB1D6;
+    padding: 18px 19px;
+}
+
+.contentReply{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.contentReply p.profileName{
+    font-size: 18px;
+}
+
+.reply{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.topic p.mainReply{
+    font-size: 18px;
+}
 
 
 aside.asideCommunity{

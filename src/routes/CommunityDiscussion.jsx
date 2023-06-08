@@ -15,7 +15,7 @@ export const CommunityDiscussion = () => {
             <h3>Animu Forum Discussions</h3>
 
             <div className="containerDiscussion">
-              <div className="topic">
+              <div className="topicSection">
                 <div className="containerTopic">
                   <img className="profileUser" src={Profile} alt="" />
                   <div className="contentTopic">
@@ -34,7 +34,49 @@ export const CommunityDiscussion = () => {
                 </div>
               </div>
 
+              <div className="replySection">
+                <div className="containerReply">
+                  <img className="profileUser" src={Profile} alt="" />
+                  <div className="contentReply">
+                    <p className="profileName">Nama Profil</p>
+                    <div className="reply">
+                      <p className="mainReply">
+                        Cari dulu! Sebelum kalian post pertanyaan atau topik
+                        pembicaraan kalian bisa searching dulu apakah pertanyaan
+                        atau topik pembicaraan kalian sudah ada atau belum
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
+                <div className="containerReply">
+                  <img className="profileUser" src={Profile} alt="" />
+                  <div className="contentReply">
+                    <p className="profileName">Nama Profil</p>
+                    <div className="reply">
+                      <p className="mainReply">
+                        Cari dulu! Sebelum kalian post pertanyaan atau topik
+                        pembicaraan kalian bisa searching dulu apakah pertanyaan
+                        atau topik pembicaraan kalian sudah ada atau belum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="containerReply">
+                  <img className="profileUser" src={Profile} alt="" />
+                  <div className="contentReply">
+                    <p className="profileName">Nama Profil</p>
+                    <div className="reply">
+                      <p className="mainReply">
+                        Cari dulu! Sebelum kalian post pertanyaan atau topik
+                        pembicaraan kalian bisa searching dulu apakah pertanyaan
+                        atau topik pembicaraan kalian sudah ada atau belum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
