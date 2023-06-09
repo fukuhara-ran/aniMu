@@ -1,18 +1,16 @@
 .container {
-    margin :30px;
+    margin :100px;
     padding: 0;
-    background-color: #A0C1D1;
     box-sizing: border-box;
 }
 
-.heading-result-search {
-    background-color: #A0C1D1;
-    border: 1px solid black;
-    padding: 5px;
+.heading-search-result {
+    padding: 15px 20px 15px 20px;
 }
 
-.heading-result-search .h1 {
+.heading-search-result h4 {
     padding-left: 20px;
+    /* font-style: #A0C1D1; */
     font-family: jost;
     font-style: italic;
 }
@@ -24,21 +22,21 @@
     justify-content: space-between;
 }
 
-.item {
+.search-result {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
-/* .animeList img{
-    height: 255px;
-    width: 350px;
-} */
+.search-result img{
+    height: 455px;
+    width: 400px;
+}
 
-.item a {
+.search-result a {
     text-decoration: none;
     color: black;
 }
 
-.item a:hover{
+.search-result a:hover{
     text-decoration: underline;
 }
