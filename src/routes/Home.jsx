@@ -166,13 +166,17 @@ export const Home = () => {
             <div className="topAnime">
               <Link to='community'><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
-                <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+                <h4>
+                  <a href="#"
+                  target="_blank"
+                  rel="noreferrer"></a>
+                </h4>
                 <p>Genre : Action, Adventure dll</p>
                 <p>Sep 24, 2022 to Dec 10, 2022</p>
               </div>
             </div>
 
-            <div className="topAnime">
+            {/* <div className="topAnime">
             <Link to=''><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
                 <h4><a href="#"><Link to='anime-terbaru'>Judul Anime</Link></a></h4>
@@ -206,7 +210,7 @@ export const Home = () => {
                 <p>Genre : Action, Adventure dll</p>
                 <p>Sep 24, 2022 to Dec 10, 2022</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
         </aside>

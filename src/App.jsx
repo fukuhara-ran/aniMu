@@ -9,8 +9,23 @@ import { Login } from './routes/Login'
 import { Registration } from './routes/Registration'
 import { SearchResult } from './routes/SearchResult'
 import { CommunityDiscussion } from './routes/CommunityDiscussion'
+// import { useState, useEffect } from 'react'
 
 function App() {
+  // const [topAnime, SetTopAnime] = useState([]);
+
+  // const getTopAnime = async ()=>{
+  //   const temp = await fetch('https://api.jikan.moe/v3/top/anime/1/airing')
+  //     .then(res => res.json());
+  //   SetTopAnime(temp.top.slice(0,5));
+  // }
+
+  // useEffect(() => {
+  //   getTopAnime();
+  //   console.log('TopAnime');
+  // }, [])
+  // console.log(topAnime);
+
   return (
     <Router>
       <Routes>
