@@ -13,23 +13,31 @@ import { useState, useEffect } from 'react'
 
 function App() {
   const [topAnime, SetTopAnime] = useState([]);
+  const [recentAnime, SetRecentAnime] = useState([]);
 
   const getTopAnime = async ()=>{
     const res = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=bypopularity&limit=6')
     const resData = await res.json();
     SetTopAnime(resData.data);
   }
+  const getRecentAnime = async ()=>{
+    const res = await fetch('https://api.jikan.moe/v4/watch/episodes?limit=5')
+    const resData = await res.json();
+    SetRecentAnime(resData.data.slice(0,5));
+  }
 
   useEffect(() => {
     getTopAnime();
-    console.log('TopAnime');
+    getRecentAnime();
+    console.log('API Config');
   }, [])
   
   console.log(topAnime);
+  console.log(recentAnime);
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home top={topAnime}/>}/>
+        <Route path='/' element={<Home top={topAnime} recent={recentAnime}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
         <Route path='/anime-terbaru' element={<AnimeTerbaru/>}/>
         <Route path='/genre' element={<Genre/>}/>
