@@ -18,10 +18,10 @@ function Header() {
       </div>
       <div id="rightNav">
         <ul id="navList">
-          <li> <a href="" id="navlist"><Link to='/anime-terbaru'>Anime Terbaru</Link></a></li>
-          <li> <a href="" id="navlist"><Link to='/genre'>Genre</Link></a></li>
-          <li> <a href="" id="navlist"><Link to='/community'>Komunitas</Link></a></li>
-          <li> <a href="" id="navlist"><Link to='/help'>Help</Link></a></li>
+          <li><Link to='/anime-terbaru' id="navList">Anime Terbaru</Link></li>
+          <li><Link to='/genre' id="navList">Genre</Link></li>
+          <li><Link to='/community' id="navList">Komunitas</Link></li>
+          <li><Link to='/help' id="navList">Help</Link></li>
         </ul>
           <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
       </div>

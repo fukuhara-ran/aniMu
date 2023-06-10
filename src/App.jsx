@@ -9,27 +9,27 @@ import { Login } from './routes/Login'
 import { Registration } from './routes/Registration'
 import { SearchResult } from './routes/SearchResult'
 import { CommunityDiscussion } from './routes/CommunityDiscussion'
-// import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
-  // const [topAnime, SetTopAnime] = useState([]);
+  const [topAnime, SetTopAnime] = useState([]);
 
-  // const getTopAnime = async ()=>{
-  //   const temp = await fetch('https://api.jikan.moe/v3/top/anime/1/airing')
-  //     .then(res => res.json());
-  //   SetTopAnime(temp.top.slice(0,5));
-  // }
+  const getTopAnime = async ()=>{
+    const res = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=bypopularity&limit=6')
+    const resData = await res.json();
+    SetTopAnime(resData.data);
+  }
 
-  // useEffect(() => {
-  //   getTopAnime();
-  //   console.log('TopAnime');
-  // }, [])
-  // console.log(topAnime);
-
+  useEffect(() => {
+    getTopAnime();
+    console.log('TopAnime');
+  }, [])
+  console.log(topAnime);
+  
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home top={topAnime}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
         <Route path='/anime-terbaru' element={<AnimeTerbaru/>}/>
         <Route path='/genre' element={<Genre/>}/>

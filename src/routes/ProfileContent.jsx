@@ -1,6 +1,7 @@
 import "../components/ProfileContent.css"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { Link } from "react-router-dom"
 
 export const ProfileContent = () => {
   return (
@@ -20,7 +21,7 @@ export const ProfileContent = () => {
       </div>
       <div className="pembatasKanan">
         <h3 className="tittle">Anime Terbaru</h3>
-        <a className="cardLink" href="">
+        <Link className="cardLink" href="">
           <div className="animeCard">
             <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
             <div className="sideText">
@@ -29,6 +30,8 @@ export const ProfileContent = () => {
               <p>Episode : 5</p>
             </div>
           </div>
+        </Link>
+        <Link className="cardLink" href="">
           <div className="animeCard">
             <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
             <div className="sideText">
@@ -37,6 +40,8 @@ export const ProfileContent = () => {
               <p>Episode : 5</p>
             </div>
           </div>
+        </Link>
+        <Link className="cardLink" href="">
           <div className="animeCard">
             <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
             <div className="sideText">
@@ -45,7 +50,7 @@ export const ProfileContent = () => {
               <p>Episode : 5</p>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </section>
     <Footer/>   

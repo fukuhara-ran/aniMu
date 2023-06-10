@@ -95,7 +95,6 @@
 }
 .animeCard{
     display: flex;
-    margin-bottom: 15px;
 }
 .cardLink{
     text-decoration: none;
@@ -104,6 +103,7 @@
     padding-left: 15px; */
     margin-left: 15px;
     margin-right: 10px;
+    margin-bottom: 15px;
 }
 .sideImg{
     width: 100px;

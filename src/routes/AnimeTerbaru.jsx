@@ -15,35 +15,35 @@ export const AnimeTerbaru = () => {
         <div className="containerNewAnime">
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
           <div className="animeList">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><a href="#"><Link to=''>Judul Anime</Link></a></h4>
+            <h4><Link to=''>Judul Anime</Link></h4>
           </div>
         </div>
     </div>
