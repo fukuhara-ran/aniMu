@@ -100,10 +100,10 @@ aside{
 }
 
 .listTopAnime{
-    padding: 23px 10px;
+    margin: 23px 10px;
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 20px;
 }
 
 .topAnime{

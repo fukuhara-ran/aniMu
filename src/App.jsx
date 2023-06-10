@@ -24,8 +24,8 @@ function App() {
     getTopAnime();
     console.log('TopAnime');
   }, [])
-  console.log(topAnime);
   
+  console.log(topAnime);
   return (
     <Router>
       <Routes>

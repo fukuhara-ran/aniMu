@@ -161,27 +161,28 @@ export const Home = ({top}) => {
           <div className="headingTopAnime">
             <h3>Top Anime</h3>
           </div>
+          <div className="listTopAnime">
+            {/* Stylenya dibenerin biar imagenya sejajar */}
             {
               top ?(
                 top.map((anime,index)=>{
                   return(
-                    <div className="listTopAnime">
-                      <div className="topAnime">
-                        <img src={anime.images.jpg.large_image_url} alt="" />
-                        <div className="descTopAnime">
-                          <h4>
-                            <Link href="#"
-                            target="_blank"
-                            rel="noreferrer">{anime.title}</Link>
-                          </h4>
-                          <p>Genre : Action, Adventur</p>
-                        </div>
+                    <div className="topAnime" key={index.mal_id}>
+                      <img src={anime.images.jpg.large_image_url} alt="animeImage" />
+                      <div className="descTopAnime">
+                        <h4>
+                          <Link href="#"
+                          target="_blank"
+                          rel="noreferrer">{anime.title}</Link>
+                        </h4>
+                        <p>Genre : Action, Adventur</p>
                       </div>
                     </div>
                   )
                 })
                 ):""
               }
+              </div>
             {/* <div className="topAnime">
               <Link to=''><img src="/src/assets/tensura.jpg" alt="" /></Link>
               <div className="descTopAnime">
