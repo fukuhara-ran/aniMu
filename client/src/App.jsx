@@ -17,7 +17,7 @@ function App() {
   const [genres, SetGenres] = useState([]);
 
   const getTopAnime = async ()=>{
-    const res = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=bypopularity&limit=6')
+    const res = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing&limit=6')
     const resData = await res.json();
     SetTopAnime(resData.data);
   }
@@ -36,10 +36,11 @@ function App() {
     getTopAnime();
     getRecentAnime();
     getGenres();
+    // getGenres();
     console.log('API Config');
   }, [])
+  console.log(genres)
   
-  console.log(genres);
   return (
     <Router>
       <Routes>

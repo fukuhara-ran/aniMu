@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import tensura from "../assets/tensura.jpg"
 
 export const Home = ({top, recent}) => {
   return (
@@ -49,7 +50,7 @@ export const Home = ({top, recent}) => {
 
             <div className="listNewAnime">
               <div className="newAnime">
-                <Link to='genre'><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
+                <Link to='genre'><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to='anime-terbaru'>Judul Anime</Link></h4>
                   <p>Episode : 02</p>
@@ -59,7 +60,7 @@ export const Home = ({top, recent}) => {
               </div>
               
               <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
+                <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to=''>Judul Anime</Link></h4>
                   <p>Episode : 02</p>
@@ -69,7 +70,7 @@ export const Home = ({top, recent}) => {
               </div>
 
               <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
+                <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to=''>Judul Anime</Link></h4>
                   <p>Episode : 02</p>
@@ -79,7 +80,7 @@ export const Home = ({top, recent}) => {
               </div>
 
               <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
+                <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to=''>Judul Anime</Link></h4>
                   <p>Episode : 02</p>
@@ -89,7 +90,7 @@ export const Home = ({top, recent}) => {
               </div>
 
               <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
+                <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to=''>Judul Anime</Link></h4>
                   <p>Episode : 02</p>
@@ -99,7 +100,7 @@ export const Home = ({top, recent}) => {
               </div>
 
               <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
+                <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to=''>Judul Anime</Link></h4>
                   <p>Episode : 02</p>
@@ -108,48 +109,8 @@ export const Home = ({top, recent}) => {
                 </div>
               </div>
 
-              <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
-              <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
-              <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
               
-              <div className="newAnime">
-                <Link to=''><img src="https://www.nerdpool.it/wp-content/uploads/2023/03/naruto.jpg" alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
             </div>
-
           </div>
 
               {/* Update Content */}

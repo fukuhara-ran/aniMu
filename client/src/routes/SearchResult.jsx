@@ -7,7 +7,7 @@ export const SearchResult = () => {
     return (
         <>
       <Header/>
-      <div className="container">
+      <div className="container-Result">
         <div className="heading-search-result">
           <h1>Result Search : JUJUTSU NO KAYSEN</h1>
         </div>
