@@ -21,7 +21,7 @@ function App() {
     SetTopAnime(resData.data);
   }
   const getRecentAnime = async ()=>{
-    const res = await fetch('https://api.jikan.moe/v4/watch/episodes?limit=5')
+    const res = await fetch('https://api.jikan.moe/v4/watch/episodes')
     const resData = await res.json();
     SetRecentAnime(resData.data.slice(0,5));
   }

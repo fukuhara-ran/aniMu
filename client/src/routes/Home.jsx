@@ -2,6 +2,7 @@ import "../components/Home.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 export const Home = ({top, recent}) => {
   return (
@@ -18,13 +19,13 @@ export const Home = ({top, recent}) => {
             <div className="listOngoing">
             {
               recent ?(
-                recent.map((anime,index)=>{
+                recent.map((anime)=>{
                   return(
-                    <div className="ongoingAnime" key={index.mal_id}>
-                      <img src="/src/assets/kny.jpg" alt="anime thumbnail"/>
+                    <div className="ongoingAnime" key={anime.entry.mal_id}>
+                      <img src={anime.entry.images.jpg.large_image_url} alt="anime thumbnail"/>
                       <h4><Link href="#"
                           target="_blank"
-                          rel="noreferrer">Judul Anime</Link></h4>
+                          rel="noreferrer">{anime.entry.title}</Link></h4>
                     </div>
                   )
                 })
@@ -166,15 +167,15 @@ export const Home = ({top, recent}) => {
             {/* Stylenya dibenerin biar imagenya sejajar */}
             {
               top ?(
-                top.map((topAnime,index)=>{
+                top.map((anime)=>{
                   return(
-                    <div className="topAnime" key={index.mal_id}>
-                      <img src={topAnime.images.jpg.large_image_url} alt="animeImage" />
+                    <div className="topAnime" key={anime.mal_id}>
+                      <img src={anime.images.jpg.large_image_url} alt="animeImage" />
                       <div className="descTopAnime">
                         <h4>
                           <Link href="#"
                           target="_blank"
-                          rel="noreferrer">{topAnime.title}</Link>
+                          rel="noreferrer">{anime.title}</Link>
                         </h4>
                         <p>Genre : Action, Adventur</p>
                       </div>
@@ -199,4 +200,7 @@ export const Home = ({top, recent}) => {
   );
 };
 
-export default Home;
+Home.propTypes = {
+  top: PropTypes.any.isRequired,
+  recent: PropTypes.any.isRequired,
+};
