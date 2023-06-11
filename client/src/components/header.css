@@ -8,11 +8,13 @@ nav{
     color: black;
     display: flex;
     padding: 0px 40px;
-    height: 50px;
+    height: 55px;
     align-items: center;
     gap: 30px;
     justify-content: space-between;
 }
+
+/* Left Navbar */
 #leftNav{
     display: flex;
     align-items: center;
@@ -58,29 +60,8 @@ nav{
     align-items: center;
     padding-top: 2px;
 }
-ul{
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    height: 100%;
-    align-items: center;
-}
-li a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: -1px;
-    width: 116px;
-}
-/* li:after{
-    content: "";
-    position: absolute;
-    background-color: red;
-    height: 3px;
-    width: 50%;
-    left: 0;
-} */
+
+/* Right Navbar */
 #rightNav{
     width: 55%;
     display: flex;
@@ -89,13 +70,21 @@ li a{
     justify-content: space-between;
     height: 100%;
 }
-#navList{
-    font-size: large;
+.navList{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    /* height: 100%; */
+    align-items: center;
 }
-#navlist:hover{
-    font-weight: bold;
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 16px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
 }
-
 #profileIcon{
     width: 30px;
 }

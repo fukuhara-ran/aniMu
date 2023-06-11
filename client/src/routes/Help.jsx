@@ -38,7 +38,7 @@ export const Help = () => {
             <h1>Temukan lebih banyak tentang dunia anime sekarang</h1>
           </div>
           <div className="btn-daftar">
-            <button className="btn-daftar"><h2>Daftar disini</h2></button>
+            <button className="btn-daftar-child"><h2>Daftar disini</h2></button>
           </div>
         </div>
     </div>

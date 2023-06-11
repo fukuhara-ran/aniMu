@@ -17,8 +17,8 @@ function Header() {
         </form>
       </div>
       <div id="rightNav">
-        <ul id="navList">
-          <li><Link to='/anime-terbaru' id="navList">Anime Terbaru</Link></li>
+        <ul className="navList">
+          <li><Link to='/anime-terbaru' id="navList-child">Anime Terbaru</Link></li>
           <li><Link to='/genre' id="navList">Genre</Link></li>
           <li><Link to='/community' id="navList">Komunitas</Link></li>
           <li><Link to='/help' id="navList">Help</Link></li>

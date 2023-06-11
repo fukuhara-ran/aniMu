@@ -32,7 +32,7 @@ section.container{
 /* HERO */
 .hero{
     background-color: #ffffff;
-    border: solid 5px rgb(160, 193, 209);
+    border: solid 8px rgb(160, 193, 209);
 }
 
 .hero .headingOngoing{
@@ -44,7 +44,7 @@ section.container{
 .hero .listOngoing{
     display: flex;
     gap: 27px;
-    margin: 16px 10px 0px 10px;
+    margin: 16px 5px 0px 5px;
     overflow-x: scroll;
 }
 
@@ -56,14 +56,14 @@ section.container{
 
 .ongoingAnime img{
     width: 180px;
-    height: 200px;
+    height: 250px;
     border: solid 1px black;
 }
 
 /* MAIN CONTENT */
 .mainContent{
     background-color: #fff;
-    border: solid 5px rgb(160, 193, 209);
+    border: solid 8px rgb(160, 193, 209);
 }
 
 .mainContent .headingNewAnime{
@@ -93,14 +93,15 @@ section.container{
 /* ASIDE */
 aside{
     width: 30%;
-    background-color: #A0C1D1;
+    background-color: #fff;
     margin-bottom: auto;
+    border: solid 8px #A0C1D1;
 }
 
 .headingTopAnime{
-    border: solid 1px black;
     text-align: center;
     padding: 5px;
+    background-color: #A0C1D1;
 }
 
 .listTopAnime{

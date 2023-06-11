@@ -14,7 +14,6 @@ import { useState, useEffect } from 'react'
 function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
-  const [genres, SetGenres] = useState([]);
 
   const getTopAnime = async ()=>{
     const res = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing&limit=6')
@@ -24,22 +23,15 @@ function App() {
   const getRecentAnime = async ()=>{
     const res = await fetch('https://api.jikan.moe/v4/watch/episodes')
     const resData = await res.json();
-    SetRecentAnime(resData.data.slice(0,5));
-  }
-  const getGenres = async ()=>{
-    const res = await fetch('https://api.jikan.moe/v4/genres/anime')
-    const resData = await res.json();
-    SetGenres(resData.data);
+    SetRecentAnime(resData.data.slice(0,10));
   }
 
   useEffect(() => {
     getTopAnime();
     getRecentAnime();
-    getGenres();
     // getGenres();
     console.log('API Config');
   }, [])
-  console.log(genres)
   
   return (
     <Router>
