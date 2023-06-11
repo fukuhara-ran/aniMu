@@ -5,6 +5,7 @@
 }
 .head-Container .logo {
     text-align: center;
+    margin-top: 25px;
 }
 
 .head-Container .bottom-logo {
@@ -19,5 +20,24 @@
 .foot-Container {
     background-color: #A0C1D1;
     padding: 85px;
-    padding-top: 10px;
+    padding-top: 50px;
+    text-align: center;
+}
+.head-text {
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #ACB1D6;
+    border: none;
+    color: white;
+    padding: 0px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    margin-top: 20px;
+}
+.btn-daftar {
+    border-radius: 12px ;
 }
