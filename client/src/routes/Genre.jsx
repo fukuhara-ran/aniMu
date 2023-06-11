@@ -1,6 +1,5 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import { Link } from "react-router-dom"
 import arrow from "/src/Assets/arrow.svg";
 import "../components/genre.css"
 
@@ -15,22 +14,22 @@ export const Genre = () => {
         </div>
         <div className="listGenre">
             <div className="column">
-                <li><img src={arrow}/><Link link to='/'>action</Link></li>
-                <li><img src={arrow}/><Link link to=''>Horror</Link></li>
-                <li><img src={arrow}/><Link link to=''>Mysteri</Link></li>
-                <li><img src={arrow}/><Link link to=''>Adventure</Link></li>
+                <li><img src={arrow}/><a href="">action</a></li>
+                <li><img src={arrow}/><a href="">Horror</a></li>
+                <li><img src={arrow}/><a href="">Mysteri</a></li>
+                <li><img src={arrow}/><a href="">Adventure</a></li>
             </div>
             <div className="column">
-                <li><img src={arrow}/><Link link to=''>Shounen</Link></li>
-                <li><img src={arrow}/><Link link to=''>Mecha</Link></li>
-                <li><img src={arrow}/><Link link to=''>Fantasy</Link></li>
-                <li><img src={arrow}/><Link link to=''>Slice of life</Link></li>
+                <li><img src={arrow}/><a href="">Shounen</a></li>
+                <li><img src={arrow}/><a href="">Mecha</a></li>
+                <li><img src={arrow}/><a href="">Fantasy</a></li>
+                <li><img src={arrow}/><a href="">Slice of life</a></li>
             </div>
             <div className="column">
-                <li><img src={arrow}/><Link link to=''>Isekai</Link></li>
-                <li><img src={arrow}/><Link link to=''>Romance</Link></li>
-                <li><img src={arrow}/><Link link to=''>Drama</Link></li>
-                <li><img src={arrow}/><Link link to=''>Comedy</Link></li>
+                <li><img src={arrow}/><a href="">Isekai</a></li>
+                <li><img src={arrow}/><a href="">Romance</a></li>
+                <li><img src={arrow}/><a href="">Drama</a></li>
+                <li><img src={arrow}/><a href="">Comedy</a></li>
             </div>
           </div>
       </div>
