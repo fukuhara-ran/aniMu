@@ -125,7 +125,7 @@ export const Home = ({top, recent}) => {
             <h3>Top Anime</h3>
           </div>
           <div className="listTopAnime">
-            {/* Stylenya dibenerin biar imagenya sejajar */}
+            
             {
               top ?(
                 top.map((anime)=>{
