@@ -13,7 +13,7 @@ function Footer() {
         <div className="left">©2023 ANIMU</div>
 
         <div className="center">
-          <ul>
+          <ul className="center-child">
             <li><a href="#">Terms and Condition</a></li>
             <li><a href="#">Privacy and Policy</a></li>
             <li><a href="#">Help</a></li>

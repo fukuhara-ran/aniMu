@@ -44,7 +44,7 @@ section.container{
 .hero .listOngoing{
     display: flex;
     gap: 27px;
-    margin: 16px 5px 0px 5px;
+    padding: 16px 0px 0px 0px;
     overflow-x: scroll;
 }
 

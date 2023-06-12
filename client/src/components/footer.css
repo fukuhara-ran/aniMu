@@ -9,19 +9,28 @@
   justify-content: space-between;
   background-color: #232C33;
   color: white;
-  padding: 40px 10px 0 10px;
+  padding: 10px 10px 0 10px;
+  height: 100px;
 }
 
 .left {
-  padding-top: 80px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 20px;
 }
 
 .center {
   padding-top: 0;
-  display: contents;
+  display: flex;
 }
-
+.center-child{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 20px;
+}
 .center ul li a {
+  text-decoration: none;
   color: white;
 }
 .center ul li a:hover {
@@ -29,7 +38,9 @@
 }
 
 .right {
-  padding-top: 80px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 20px;
 }
 
 .socialmedia{
