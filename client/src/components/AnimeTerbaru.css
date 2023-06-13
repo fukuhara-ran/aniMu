@@ -1,40 +1,46 @@
 #container {
-    margin :30px;
-    padding: 0;
-    background-color: #A0C1D1;
-    box-sizing: border-box;
+    margin: 1%;
+    display: flex;
+    gap: 10px;
+
+}
+
+.contentNewAnime{
+    border: solid 8px rgb(160, 193, 209);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
 /* Heading */
 .headingNewAnime {
     background-color: #A0C1D1;
-    border: 1px solid black;
     padding: 5px;
 }
 
 .headingNewAnime h4 {
     padding-left: 20px;
     font-family: jost;
-    font-size: 20px;
+        font-size: 20px;
     font-style: italic;
 }
 
 /* Container Anime */
 .containerNewAnime {
-    margin: 20px;
+    margin-left: 12px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 45px;
 }
 
 .animeList {
     text-align: center;
-    gap: 10px;
 }
 
 .animeList img{
-    height: 330px;
-    width: 230px;
+    height: 190px;
+    width: auto;
 }
 
 .animeList a {
@@ -44,4 +50,11 @@
 
 .animeList a:hover{
     text-decoration: underline;
+}
+
+.pageNav {
+    background-color: #A0C1D1;
+    text-align: center;
+    padding: 2vh;
+    margin: 5px;
 }
