@@ -12,9 +12,27 @@
     text-align: center;
 }
 .body-Container {
+    margin :20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.items {
     background-color: #ffffff;
-    padding: 85px;
-    padding-top: 10px;
+    padding: 85px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.items .item {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.items .item img {
+    height: 300px;
+    width: 270px;
 }
 
 .foot-Container {

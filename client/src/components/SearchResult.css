@@ -1,5 +1,5 @@
 .container-Result {
-    margin :100px;
+    margin :90px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -32,11 +32,11 @@
     width: 270px;
 }
 
-.search-result a {
+.search-result link {
     text-decoration: none;
     color: black;
 }
 
-.search-result a:hover{
+.search-result link:hover{
     text-decoration: underline;
 }

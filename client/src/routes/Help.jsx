@@ -21,12 +21,12 @@ export const Help = () => {
         </div>
         <div className="body-Container">
           <div className="items">
-            <div className="first-item">
+            <div className="item">
               <h3>STAY UP TO DATE</h3>
               <img src={logostayuptodate} alt="" />
               <p>Pantau terus dari anime kesayanganmu agar tidak ketinggalan berita-berita tentang anime terbaru</p>
             </div>
-            <div className="second-item">
+            <div className="item">
               <h3>JOIN THE DISCUSSION</h3>
               <img src={logodiscussion} alt="" />
               <p>Gabung diskusi bareng dengan pecinta anime lainnya bisa jadi kalian dapat teman baru di sana</p>
