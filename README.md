@@ -13,4 +13,4 @@ https://www.figma.com/file/iwFUTLsGjVFpEqDXpuS1e3/Untitled?type=design&node-id=0
 | 4 | Zulaicho Oktafreza Wardana | 21.11.4360 | Figma Editor and BackEnd Editor |
 | 5 | Nur Fadhlur Rahman | 21.11.4349 | FullStack Web |
 | 6 | Ahmed Ibnu Aprianto | 21.11.4361 | Figma Editor and BackEnd Web |
-| 7 | Rofinus Fernando Kasiasi | 21.11.4348 | ? |
+| 7 | Rofinus Fernando Kasiasi | 21.11.4348 | Figma Editor |
