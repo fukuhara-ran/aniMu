@@ -58,47 +58,6 @@ export const Home = ({top, recent}) => {
                   <p>Released on : 5 hari yang lalu</p>
                 </div>
               </div>
-              
-              <div className="newAnime">
-                <Link to=''><img src={tensura} alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
-              <div className="newAnime">
-                <Link to=''><img src={tensura} alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
-              <div className="newAnime">
-                <Link to=''><img src={tensura} alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
-              <div className="newAnime">
-                <Link to=''><img src={tensura} alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to=''>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-
               <div className="newAnime">
                 <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
@@ -125,7 +84,6 @@ export const Home = ({top, recent}) => {
             <h3>Top Anime</h3>
           </div>
           <div className="listTopAnime">
-            
             {
               top ?(
                 top.map((anime)=>{
@@ -138,7 +96,7 @@ export const Home = ({top, recent}) => {
                           target="_blank"
                           rel="noreferrer">{anime.title}</Link>
                         </h4>
-                        <p>Genre : Action, Adventur</p>
+                        <p>Genre : Action, Adventure</p>
                       </div>
                     </div>
                   )

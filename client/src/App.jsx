@@ -16,28 +16,31 @@ function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
   
-  async function fetchData(){
-    //!Axios method
-    // const topAnimeAPI = ('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing&limit=6');
-    // const recentAnimeAPI = ('https://api.jikan.moe/v4/watch/episodes');
-    // const resTopAnime = axios.get(topAnimeAPI)
-    // const resRecentAnime = axios.get(recentAnimeAPI)
-    // const resDataTop = await resTopAnime.data.json;
-    // const resDataRecent = await resRecentAnime.data.json;
-    
-    //! Async method
-    const resTop = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing')
-    const resRecent = await fetch('https://api.jikan.moe/v4/watch/episodes')
-    const resDataTop = await resTop.json();
-    const resDataRecent = await resRecent.json();
-    SetTopAnime(resDataTop.data.slice(0,6));
-    SetRecentAnime(resDataRecent.data.slice(0,10));
+  //! Async method
+  async function getTopAnime(){
+    try {
+      const resTop = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing')
+      const resDataTop = await resTop.json();
+      SetTopAnime(resDataTop.data.slice(0,6));
+    } catch (error) {
+      console.log(`ERROR: ${error}`);
+    }
   }
+  async function getRecentAnime(){
+    try {
+      const resRecent = await fetch('https://api.jikan.moe/v4/watch/episodes')
+      const resDataRecent = await resRecent.json();
+      SetRecentAnime(resDataRecent.data.slice(0,10));
+    } catch (error) {
+      console.log(`ERROR: ${error}`);
+    }
+  }
+
   
   useEffect(() => {
-    fetchData();
+    getTopAnime();
+    getRecentAnime();
   }, [])
-
   
   return (
     <Router>
