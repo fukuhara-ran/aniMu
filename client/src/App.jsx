@@ -15,6 +15,7 @@ import axios from 'axios'
 function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
+  const [recentEps, SetRecentEps] = useState([]);
   
   //! Async method
   // async function getTopAnime(){
@@ -39,17 +40,20 @@ function App() {
   //!Axios
   const fetchData = () => {
     const resTop = 'https://api.jikan.moe/v4/top/anime?type=tv&filter=airing'
-    const resRecent = 'https://api.jikan.moe/v4/watch/episodes'
+    const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release?type=1'
 
     const getTopAnime = axios.get(resTop)
     const getRecentAnime = axios.get(resRecent)
     axios.all([getTopAnime, getRecentAnime]).then(
       axios.spread((...allData) => {
-        const allDataTop = allData[0].data.data.slice(0,5)
-        const allDataRecent = allData[1].data.data.slice(0,10)
+        const allDataTop = allData[0].data.data
+        const allDataRecent = allData[1].data
+        const allDataEps = allData[1].data
 
-        SetTopAnime(allDataTop);
-        SetRecentAnime(allDataRecent);
+        SetTopAnime(allDataTop.slice(0,5));
+        SetRecentAnime(allDataRecent.slice(0,10));
+        SetRecentEps(allDataEps.slice(0,8));
+        console.log(allDataEps);
       })
     )
   }
@@ -63,7 +67,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home top={topAnime} recent={recentAnime}/>}/>
+        <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
         <Route path='/anime-terbaru' element={<AnimeTerbaru/>}/>
         <Route path='/genre' element={<Genre/>}/>

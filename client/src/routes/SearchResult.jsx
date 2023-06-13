@@ -29,54 +29,6 @@ export const SearchResult = () => {
             <img src="/src/assets/kny.jpg" alt="" />
             <h4><Link to=''>Judul Anime</Link></h4>
           </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div> 
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
         </div>
       </div>
         <Footer/>
