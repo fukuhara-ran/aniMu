@@ -72,10 +72,11 @@ export const SearchResult = () => {
           <div className="search-result">
             <img src="/src/assets/kny.jpg" alt="" />
             <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
+          </div> 
         </div>
       </div>
         <Footer/>
         </>
     )
 }
+// coba lagi git FadhlurRahman11
