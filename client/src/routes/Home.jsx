@@ -3,9 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
-import tensura from "../assets/tensura.jpg"
 
-export const Home = ({top, recent}) => {
+export const Home = ({top, recent, eps}) => {
   return (
     <>
       <Header />
@@ -20,13 +19,13 @@ export const Home = ({top, recent}) => {
             <div className="listOngoing">
             {
               recent ?(
-                recent.map((anime)=>{
+                recent.map((anime,id)=>{
                   return(
-                    <div className="ongoingAnime" key={anime.entry.mal_id}>
-                      <img src={anime.entry.images.jpg.large_image_url} alt="anime thumbnail"/>
+                    <div className="ongoingAnime" key={id}>
+                      <img src={anime.animeImg} alt="anime thumbnail"/>
                       <h4><Link href="#"
                           target="_blank"
-                          rel="noreferrer">{anime.entry.title}</Link></h4>
+                          rel="noreferrer">{anime.animeTitle}</Link></h4>
                     </div>
                   )
                 })
@@ -49,16 +48,23 @@ export const Home = ({top, recent}) => {
             </div>
 
             <div className="listNewAnime">
-              <div className="newAnime">
-                <Link to='genre'><img src={tensura} alt="" /></Link>
-                <div className="descNewAnime">
-                  <h4><Link to='anime-terbaru'>Judul Anime</Link></h4>
-                  <p>Episode : 02</p>
-                  <p>Posted by : Cane Toad</p>
-                  <p>Released on : 5 hari yang lalu</p>
-                </div>
-              </div>
-              <div className="newAnime">
+            {
+              eps ?(
+                eps.map((anime,id)=>{
+                  return(
+                    <div className="newAnime" key={id}>
+                      <Link to='genre'><img src={anime.animeImg} alt="" /></Link>
+                      <div className="descNewAnime">
+                        <h4><Link to='anime-terbaru'>{anime.animeTitle}</Link></h4>
+                        <p>Episode : {anime.episodeNum}</p>
+                        <p>Version : {anime.subOrDub}</p>
+                      </div>
+                    </div>
+                  )
+                })
+                ):""
+              }
+              {/* <div className="newAnime">
                 <Link to=''><img src={tensura} alt="" /></Link>
                 <div className="descNewAnime">
                   <h4><Link to=''>Judul Anime</Link></h4>
@@ -66,9 +72,8 @@ export const Home = ({top, recent}) => {
                   <p>Posted by : Cane Toad</p>
                   <p>Released on : 5 hari yang lalu</p>
                 </div>
-              </div>
-
-              
+              </div> */}
+  
             </div>
           </div>
 
@@ -122,4 +127,5 @@ export const Home = ({top, recent}) => {
 Home.propTypes = {
   top: PropTypes.any.isRequired,
   recent: PropTypes.any.isRequired,
+  eps: PropTypes.any.isRequired,
 };
