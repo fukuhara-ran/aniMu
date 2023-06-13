@@ -10,7 +10,7 @@ function Header() {
       <div id="leftNav">
         <Link to="/"><img id="navTittle" src={logo} alt="" /></Link>
         <form id="search">
-          <input type="text" placeholder="Search" id="searchBar"/>
+          <input type="search" placeholder="Search" id="searchBar"/>
           <button id="searchBtn">
             <img id="searchIcon" src={searchIcon} alt="Search icon" />
           </button>
