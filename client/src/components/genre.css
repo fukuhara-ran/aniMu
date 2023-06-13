@@ -30,6 +30,12 @@
     list-style-type:none ;
 }
 
+.listGenre li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 2px;
+}
+
 .listGenre li a:hover {
     text-decoration: underline;
 }
