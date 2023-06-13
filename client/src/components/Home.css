@@ -90,6 +90,10 @@ section.container{
     height: 250px;
 }
 
+.newAnime .descNewAnime{
+    width: 200px;
+}
+
 /* ASIDE */
 aside{
     width: 30%;
