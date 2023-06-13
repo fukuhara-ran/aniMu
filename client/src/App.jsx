@@ -10,36 +10,54 @@ import { Registration } from './routes/Registration'
 import { SearchResult } from './routes/SearchResult'
 import { CommunityDiscussion } from './routes/CommunityDiscussion'
 import { useState, useEffect } from 'react'
-// import axios from 'axios';
+import axios from 'axios'
 
 function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
   
   //! Async method
-  async function getTopAnime(){
-    try {
-      const resTop = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing')
-      const resDataTop = await resTop.json();
-      SetTopAnime(resDataTop.data.slice(0,6));
-    } catch (error) {
-      console.log(`ERROR: ${error}`);
-    }
-  }
-  async function getRecentAnime(){
-    try {
-      const resRecent = await fetch('https://api.jikan.moe/v4/watch/episodes')
-      const resDataRecent = await resRecent.json();
-      SetRecentAnime(resDataRecent.data.slice(0,10));
-    } catch (error) {
-      console.log(`ERROR: ${error}`);
-    }
+  // async function getTopAnime(){
+  //   try {
+  //     const resTop = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing')
+  //     const resDataTop = await resTop.json();
+  //     SetTopAnime(resDataTop.data.slice(0,6));
+  //   } catch (error) {
+  //     console.log(`ERROR: ${error}`);
+  //   }
+  // }
+  // async function getRecentAnime(){
+  //   try {
+  //     const resRecent = await fetch('https://api.jikan.moe/v4/watch/episodes')
+  //     const resDataRecent = await resRecent.json();
+  //     SetRecentAnime(resDataRecent.data.slice(0,10));
+  //   } catch (error) {
+  //     console.log(`ERROR: ${error}`);
+  //   }
+  // }
+
+  //!Axios
+  const fetchData = () => {
+    const resTop = 'https://api.jikan.moe/v4/top/anime?type=tv&filter=airing'
+    const resRecent = 'https://api.jikan.moe/v4/watch/episodes'
+
+    const getTopAnime = axios.get(resTop)
+    const getRecentAnime = axios.get(resRecent)
+    axios.all([getTopAnime, getRecentAnime]).then(
+      axios.spread((...allData) => {
+        const allDataTop = allData[0].data.data.slice(0,5)
+        const allDataRecent = allData[1].data.data.slice(0,10)
+
+        SetTopAnime(allDataTop);
+        SetRecentAnime(allDataRecent);
+      })
+    )
   }
 
-  
   useEffect(() => {
-    getTopAnime();
-    getRecentAnime();
+    // getTopAnime();
+    // getRecentAnime();
+    fetchData();
   }, [])
   
   return (
