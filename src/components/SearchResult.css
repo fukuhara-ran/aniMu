@@ -1,5 +1,5 @@
 .container-Result {
-    margin :90px;
+    margin : 25px 90px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -28,8 +28,8 @@
 }
 
 .search-result img{
-    height: 325px;
-    width: 270px;
+    height: 255px;
+    width: 200px;
 }
 
 .search-result link {
