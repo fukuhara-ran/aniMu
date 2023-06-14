@@ -19,7 +19,7 @@ export const AnimeTerbaru = ({ top,page }) => {
                       <Link to="genre"><img src={anime.animeImg} alt="" /></Link>
                       <div className="descNewAnime">
                         <h4><Link to="anime-terbaru">{anime.animeTitle}</Link></h4>
-                        <p>Episode : {anime.episodeNum}</p>
+                        <p>Eps {anime.episodeNum}</p>
                       </div>
                     </div>
                   );

@@ -1,5 +1,5 @@
 #container {
-    margin: 1%;
+    padding: 32px 27px 0 27px;
     display: flex;
     gap: 10px;
 
@@ -22,7 +22,7 @@
 .headingNewAnime h4 {
     padding-left: 20px;
     font-family: jost;
-        font-size: 20px;
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -31,16 +31,25 @@
     margin-left: 12px;
     display: flex;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 35px;
+}
+
+.animeList .descNewAnime {
+    width: 140px
 }
 
 .animeList {
     text-align: center;
 }
 
+.descNewAnime p {
+    font-style: italic;
+    opacity: 70%;
+}
+
 .animeList img{
     height: 190px;
-    width: auto;
+    width: 140px;
 }
 
 .animeList a {
