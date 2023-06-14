@@ -1,4 +1,3 @@
-import Header from "../components/Header"
 import Footer from "../components/Footer"
 import searchIcon from "/search.svg";
 import "../components/community.css";
@@ -7,7 +6,6 @@ import discussion from "../assets/dicussion.png";
 export const Community = () => {
   return (
     <>
-    <Header/>
     <section className="containerCommunity">
       <div className="contentCommunity">
         <div className="headingContent">

@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import "../components/AnimeTerbaru.css";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -7,7 +6,6 @@ import PropTypes from "prop-types";
 export const AnimeTerbaru = ({ top,page }) => {
   return (
     <>
-      <Header />
       <section id="container">
         <div className="contentNewAnime">
           <div className="headingNewAnime">

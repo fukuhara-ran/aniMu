@@ -1,12 +1,10 @@
 import "../components/ProfileContent.css"
-import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { Link } from "react-router-dom"
 
 export const ProfileContent = () => {
   return (
     <>
-    <Header/>
     <section id="profileAnim">
       <div className="pembatasKiri">
         <img className="animeImage" src="/src/assets/kny.jpg" alt="anime_image" />

@@ -1,4 +1,3 @@
-import Header from "../components/Header"
 import Footer from "../components/Footer"
 import arrow from "/src/Assets/arrow.svg";
 import { Link } from "react-router-dom";
@@ -7,7 +6,6 @@ import "../components/genre.css"
 export const Genre = () => {
   return (
     <>
-    <Header/>
     <div className="backGenre">
       <div className="containerGenre">
         <div className="headerGenre">

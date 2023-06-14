@@ -10,6 +10,7 @@ import { Registration } from './routes/Registration'
 import { SearchResult } from './routes/SearchResult'
 import { CommunityDiscussion } from './routes/CommunityDiscussion'
 import { useState, useEffect } from 'react'
+import Header from './components/Header'
 import axios from 'axios'
 
 function App() {
@@ -76,7 +77,9 @@ function App() {
   }, [])
   
   return (
+    <>
     <Router>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
@@ -90,6 +93,7 @@ function App() {
         <Route path='/community-discussion' element={<CommunityDiscussion/>}/>
       </Routes>
     </Router>  
+    </>
   )
 }
 

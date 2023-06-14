@@ -1,5 +1,4 @@
 import "../components/Home.css";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
@@ -7,7 +6,6 @@ import PropTypes from 'prop-types';
 export const Home = ({top, recent, eps}) => {
   return (
     <>
-      <Header />
       <section className="container">
         <div className="content">
 

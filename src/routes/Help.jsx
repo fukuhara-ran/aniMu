@@ -2,13 +2,11 @@ import logo from "../assets/ANIMU_RILL2.png";
 import logodiscussion from "../assets/discusion.png";
 import logostayuptodate from "../assets/stayuptodate.png";
 import "../components/Help.css";
-import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 export const Help = () => {
   return (
     <>
-    <Header/>
     <div>
         <div className="head-Container">
           <div className="logo">

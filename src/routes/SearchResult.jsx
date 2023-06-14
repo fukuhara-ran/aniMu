@@ -1,4 +1,3 @@
-import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { Link } from "react-router-dom";
 import "../components/SearchResult.css"
@@ -6,7 +5,6 @@ import "../components/SearchResult.css"
 export const SearchResult = () => {
     return (
         <>
-      <Header/>
       <div className="container-Result">
         <div className="heading-search-result">
           <h1>Result Search : JUJUTSU NO KAYSEN</h1>

@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import searchIcon from "/search.svg";
 import Profile from "../assets/person.svg";
@@ -8,7 +7,6 @@ import "../components/CommunityDiscussion.css";
 export const CommunityDiscussion = () => {
   return (
     <>
-      <Header />
       <section className="containerCommunity">
         <div className="contentCommunity">
           <div className="mainContentCommunity">
