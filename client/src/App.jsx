@@ -16,6 +16,7 @@ function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
   const [recentEps, SetRecentEps] = useState([]);
+  //const [search, setSearch]=useState([]); //search
   
   //! Async method
   // async function getTopAnime(){
@@ -41,18 +42,24 @@ function App() {
   const fetchData = () => {
     const resTop = 'https://api.jikan.moe/v4/top/anime?type=tv&filter=airing'
     const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release?type=1'
+    //const resSearch = `https://api.jikan.moe/v4/anime?q=${search}` //search &limit=20
+
 
     const getTopAnime = axios.get(resTop)
     const getRecentAnime = axios.get(resRecent)
-    axios.all([getTopAnime, getRecentAnime]).then(
+    //const getSearchAnime = axios.get(resSearch) //search
+    axios.all([getTopAnime, getRecentAnime /*, getSearchAnime*/]).then(
       axios.spread((...allData) => {
         const allDataTop = allData[0].data.data
         const allDataRecent = allData[1].data
         const allDataEps = allData[1].data
+        //const allDataSearch = allData[1].data // search
+
 
         SetTopAnime(allDataTop.slice(0,5));
         SetRecentAnime(allDataRecent.slice(0,10));
         SetRecentEps(allDataEps.slice(0,8));
+        //setSearch(allDataSearch.slice(0,20)) // search
         console.log(allDataEps);
       })
     )
