@@ -3,9 +3,8 @@ import "../components/AnimeTerbaru.css";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import tensura from "../assets/tensura.jpg";
 
-export const AnimeTerbaru = ({ top }) => {
+export const AnimeTerbaru = ({ top,page }) => {
   return (
     <>
       <Header />
@@ -15,13 +14,19 @@ export const AnimeTerbaru = ({ top }) => {
             <h4>Terbaru</h4>
           </div>
           <div className="containerNewAnime">
-            <div className="animeList">
-              <Link to="genre"><img src={tensura} alt="" /></Link>
-              <div className="descNewAnime">
-                <h4><Link to="anime-terbaru">Judul Anime</Link></h4>
-                <p>Eps 02</p>
-              </div>
-            </div>
+          {page
+              ? page.map((anime,id) => {
+                  return (
+                    <div className="animeList" key={id}>
+                      <Link to="genre"><img src={anime.animeImg} alt="" /></Link>
+                      <div className="descNewAnime">
+                        <h4><Link to="anime-terbaru">{anime.animeTitle}</Link></h4>
+                        <p>Episode : {anime.episodeNum}</p>
+                      </div>
+                    </div>
+                  );
+                })
+              : ""}
           </div>
 
           <div className="pageNav">
@@ -72,5 +77,5 @@ export const AnimeTerbaru = ({ top }) => {
 
 AnimeTerbaru.propTypes = {
   top: PropTypes.any.isRequired,
-  recent: PropTypes.any.isRequired,
+  page: PropTypes.any.isRequired,
 };

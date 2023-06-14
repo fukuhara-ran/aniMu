@@ -16,6 +16,8 @@ function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
   const [recentEps, SetRecentEps] = useState([]);
+  const [recentPage, SetRecentPage] = useState([]);
+  // const [genre, SetGenre] = useState([]);
   //const [search, setSearch]=useState([]); //search
   
   //! Async method
@@ -53,6 +55,7 @@ function App() {
         const allDataTop = allData[0].data.data
         const allDataRecent = allData[1].data
         const allDataEps = allData[1].data
+        const allDataRep = allData[1].data
         //const allDataSearch = allData[1].data // search
 
 
@@ -60,6 +63,7 @@ function App() {
         SetRecentAnime(allDataRecent.slice(0,10));
         SetRecentEps(allDataEps.slice(0,8));
         //setSearch(allDataSearch.slice(0,20)) // search
+        SetRecentPage(allDataRep.slice(0,20));
         console.log(allDataEps);
       })
     )
@@ -76,7 +80,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
-        <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} recent={recentAnime}/>}/>
+        <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} page={recentPage}/>}/>
         <Route path='/genre' element={<Genre/>}/>
         <Route path='/community' element={<Community/>}/>
         <Route path='/help' element={<Help/>}/>
