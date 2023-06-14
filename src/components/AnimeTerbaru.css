@@ -48,8 +48,14 @@
 }
 
 .animeList img{
+    border: 1px solid black;
     height: 190px;
     width: 140px;
+}
+
+.animeList img:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transform: scale(0.99); 
 }
 
 .animeList a {

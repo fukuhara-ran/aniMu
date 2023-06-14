@@ -43,12 +43,13 @@ section.container{
 
 .hero .listOngoing{
     display: flex;
-    gap: 27px;
+    gap: 15px;
     padding: 16px 0px 0px 0px;
     overflow-x: scroll;
 }
 
 .ongoingAnime{
+    padding-left: 20px;
     text-align: center;
     cursor: pointer;
     margin-bottom: 10px;
@@ -123,6 +124,7 @@ aside{
 }
 
 .topAnime img{
+    border: 1px solid black;
     width: 120px;
     height: 160px;
 }
