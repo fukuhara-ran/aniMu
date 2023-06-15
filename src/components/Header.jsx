@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 import "./header.css";
 
 function Header() {
-  // const HandleSearch = e => {
-  //   e.preventDefault();
-  // }
-
   return (
     <nav>
       <div id="leftNav">

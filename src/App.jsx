@@ -19,7 +19,7 @@ function App() {
   const [recentEps, SetRecentEps] = useState([]);
   const [recentPage, SetRecentPage] = useState([]);
   // const [genre, SetGenre] = useState([]);
-  //const [search, setSearch]=useState([]); //search
+  // const [search, setSearch]=useState([]);
   
   //! Async method
   // async function getTopAnime(){
