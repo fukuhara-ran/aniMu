@@ -1,42 +1,92 @@
-.container-Result {
-    margin : 25px 90px;
-    padding: 0;
-    box-sizing: border-box;
+#container {
+    padding: 32px 27px 0 27px;
+    display: flex;
+    gap: 10px;
+
 }
 
-.heading-search-result {
-    padding: 15px 20px 15px 20px;
+.content-Search-Result{
+    border: solid 8px rgb(160, 193, 209);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
-.heading-search-result h4 {
+/* Heading */
+.heading-Search-Result {
+    background-color: #A0C1D1;
+    padding: 5px;
+}
+
+.heading-Search-Result h4 {
     padding-left: 20px;
-    /* font-style: #A0C1D1; */
     font-family: jost;
+    font-size: 20px;
     font-style: italic;
 }
 
-.container-result-search {
-    padding: 20px;
+/* Container Anime */
+.container-Search-Result {
+    margin-left: 12px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 35px;
 }
 
-.search-result {
+.animeList .desc-Search-Result {
+    width: 140px
+}
+
+.animeList {
     text-align: center;
-    padding-bottom: 25px;
 }
 
-.search-result img{
-    height: 255px;
-    width: 200px;
+.desc-Search-Result p {
+    font-style: italic;
+    opacity: 70%;
 }
 
-.search-result link {
+.animeList img{
+    border: 1px solid black;
+    height: 190px;
+    width: 140px;
+}
+
+.animeList img:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transform: scale(0.99); 
+}
+
+.animeList a {
     text-decoration: none;
     color: black;
 }
 
-.search-result link:hover{
+.animeList a:hover{
     text-decoration: underline;
+}
+
+.pageNav {
+    background-color: #A0C1D1;
+    text-align: center;
+    padding: 2vh;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.pageNumber button {
+    background-color: transparent;
+    cursor: pointer;
+    margin: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
 }
