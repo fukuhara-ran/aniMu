@@ -1,5 +1,5 @@
 #container {
-    margin: 1%;
+    padding: 32px 27px 0 27px;
     display: flex;
     gap: 10px;
 
@@ -22,7 +22,7 @@
 .headingNewAnime h4 {
     padding-left: 20px;
     font-family: jost;
-        font-size: 20px;
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -31,16 +31,31 @@
     margin-left: 12px;
     display: flex;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 35px;
+}
+
+.animeList .descNewAnime {
+    width: 140px
 }
 
 .animeList {
     text-align: center;
 }
 
+.descNewAnime p {
+    font-style: italic;
+    opacity: 70%;
+}
+
 .animeList img{
+    border: 1px solid black;
     height: 190px;
-    width: auto;
+    width: 140px;
+}
+
+.animeList img:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transform: scale(0.99); 
 }
 
 .animeList a {
@@ -57,4 +72,21 @@
     text-align: center;
     padding: 2vh;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.pageNumber button {
+    background-color: transparent;
+    cursor: pointer;
+    margin: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
 }

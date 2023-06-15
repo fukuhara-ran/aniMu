@@ -85,6 +85,11 @@ nav{
     font-size: 18px;
     letter-spacing: -1px;
 }
+
+.navList li a:hover{
+    font-weight: bold;
+}
+
 #profileIcon{
     width: 30px;
 }

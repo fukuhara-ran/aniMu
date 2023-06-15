@@ -64,7 +64,7 @@ function App() {
         SetRecentAnime(allDataRecent.slice(0,10));
         SetRecentEps(allDataEps.slice(0,8));
         //setSearch(allDataSearch.slice(0,20)) // search
-        SetRecentPage(allDataRep.slice(0,20));
+        SetRecentPage(allDataRep.slice(0,30));
         console.log(allDataEps);
       })
     )

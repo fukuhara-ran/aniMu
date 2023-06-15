@@ -2,6 +2,7 @@ import "../components/AnimeTerbaru.css";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import arrow from "../assets/arrow.svg"
 
 export const AnimeTerbaru = ({ top,page }) => {
   return (
@@ -19,7 +20,7 @@ export const AnimeTerbaru = ({ top,page }) => {
                       <Link to="genre"><img src={anime.animeImg} alt="" /></Link>
                       <div className="descNewAnime">
                         <h4><Link to="anime-terbaru">{anime.animeTitle}</Link></h4>
-                        <p>Episode : {anime.episodeNum}</p>
+                        <p>Eps {anime.episodeNum}</p>
                       </div>
                     </div>
                   );
@@ -28,7 +29,14 @@ export const AnimeTerbaru = ({ top,page }) => {
           </div>
 
           <div className="pageNav">
-          <h1>1</h1>
+            <div className="pageNumber">
+              <button><img src={arrow} alt="" /></button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button><img src={arrow} alt="" /></button>
+            </div>
         </div>
         </div>
 
