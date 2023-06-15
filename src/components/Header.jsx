@@ -3,14 +3,23 @@ import personLogo from "../assets/person.svg"
 import searchIcon from "/search.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
+import { useState } from "react";
 
-function Header() {
+function Header(props) {
+  const {getDataFromSearch} = props
+  const [inputValue, SetInputValue] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    getDataFromSearch(inputValue);
+  }
+
   return (
     <nav>
       <div id="leftNav">
         <Link to="/"><img id="navTittle" src={logo} alt="" /></Link>
-        <form id="search">
-          <input type="search" placeholder="Search" id="searchBar"/>
+        <form id="search" onSubmit={handleSubmit}>
+          <input type="search" placeholder="Search" id="searchBar" onChange={e => SetInputValue(e.target.value)}/>
           <button id="searchBtn">
             <img id="searchIcon" src={searchIcon} alt="Search icon" />
           </button>

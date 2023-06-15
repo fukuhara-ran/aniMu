@@ -1,10 +1,10 @@
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import "../components/SearchResult.css"
+import "../components/SearchResult.css";
 
 export const SearchResult = () => {
-    return (
-        <>
+  return (
+    <>
       <div className="container-Result">
         <div className="heading-search-result">
           <h1>Result Search : JUJUTSU NO KAYSEN</h1>
@@ -13,28 +13,13 @@ export const SearchResult = () => {
         <div className="container-result-search">
           <div className="search-result">
             <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
-          </div>
-          <div className="search-result">
-            <img src="/src/assets/kny.jpg" alt="" />
-            <h4><Link to=''>Judul Anime</Link></h4>
+            <h4>
+              <Link to="">Judul Anime</Link>
+            </h4>
           </div>
         </div>
       </div>
-        <Footer/>
-        </>
-    )
-}
-
+      <Footer />
+    </>
+  );
+};

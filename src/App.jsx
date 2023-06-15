@@ -18,8 +18,9 @@ function App() {
   const [recentAnime, SetRecentAnime] = useState([]);
   const [recentEps, SetRecentEps] = useState([]);
   const [recentPage, SetRecentPage] = useState([]);
+  const [loadingState, SetLoadingState] = useState(false);
+  const [search, setSearch] = useState([]);
   // const [genre, SetGenre] = useState([]);
-  // const [search, setSearch]=useState([]);
   
   //! Async method
   // async function getTopAnime(){
@@ -31,21 +32,11 @@ function App() {
   //     console.log(`ERROR: ${error}`);
   //   }
   // }
-  // async function getRecentAnime(){
-  //   try {
-  //     const resRecent = await fetch('https://api.jikan.moe/v4/watch/episodes')
-  //     const resDataRecent = await resRecent.json();
-  //     SetRecentAnime(resDataRecent.data.slice(0,10));
-  //   } catch (error) {
-  //     console.log(`ERROR: ${error}`);
-  //   }
-  // }
 
   //!Axios
   const fetchData = () => {
     const resTop = 'https://api.jikan.moe/v4/top/anime?type=tv&filter=airing'
     const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release?type=1'
-    //const resSearch = `https://api.jikan.moe/v4/anime?q=${search}` //search &limit=20
 
 
     const getTopAnime = axios.get(resTop)
@@ -65,7 +56,7 @@ function App() {
         SetRecentEps(allDataEps.slice(0,8));
         //setSearch(allDataSearch.slice(0,20)) // search
         SetRecentPage(allDataRep.slice(0,30));
-        console.log(allDataEps);
+        // console.log(allDataEps);
       })
     )
   }
@@ -76,10 +67,24 @@ function App() {
     fetchData();
   }, [])
   
+  const getDataFromSearch = (searchdata) => {
+    SetLoadingState(true)
+    async function getanimes() {
+      const resSearch = await fetch(`https://gogoanime-api-production-630c.up.railway.app/search?keyw=${searchdata}`);
+      const resData = await resSearch.json();
+      if (resData && resData.length > 0) {
+        SetLoadingState(false);
+        setSearch(resData);
+      }
+    }
+    getanimes();
+  }
+  console.log(loadingState, search, ".....");
+  
   return (
     <>
     <Router>
-      <Header/>
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
