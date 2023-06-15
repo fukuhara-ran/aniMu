@@ -94,7 +94,7 @@ function App() {
         <Route path='/help' element={<Help/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Registration/>}/>
-        <Route path='/search-result' element={<SearchResult/>} />
+        <Route path='/search-result' element={<SearchResult search={search}/>} />
         <Route path='/community-discussion' element={<CommunityDiscussion/>}/>
       </Routes>
     </Router>  

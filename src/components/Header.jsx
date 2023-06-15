@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 import "./header.css";
 import { useState } from "react";
 
-function Header(props) {
-  const {getDataFromSearch} = props
-  const [inputValue, SetInputValue] = useState("");
+function Header({getDataFromSearch}) {
+  const [inputValue, SetInputValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault()
