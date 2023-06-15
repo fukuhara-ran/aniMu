@@ -72,4 +72,12 @@
     text-align: center;
     padding: 2vh;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pageNumber h1 {
+    width: 30px;
+    border: 1px solid black;
 }
