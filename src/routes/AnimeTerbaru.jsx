@@ -30,22 +30,12 @@ export const AnimeTerbaru = ({ top,page }) => {
 
           <div className="pageNav">
             <div className="pageNumber">
-              <h1><img src={arrow} alt="" /></h1>
-            </div>
-            <div className="pageNumber">
-              <h1>1</h1>
-            </div>
-            <div className="pageNumber">
-              <h1>2</h1>
-            </div>
-            <div className="pageNumber">
-              <h1>3</h1>
-            </div>
-            <div className="pageNumber">
-              <h1>3</h1>
-            </div>
-            <div className="pageNumber">
-              <h1><img src={arrow} alt="" /></h1>
+              <button><img src={arrow} alt="" /></button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button><img src={arrow} alt="" /></button>
             </div>
         </div>
         </div>

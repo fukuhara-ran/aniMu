@@ -77,7 +77,16 @@
     gap: 5px;
 }
 
-.pageNumber h1 {
+
+.pageNumber button {
+    background-color: transparent;
+    cursor: pointer;
+    margin: 2px;
+    height: 30px;
     width: 30px;
-    border: 1px solid black;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
 }
