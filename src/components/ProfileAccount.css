@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: calc(100vh - 155px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.photoProfile{
+    width: 250px;
+    height: 280px;
+    background-color: #ACB1D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoProfile img{
+    width: 80px;
+}
+
+.userBiodata{
+    border: 3px solid #ACB1D6;
+    width: 700px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.userBiodata .subHeadingProfile{
+    background-color: #ACB1D6;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+}
+
+.userBiodata .inputField input{
+    margin: 7px 10px;
+    width: 97%;
+}
+
+.userBiodata .inputField label{
+    margin: 7px 10px;
+}
+
+.userBiodata .inputField select{
+    margin: 15px 10px;
+    padding: 2px;
+    background-color: #ACB1D6;
+}
+
+.userBiodata .inputField textarea{
+    margin: 7px 10px;
+    width: 97%;
+}
+
+.userBiodata .buttonAction{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.userBiodata .buttonAction button{
+    width: 80px;
+    height: 25px;
+    background-color: #ACB1D6;
+    border: 0;
+}
