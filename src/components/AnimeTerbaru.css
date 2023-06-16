@@ -85,8 +85,3 @@
     height: 30px;
     width: 30px;
 }
-
-button:hover {
-    color: white;
-    background-color: black;
-}
