@@ -7,7 +7,7 @@ import Photo from '../assets/basic-photo-profile.png'
 export const ProfileAccount = () =>{
     return(
         <>
-        <section className="container">
+        <section className="containerProfile">
 
             <div className="photoProfile">
                 <img src={Photo} alt="user photo" />

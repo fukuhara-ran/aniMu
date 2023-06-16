@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container{
+.containerProfile{
     height: calc(100vh - 155px);
     width: 100vw;
     display: flex;
