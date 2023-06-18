@@ -10,7 +10,7 @@ import { Registration } from './routes/Registration'
 import { SearchResult } from './routes/SearchResult'
 import { CommunityDiscussion } from './routes/CommunityDiscussion'
 import { StartDiscussions } from './routes/StartDiscussions'
-import { Streams } from './routes/streams'
+import { Streaming } from './routes/Streaming'
 import { useState, useEffect } from 'react'
 import {ProfileAccount} from './routes/ProfileAccount'
 import Header from './components/Header'
@@ -100,7 +100,7 @@ function App() {
         <Route path='/search-result' element={<SearchResult search={search} top={topAnime}/>} />
         <Route path='/community-discussion' element={<CommunityDiscussion/>}/>
         <Route path='/start-discussion' element={<StartDiscussions/>}/>
-        <Route path='/streamings' element={<Streams/>}/>
+        <Route path='/streaming' element={<Streaming/>}/>
         <Route path='/profile-account' element={<ProfileAccount/>}/>
         {/* <Route path='/profile-account' element={<ProfileAccount/>}/> */}
       </Routes>
