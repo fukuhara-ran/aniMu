@@ -6,8 +6,31 @@ export const Streaming = ({}) => {
       <>
         <section className="container">
           <div className="content-Streaming">
-            <h1>woii</h1>
+            <div className="streams">
+            <h1>bagian streaming</h1>
+              <br /><br /><br /><br />
+            </div>
+            <div className="title">
+              <h1>gambar dan judul</h1>
+            </div>
+
           </div>
+          <aside>
+            <div className="heading-streaming">
+              <h3>List Episode</h3>
+            </div>
+            <div className="list-episode">
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+              <div className="epsiode">EP1</div>
+            </div>
+          </aside>
         </section>
         <Footer />
       </>
