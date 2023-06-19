@@ -89,6 +89,7 @@ section.container{
 .newAnime img{
     width: 200px;
     height: 250px;
+    border: 1px solid black;
 }
 
 .newAnime .descNewAnime{
