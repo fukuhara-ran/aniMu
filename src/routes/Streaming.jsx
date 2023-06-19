@@ -10,6 +10,9 @@ export const Streaming = ({}) => {
       <>
         <section className="container">
           <div className="content-Streaming">
+            <div className="heading-streaming">
+              <h1>STREAMING ANIMU</h1>
+            </div>
             <div className="streams">
               <video src=""></video>
             </div>
