@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+h1 h3 h4 h5 {
+    font-family: 'Judson', serif;
+}
+
+section {
+    display: flex;
+}
+
+.content-Streaming {
+    padding: 0px 5px;
+}
+
+.streams {
+    border: 10px solid #A0C1D1;
+    border-bottom: 15px solid #A0C1D1;
+    padding: 10px 15px;
+    margin: 10px;
+}
+.streams video {
+    height: 350px;
+    width: auto;
+}
+
+.title {
+    display: flex;
+    margin: 10px;
+}
+.title img {
+    /* height: 200px; */
+    width: 25%;
+}
+.title .title-anime {
+    margin-left: 15px;
+}
+
+aside {
+    width: 600px;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    /* border: none; */
+}
+.heading-episode {
+    background-color: #A0C1D1;
+    padding: 0px 5px;
+    margin: 4px 5px;
+    border: 5px solid #A0C1D1;
+}
+.nav-ep {
+    /* background-color: #A0C1D1; */
+    text-align: center;
+    padding: 2vh;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.nav-ep .nav-ep-flex {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-ep .nav-ep-flex button {
+    /* background-color: transparent; */
+    cursor: pointer;
+    margin: 2px;
+    height: 30px;
+    width: 50px;
+    /* font-size: 12px; */
+}
+
+.nav-ep .nav-ep-flex button:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.list-episode {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+}
+.episode {
+    padding: 4px 2px;
+    margin: 5px 10px;
+}
+.episode button {
+    padding: 4px 5px;
+    cursor: pointer;
+}
+.episode button:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    background-color: #A0C1D1;
+}
+
