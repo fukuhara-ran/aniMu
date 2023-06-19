@@ -2,7 +2,7 @@
 ## Final Project Pemrograman Web
 
 ## Desain :
-https://www.figma.com/file/iwFUTLsGjVFpEqDXpuS1e3/Untitled?type=design&node-id=0%3A1&t=GWykl5bjYMA6agXk-1
+https://ungu.in/DesignFigma-ANIMU
 
 ## Framework utils :
 #### -Vite
