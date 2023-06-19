@@ -58,13 +58,29 @@ section.containerCommunity{
     justify-content: space-between;
 }
 
-.discussion{
-    padding: 15px 15px;
+Link{
+    /* width: 55%; */
+    /* padding: 15px 15px; */
+    /* padding: 15px 15px;
     background-color: #ACB1D6;
     width: 48%;
     display: flex;
     align-items: center;
+    justify-content: space-between; */
+}
+
+.discussion{
+    padding: 15px 15px;
+    background-color: #ACB1D6;
+    width: 320px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .discussion img{
@@ -102,6 +118,7 @@ section.containerCommunity{
 
 aside.asideCommunity{
     width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;

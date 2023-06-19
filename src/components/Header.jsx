@@ -31,7 +31,9 @@ function Header({getDataFromSearch}) {
           <li><Link to='/community' id="navList">Komunitas</Link></li>
           <li><Link to='/help' id="navList">Help</Link></li>
         </ul>
+        <Link to='/profile-account'>
           <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
+        </Link>
       </div>
     </nav>
   );

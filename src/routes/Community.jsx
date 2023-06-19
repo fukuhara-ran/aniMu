@@ -2,6 +2,7 @@ import Footer from "../components/Footer"
 import searchIcon from "/search.svg";
 import "../components/community.css";
 import discussion from "../assets/dicussion.png";
+import { Link } from "react-router-dom";
 
 export const Community = () => {
   return (
@@ -29,41 +30,55 @@ export const Community = () => {
           </div>
 
           <div className="listDicussion">
+
+          <Link to='/profile-account'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
               <p>Diposting oleh : Cane Toad</p>
             </div>
+          </Link>
 
+          <Link to='/profile-account'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
               <p>Diposting oleh : Cane Toad</p>
             </div>
+          </Link>
 
-            <div className="discussion">
-              <img src={discussion} alt="" />
-              <h4>Judul Topik</h4>
-              <p>Diposting oleh : Cane Toad</p>
-            </div>            
-
-            <div className="discussion">
-              <img src={discussion} alt="" />
-              <h4>Judul Topik</h4>
-              <p>Diposting oleh : Cane Toad</p>
-            </div>
-
+          <Link to='/profile-account'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
               <p>Diposting oleh : Cane Toad</p>
             </div>
+          </Link>
 
+          <Link to='/profile-account'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
               <p>Diposting oleh : Cane Toad</p>
             </div>
+          </Link>
+
+          <Link to='/profile-account'>
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+          </Link>
+
+          <Link to='/profile-account'>
+            <div className="discussion">
+              <img src={discussion} alt="" />
+              <h4>Judul Topik</h4>
+              <p>Diposting oleh : Cane Toad</p>
+            </div>
+          </Link>
+            
           </div>
         </div>
       </div>
