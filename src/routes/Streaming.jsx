@@ -5,7 +5,7 @@ import "../components/streaming.css";
 import l_arrow from "../assets/l-arrow.svg"
 import r_arrow from "../assets/r-arrow.svg"
 
-export const Streaming = ({}) => {
+export const Streaming = () => {
     return (
       <>
         <section className="container">
@@ -28,7 +28,7 @@ export const Streaming = ({}) => {
             </div>
 
           </div>
-          <aside>
+          <aside className="aside-streaming">
             <div className="heading-episode">
               <h3>List Episode :</h3>
             </div>

@@ -43,7 +43,7 @@ section {
     margin-left: 15px;
 }
 
-aside {
+.aside-streaming {
     width: 350px;
     height: 400px;
     /* padding: 10px 10px; */
