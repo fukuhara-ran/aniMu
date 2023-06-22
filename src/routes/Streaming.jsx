@@ -5,6 +5,8 @@ import "../components/streaming.css";
 import l_arrow from "../assets/l-arrow.svg"
 import r_arrow from "../assets/r-arrow.svg"
 
+import videoo from "../assets/animemv.mp4" // coba masang video menggunakan iframe
+
 export const Streaming = () => {
     return (
       <>
@@ -14,7 +16,7 @@ export const Streaming = () => {
               <h1>STREAMING ANIMU</h1>
             </div>
             <div className="streams">
-              <video src=""></video>
+              <iframe src={videoo} frameborder="0" allowFullScreen></iframe>
             </div>
             <div className="title">
               <img src={imgAnime} alt="" />
