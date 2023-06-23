@@ -20,10 +20,8 @@ export const Home = ({top, recent, eps}) => {
                 recent.map((anime,id)=>{
                   return(
                     <div className="ongoingAnime" key={id}>
-                      <img src={anime.animeImg} alt="anime thumbnail"/>
-                      <h4><Link href="#"
-                          target="_blank"
-                          rel="noreferrer">{anime.animeTitle}</Link></h4>
+                      <Link to='profile-content'><img src={anime.animeImg} alt="anime thumbnail"/></Link>
+                      <h4><Link to='profile-content'>{anime.animeTitle}</Link></h4>
                     </div>
                   )
                 })
@@ -51,9 +49,9 @@ export const Home = ({top, recent, eps}) => {
                 eps.map((anime,id)=>{
                   return(
                     <div className="newAnime" key={id}>
-                      <Link to='genre'><img src={anime.animeImg} alt="" /></Link>
+                      <Link to='profile-content'><img src={anime.animeImg} alt="" /></Link>
                       <div className="descNewAnime">
-                        <h4><Link to='anime-terbaru'>{anime.animeTitle}</Link></h4>
+                        <h4><Link to='profile-content'>{anime.animeTitle}</Link></h4>
                         <p>Episode : {anime.episodeNum}</p>
                         <p>Version : {anime.subOrDub}</p>
                       </div>
@@ -92,13 +90,9 @@ export const Home = ({top, recent, eps}) => {
                 top.map((anime)=>{
                   return(
                     <div className="topAnime" key={anime.mal_id}>
-                      <img src={anime.images.jpg.large_image_url} alt="animeImage" />
+                      <Link to='profile-content'><img src={anime.images.jpg.large_image_url} alt="animeImage" /></Link>
                       <div className="descTopAnime">
-                        <h4>
-                          <Link href="#"
-                          target="_blank"
-                          rel="noreferrer">{anime.title}</Link>
-                        </h4>
+                        <h4><Link to='profile-content'>{anime.title}</Link></h4>
                         <p>Genre : Action, Adventure</p>
                       </div>
                     </div>
