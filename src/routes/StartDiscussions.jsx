@@ -17,7 +17,7 @@ export const StartDiscussions = () => {
               <div className="box-2"><textarea placeholder="enter a title" id="" cols="300" rows="10"></textarea></div>
               <div className="box-3"></div>
               <div className="box-4"><textarea placeholder="say something" id="" cols="300" rows="10"></textarea></div>
-            <button className="submit-button" id="">submit</button>
+            <button className="submit-button" id="">Submit</button>
             </div>
           </div>
         </div>
