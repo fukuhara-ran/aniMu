@@ -63,16 +63,16 @@ section.containerCommunity{
     justify-content: space-between;
 }
 
-Link{
-    /* width: 55%; */
-    /* padding: 15px 15px; */
-    /* padding: 15px 15px;
+/* Link{
+    width: 55%;
+    padding: 15px 15px;
+    padding: 15px 15px;
     background-color: #ACB1D6;
     width: 48%;
     display: flex;
     align-items: center;
-    justify-content: space-between; */
-}
+    justify-content: space-between;
+} */
 
 .discussion{
     padding: 15px 15px;
@@ -128,6 +128,7 @@ aside.asideCommunity{
     flex-direction: column;
     gap: 5px;
     background: transparent;
+    border: 0;
 }
 
 aside.asideCommunity p:nth-child(1){
