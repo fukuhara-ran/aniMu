@@ -18,9 +18,9 @@ export const Community = () => {
         <div className="mainContentCommunity">
           <div className="searchCommunity">
             <input type="text" placeholder="Search discussion" className="searchBar"/>
-            <button>
+            <Link to='/community-discussion'>
               <img src={searchIcon} alt="" />
-            </button>
+            </Link>
           </div>
           <h3>Animu Forum Discussions</h3>
 

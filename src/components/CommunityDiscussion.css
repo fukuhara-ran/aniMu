@@ -151,10 +151,19 @@ aside.asideCommunity p{
 .searchCommunityDiscussion img{
     width: 25px;
 }
+.searchCommunityDiscussion img:hover{
+    width: 22px;
+}
 
-button.newDiscussion{
+aside .newDiscussion{
     background-color: #ACB1D6;
     border: 0;
-    width: 220px;
-    padding: 10px 0px;
+    padding: 10px 40px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.newDiscussion:hover{
+    background-color: #A0C1D1;
+    color: black;
 }

@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import searchIcon from "/search.svg";
 import Profile from "../assets/person.svg";
 import "../components/CommunityDiscussion.css";
+import { Link } from "react-router-dom";
 // import discussion from "../assets/dicussion.png";
 
 export const CommunityDiscussion = () => {
@@ -95,12 +96,12 @@ export const CommunityDiscussion = () => {
               placeholder="Search discussion"
               className="searchBar"
             />
-            <button>
+            <Link to='/community'>
               <img src={searchIcon} alt="" />
-            </button>
+            </Link>
           </div>
 
-          <button className="newDiscussion">Start New Discussion</button>
+          <Link to='/start-discussion'><button className="newDiscussion">Start New Discussion</button></Link>
         </aside>
       </section>
       <Footer />

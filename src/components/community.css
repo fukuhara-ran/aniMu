@@ -49,6 +49,7 @@ section.containerCommunity{
     background-color: #ACB1D6;
     border: 0;
     padding: 10px 40px;
+    cursor: pointer;
 }
 
 .start-discuss:hover{
@@ -81,6 +82,10 @@ section.containerCommunity{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.discussion:hover{
+    background-color: #A0C1D1;
 }
 
 a{
@@ -119,6 +124,9 @@ a{
 
 .searchCommunity img{
     width: 25px;
+}
+.searchCommunity img:hover{
+    width: 22px;
 }
 
 aside.asideCommunity{
