@@ -31,7 +31,7 @@ export const Community = () => {
 
           <div className="listDicussion">
 
-          <Link to='/profile-account'>
+          <Link to='/community-discussion'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
@@ -39,7 +39,7 @@ export const Community = () => {
             </div>
           </Link>
 
-          <Link to='/profile-account'>
+          <Link to='/community-discussion'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
@@ -47,7 +47,7 @@ export const Community = () => {
             </div>
           </Link>
 
-          <Link to='/profile-account'>
+          <Link to='/community-discussion'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
@@ -55,7 +55,7 @@ export const Community = () => {
             </div>
           </Link>
 
-          <Link to='/profile-account'>
+          <Link to='/community-discussion'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
@@ -63,7 +63,7 @@ export const Community = () => {
             </div>
           </Link>
 
-          <Link to='/profile-account'>
+          <Link to='/community-discussion'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
@@ -71,7 +71,7 @@ export const Community = () => {
             </div>
           </Link>
 
-          <Link to='/profile-account'>
+          <Link to='/community-discussion'>
             <div className="discussion">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
