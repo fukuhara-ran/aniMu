@@ -51,6 +51,11 @@ section.containerCommunity{
     padding: 10px 40px;
 }
 
+.start-discuss:hover{
+    background-color: #A0C1D1;
+    color: black;
+}
+
 .listDicussion{
     display: flex;
     flex-wrap: wrap;

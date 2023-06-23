@@ -26,7 +26,7 @@ export const Community = () => {
 
           <div className="subHeadingDiscussion">
             <p>Latest discussion</p>
-            <button>Start New Discussion</button>
+            <Link to='/start-discussion'><button className="start-discuss">Start New Discussion</button></Link>
           </div>
 
           <div className="listDicussion">
