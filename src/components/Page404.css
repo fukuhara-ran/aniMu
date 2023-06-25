@@ -1,0 +1,46 @@
+.page404{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Side */
+.textside{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 44, 51);
+    padding-left: 50px;
+    justify-content: center;
+    width: 55%;
+}
+.textbox{
+    color: white;
+}
+.textboxh1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 83px;
+    letter-spacing: 2px;
+}
+.textboxh3{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    
+}
+.backtohome{
+    background-color: rgb(130, 148, 196);
+    height: 38px;
+    width: 150px;
+    font-family: 'Judson', serif;
+    text-decoration-color: none;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 17px;
+}
+
+/* Right Side */
+.catImageSide{
+    display: contents;
+    width: 45%;
+}
