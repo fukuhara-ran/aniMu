@@ -4,12 +4,12 @@
 ## Desain :
 https://ungu.in/DesignFigma-ANIMU
 
-## Framework utils :
+## FrontEnd utils :
 #### -Vite
 #### -React
 #### -Vanilla CSS
 
-## BackEnd Framework utils :
+## BackEnd utils :
 #### -Express JS
 #### -MySQL
 #### -ORM Sequelize
