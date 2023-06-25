@@ -16,7 +16,7 @@ export const Streaming = () => {
               <h1>STREAMING ANIMU</h1>
             </div>
             <div className="streams">
-              <iframe src={videoo} frameborder="0" allowFullScreen></iframe>
+              <iframe src={videoo} frameBorder="0" allowFullScreen></iframe>
             </div>
             <div className="title">
               <img src={imgAnime} alt="" />

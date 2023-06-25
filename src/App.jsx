@@ -88,7 +88,7 @@ function App() {
   return (
     <>
     <Router>
-      <Header getDataFromSearch = {getDataFromSearch}/>
+      {/* <Header getDataFromSearch = {getDataFromSearch}/> */}
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent/>}/>
