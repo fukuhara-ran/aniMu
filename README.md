@@ -1,4 +1,4 @@
-![image](https://github.com/ReksaPanduasa/aniMu/assets/97326829/47947715-d172-48ca-b48c-70e5b68a223e)![image](https://github.com/ReksaPanduasa/aniMu/assets/97326829/9e30c2d9-1074-40eb-bc0d-c05ec34bb1a6)# ANIMU
+# ANIMU
 ## Final Project Pemrograman Web
 
 ## Desain :
