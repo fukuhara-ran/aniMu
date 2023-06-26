@@ -1,11 +1,12 @@
 .backGenre {
-    background-color: #A0C1D1;
+    /* background-color: #A0C1D1; */
     padding: 85px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .containerGenre {
-    background-color: azure;
+    border: 7px solid #A0C1D1;
+    /* background-color: azure; */
     height: 560px;
 }
 
