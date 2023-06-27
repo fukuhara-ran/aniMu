@@ -1,4 +1,4 @@
-export const profile = () => {
+export async function profile () {
   return fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`, {
     method: "GET",
     headers: {
@@ -6,9 +6,9 @@ export const profile = () => {
     },
     credentials: "include",
   });
-};
+}
 
-export const updateProfile = (params) => {
+export async function updateProfile (params) {
   return fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`, {
     method: "PUT",
     headers: {
@@ -17,4 +17,4 @@ export const updateProfile = (params) => {
     body: JSON.stringify(params),
     credentials: "include",
   });
-};
+}

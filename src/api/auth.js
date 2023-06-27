@@ -1,4 +1,4 @@
-export const Register = (params) => {
+export async function Register(params){
   return fetch(`${import.meta.env.VITE_BACKEND_URL}/register`, {
     method: "POST",
     headers: {
@@ -7,9 +7,9 @@ export const Register = (params) => {
     body: JSON.stringify(params),
     credentials: "include",
   });
-};
+}
 
-export const Login = (params) => {
+export async function Login(params){
   return fetch(`${import.meta.env.VITE_BACKEND_URL}/login`, {
     method: "POST",
     headers: {
@@ -18,9 +18,9 @@ export const Login = (params) => {
     body: JSON.stringify(params),
     credentials: "include",
   });
-};
+}
 
-export const Logout = () => {
+export async function Logout(){
   return fetch(`${import.meta.env.VITE_BACKEND_URL}/logout`, {
     method: "GET",
     headers: {
@@ -28,4 +28,4 @@ export const Logout = () => {
     },
     credentials: "include",
   });
-};
+}

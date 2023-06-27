@@ -1,4 +1,4 @@
-export const comment = (params) => {
+export async function comment(params){
   return fetch(`${import.meta.env.VITE_BACKEND_URL}/discussion`, {
     method: "POST",
     headers: {
@@ -9,7 +9,7 @@ export const comment = (params) => {
   });
 }
 
-export const reply = (params) => {
+export async function reply(params){
     return fetch(`${import.meta.env.VITE_BACKEND_URL}/reply`, {
         method: "POST",
         headers: {

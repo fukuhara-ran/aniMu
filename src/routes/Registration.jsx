@@ -1,5 +1,5 @@
 import "../components/Registration.css"
-import { Link } from "react-router-dom"
+import { Link, Form, redirect } from "react-router-dom"
 
 export const Registration = () => {
   return (
