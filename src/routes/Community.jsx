@@ -5,7 +5,7 @@ import discussion from "../assets/dicussion.png";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 
-export const Community = () => {
+export default function Community () {
   return (
     <>
     <Header/>

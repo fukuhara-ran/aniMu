@@ -7,7 +7,7 @@ import r_arrow from "../assets/r-arrow.svg"
 import Header from "../components/Header";
 import videoo from "../assets/animemv.mp4" // coba masang video menggunakan iframe
 
-export const Streaming = () => {
+export default function Streaming () {
     return (
       <>
       <Header/>
@@ -151,4 +151,4 @@ export const Streaming = () => {
         <Footer />
       </>
     );
-  };
+  }

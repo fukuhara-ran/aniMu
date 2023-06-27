@@ -5,7 +5,7 @@ import "../components/Help.css";
 import Footer from "../components/Footer"
 import Header from "../components/Header";
 
-export const Help = () => {
+export default function Help () {
   return (
     <>
     <Header/>

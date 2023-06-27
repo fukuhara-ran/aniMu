@@ -3,7 +3,7 @@ import "../components/StartDiscussions.css";
 // import profile from "../assets/person.svg"
 import Header from "../components/Header";
 
-export const StartDiscussions = () => {
+export default function StartDiscussions () {
   return (
     <>
     <Header/>
@@ -36,4 +36,4 @@ export const StartDiscussions = () => {
       <Footer />
     </>
   );
-};
+}

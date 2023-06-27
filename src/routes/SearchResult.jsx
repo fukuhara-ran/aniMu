@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import arrow from "../assets/arrow.svg"
 import Header from "../components/Header";
 
-export const SearchResult = ({search, top}) => {
+export default function SearchResult ({search, top}) {
   return (
     <>
     <Header/>
@@ -75,7 +75,7 @@ export const SearchResult = ({search, top}) => {
       <Footer />
     </>
   );
-};
+}
 
 SearchResult.propTypes = {
   search: PropTypes.any.isRequired,

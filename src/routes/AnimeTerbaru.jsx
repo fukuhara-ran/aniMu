@@ -6,7 +6,7 @@ import l_arrow from "../assets/l-arrow.svg"
 import r_arrow from "../assets/r-arrow.svg"
 import Header from "../components/Header";
 
-export const AnimeTerbaru = ({ top,page }) => {
+export default function AnimeTerbaru ({ top,page }) {
   return (
     <>
     <Header/>
@@ -76,7 +76,7 @@ export const AnimeTerbaru = ({ top,page }) => {
       <Footer />
     </>
   );
-};
+}
 
 AnimeTerbaru.propTypes = {
   top: PropTypes.any.isRequired,

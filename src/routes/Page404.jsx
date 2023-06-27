@@ -2,7 +2,7 @@ import "../components/Page404.css";
 import Cat from "../assets/loading_cat.jpg"
 import { Link } from "react-router-dom";
 
-export const Page404 = () => {
+export default function Page404 () {
   return (
     <div className="page404">
       <div className="textside">
@@ -18,4 +18,4 @@ export const Page404 = () => {
       </div>
     </div>
   );
-};
+}

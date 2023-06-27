@@ -1,7 +1,7 @@
 import "../components/login.css"
 import { Link } from "react-router-dom"
 
-export const Login = () => {
+export default function Login () {
   return (
     <div className="login">
       <form className="loginForm">

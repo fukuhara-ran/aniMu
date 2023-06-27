@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import discussion from "../assets/dicussion.png";
 import Header from "../components/Header";
 
-export const CommunityDiscussion = () => {
+export default function CommunityDiscussion () {
   return (
     <>
     <Header/>
@@ -109,4 +109,4 @@ export const CommunityDiscussion = () => {
       <Footer />
     </>
   );
-};
+}

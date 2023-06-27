@@ -4,7 +4,7 @@ import '../components/ProfileAccount.css'
 import Photo from '../assets/basic-photo-profile.png'
 import Header from "../components/Header";
 
-export const ProfileAccount = () =>{
+export default function ProfileAccount () {
     return(
         <>
         <Header/>
@@ -44,7 +44,7 @@ export const ProfileAccount = () =>{
         <Footer/>
         </>
     )
-};
+}
 
 // Home.propTypes = {
 //     top: PropTypes.any.isRequired,

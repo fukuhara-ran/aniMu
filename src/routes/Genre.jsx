@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../components/genre.css"
 import Header from "../components/Header";
 
-export const Genre = () => {
+export default function Genre () {
   return (
     <>
     <Header/>
