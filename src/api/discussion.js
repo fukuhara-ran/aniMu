@@ -1,5 +1,5 @@
 export async function comment(params){
-  return fetch(`${import.meta.env.VITE_BACKEND_URL}/discussion`, {
+  return fetch("http://localhost:3000/comment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -10,7 +10,7 @@ export async function comment(params){
 }
 
 export async function reply(params){
-    return fetch(`${import.meta.env.VITE_BACKEND_URL}/reply`, {
+    return fetch("http://localhost:3000/reply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

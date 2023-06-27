@@ -1,5 +1,5 @@
 export async function Register(params){
-  return fetch(`${import.meta.env.VITE_BACKEND_URL}/register`, {
+  return fetch("http://localhost:3000/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -10,7 +10,7 @@ export async function Register(params){
 }
 
 export async function Login(params){
-  return fetch(`${import.meta.env.VITE_BACKEND_URL}/login`, {
+  return fetch("http://localhost:3000/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -21,7 +21,7 @@ export async function Login(params){
 }
 
 export async function Logout(){
-  return fetch(`${import.meta.env.VITE_BACKEND_URL}/logout`, {
+  return fetch("http://localhost:3000/logout", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

@@ -1,5 +1,5 @@
 export async function profile () {
-  return fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`, {
+  return fetch("http://localhost:3000/getinfo", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -9,7 +9,7 @@ export async function profile () {
 }
 
 export async function updateProfile (params) {
-  return fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`, {
+  return fetch("http://localhost:3000/update", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
