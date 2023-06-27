@@ -77,17 +77,28 @@ nav{
     /* height: 100%; */
     align-items: center;
 }
-.navList li a{
+
+
+.navList a{
     text-decoration: none;
     color: black;
     padding: 16px 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     letter-spacing: -1px;
+    transition: 0.4s;
 }
 
-.navList li a:hover{
+.navList a:hover{
     font-weight: bold;
+}
+
+.active{
+    border-bottom: 3px solid black;
+}
+
+.notActive{
+    color: black;
 }
 
 #profileIcon{

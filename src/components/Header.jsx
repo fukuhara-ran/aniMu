@@ -4,9 +4,18 @@ import searchIcon from "/search.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Header({getDataFromSearch}) {
   const [inputValue, SetInputValue] = useState('');
+
+  const navigation = [
+    {name: 'Anime Terbaru', href: '/anime-terbaru'},
+    {name: 'Genre', href: '/genre'},
+    {name: 'Community', href: '/community'},
+    {name: 'Help', href: '/help'},
+];
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -26,10 +35,22 @@ function Header({getDataFromSearch}) {
       </div>
       <div id="rightNav">
         <ul className="navList">
-          <li><Link to='/anime-terbaru' id="navList-child">Anime Terbaru</Link></li>
-          <li><Link to='/genre' id="navList">Genre</Link></li>
-          <li><Link to='/community' id="navList">Komunitas</Link></li>
-          <li><Link to='/help' id="navList">Help</Link></li>
+        {navigation.map((item) => (
+                    <NavLink
+                    key={item.name}
+                    to={item.href}
+                    className={({isActive}) =>{
+                        return( 
+                            (!isActive 
+                                ? 'notActive' 
+                                : 'active')
+                        );
+                      
+                    }}>
+                        {item.name}
+                    </NavLink>
+                ))}
+          
         </ul>
         <Link to='/profile-account'>
           <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
