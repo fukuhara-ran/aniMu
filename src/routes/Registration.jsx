@@ -21,7 +21,7 @@ export const Registration = () => {
           <div className="cekPrivasi">
             <input type="checkbox" name="check" />
             <p className="cekKeterangan">
-              Saya telah berusia 13 tahun ke atas. Dengan login, Anda telah
+              Saya telah berusia 13 tahun ke atas. Dengan login, anda telah
               mengetahui dan menyetujui bahwa Anda telah membaca dan menyetujui
               untuk terikat dengan Syarat Layanan dan Kebijakan Privasi
             </p>

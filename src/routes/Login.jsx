@@ -1,4 +1,5 @@
 import "../components/login.css"
+import { Link } from "react-router-dom"
 
 export const Login = () => {
   return (
@@ -10,7 +11,7 @@ export const Login = () => {
           <input type="password" name="password" placeholder="Password"/>
         </div>
         <button className="loginButton" type="submit">Login</button>
-        <p>Belum ada akun? <a href="">Buat akun</a></p>
+        <p>Belum ada akun? <Link to="/register">Buat akun</Link></p>
         <div className="cekPrivasi">
           <input type="checkbox" name="check"/>
           <p className="cekKeterangan">Saya telah berusia 13 tahun ke atas. Dengan login, Anda telah mengetahui 

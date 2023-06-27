@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(172, 177, 214);
     border-radius: 15px;
     height: 450px;
     width: 450px;
@@ -22,7 +22,7 @@
 .fill{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
     width: 70%;
 }
 h2{
@@ -37,7 +37,7 @@ h2{
     width: 80%;
     height: 47px;
     font-family: 'Judson', serif;
-    background-color: #636363;
+    background-color: rgb(99, 99, 99);
     font-size: 20px;
     color: rgb(234, 234, 234);
     border: 1.5px solid black;
