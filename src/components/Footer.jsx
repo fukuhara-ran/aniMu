@@ -5,6 +5,7 @@ import youtube from "/src/Assets/youtube.svg";
 import snapchat from "/src/Assets/snapchat.svg";
 import tiktok from "/src/Assets/tiktok.svg";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,20 +15,20 @@ function Footer() {
 
         <div className="center">
           <ul className="center-child">
-            <li><a href="#">Terms and Condition</a></li>
-            <li><a href="#">Privacy and Policy</a></li>
-            <li><a href="#">Help</a></li>
+            <li><Link to='/help'>Terms and Condition</Link></li>
+            <li><Link to='/help'>Privacy and Policy</Link></li>
+            <li><Link to='/help'>Help</Link></li>
           </ul>
         </div>
 
         <div className="right">
           <div className="socialmedia">Support:
-            <a href=""><img src={discord} alt="" /> </a>
-            <a href=""><img src={instagram} alt="" /> </a>
-            <a href=""><img src={whatsapp} alt="" /> </a>
-            <a href=""><img src={youtube} alt="" /> </a>
-            <a href=""><img src={snapchat} alt="" /> </a>
-            <a href=""><img src={tiktok} alt="" /> </a>
+            <Link to='https://discord.com/'><img src={discord} alt="" /> </Link>
+            <Link to='https://instagram.com/'><img src={instagram} alt="" /> </Link>
+            <Link to='https://whatsapp.com/'><img src={whatsapp} alt="" /> </Link>
+            <Link to='https://youtube.com/'><img src={youtube} alt="" /> </Link>
+            <Link to='https://snapchat.com/'><img src={snapchat} alt="" /> </Link>
+            <Link to='https://tiktok.com/'><img src={tiktok} alt="" /> </Link>
           </div>
         </div>
       </div>

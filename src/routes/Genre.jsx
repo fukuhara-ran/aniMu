@@ -13,7 +13,7 @@ export const Genre = () => {
         </div>
         <div className="listGenre">
             <div className="column">
-                <li><img src={arrow}/><Link to=''>action</Link></li>
+                <li><img src={arrow}/><Link to=''>Action</Link></li>
                 <li><img src={arrow}/><Link to=''>Horror</Link></li>
                 <li><img src={arrow}/><Link to=''>Mysteri</Link></li>
                 <li><img src={arrow}/><Link to=''>Adventure</Link></li>
