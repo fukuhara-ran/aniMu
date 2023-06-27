@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import "../components/SearchResult.css";
 import PropTypes from 'prop-types';
 import arrow from "../assets/arrow.svg"
+import Header from "../components/Header";
 
 export const SearchResult = ({search, top}) => {
   return (
     <>
+    <Header/>
       <section id="container">
         <div className="content-Search-Result">
           <div className="heading-Search-Result">

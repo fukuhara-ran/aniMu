@@ -1,4 +1,5 @@
 import "../components/Registration.css"
+import { Link } from "react-router-dom"
 
 export const Registration = () => {
   return (
@@ -10,16 +11,12 @@ export const Registration = () => {
             <input type="text" name="email" placeholder="Email" />
             <input type="password" name="password" placeholder="Password" />
             <input type="password" name="password" placeholder="Konfirmasi Password" />
-            <div className="verification">
-              <input type="text" placeholder="Kode Verifikasi"/>
-              <button>Kirim Kode</button>
-            </div>
           </div>
           <button className="registerButton" type="submit">
             Registrasi
           </button>
           <p>
-          Sudah ada akun? <a href="">Login</a>
+          Sudah ada akun? <Link to="/login">Login</Link>
           </p>
           <div className="cekPrivasi">
             <input type="checkbox" name="check" />

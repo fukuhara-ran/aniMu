@@ -4,10 +4,12 @@ import Profile from "../assets/person.svg";
 import "../components/CommunityDiscussion.css";
 import { Link } from "react-router-dom";
 // import discussion from "../assets/dicussion.png";
+import Header from "../components/Header";
 
 export const CommunityDiscussion = () => {
   return (
     <>
+    <Header/>
       <section className="containerCommunity">
         <div className="contentCommunity">
           <div className="mainContentCommunity">

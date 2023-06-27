@@ -51,16 +51,6 @@ h2{
     border-radius: 10px;
     padding-left: 10px;
 }
-.verification{
-    display: flex;
-    justify-content: space-between;
-}
-.verification button{
-    padding: 10px 25px;
-    background-color: #636363;
-    border: none;
-    color: #fff;
-}
 input:focus{
     outline: none;
 }

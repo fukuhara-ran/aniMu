@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import "../components/streaming.css";
 import l_arrow from "../assets/l-arrow.svg"
 import r_arrow from "../assets/r-arrow.svg"
-
+import Header from "../components/Header";
 import videoo from "../assets/animemv.mp4" // coba masang video menggunakan iframe
 
 export const Streaming = () => {
     return (
       <>
+      <Header/>
         <section className="container">
           <div className="content-Streaming">
             <div className="heading-streaming">

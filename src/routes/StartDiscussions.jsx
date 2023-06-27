@@ -1,10 +1,12 @@
 import Footer from "../components/Footer";
 import "../components/StartDiscussions.css";
 // import profile from "../assets/person.svg"
+import Header from "../components/Header";
 
 export const StartDiscussions = () => {
   return (
     <>
+    <Header/>
       <section className="containerCommunity">
         <div className="contentCommunity">
           <h1>Animu New Discussion</h1>

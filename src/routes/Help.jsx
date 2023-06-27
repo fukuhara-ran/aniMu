@@ -3,10 +3,12 @@ import logodiscussion from "../assets/discusion.png";
 import logostayuptodate from "../assets/stayuptodate.png";
 import "../components/Help.css";
 import Footer from "../components/Footer"
+import Header from "../components/Header";
 
 export const Help = () => {
   return (
     <>
+    <Header/>
     <div>
         <div className="head-Container">
           <div className="logo">

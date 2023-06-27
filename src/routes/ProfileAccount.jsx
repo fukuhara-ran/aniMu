@@ -1,12 +1,13 @@
 import Footer from "../components/Footer";
 // import { Link } from "react-router-dom";
 import '../components/ProfileAccount.css'
-import PropTypes from 'prop-types';
 import Photo from '../assets/basic-photo-profile.png'
+import Header from "../components/Header";
 
 export const ProfileAccount = () =>{
     return(
         <>
+        <Header/>
         <section className="containerProfile">
 
             <div className="photoProfile">
@@ -18,7 +19,7 @@ export const ProfileAccount = () =>{
                     <h4 className="subHeadingProfile">Person Profile</h4>
                     <label htmlFor="name">Name</label>
                     <br />
-                    <input type="text" id="name" sty/>
+                    <input type="text" id="name"/>
                     <br />
 
                     <label htmlFor="gender">Gender</label>

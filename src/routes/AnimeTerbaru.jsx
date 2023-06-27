@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import l_arrow from "../assets/l-arrow.svg"
 import r_arrow from "../assets/r-arrow.svg"
+import Header from "../components/Header";
 
 export const AnimeTerbaru = ({ top,page }) => {
   return (
     <>
+    <Header/>
       <section id="container">
         <div className="contentNewAnime">
           <div className="headingNewAnime">
