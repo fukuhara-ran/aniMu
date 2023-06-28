@@ -54,10 +54,10 @@ function Header({getDataFromSearch}) {
 
         
         <Link to='/login' className="log">
-          <button className="login" alt="login">LOGIN</button>
+          <button className="loginButtonHeader" alt="login">LOGIN</button>
         </Link>
         <Link to='/registration' className="res">
-           <button className="register" alt="register">REGISTER</button> 
+           <button className="registerButtonHeader" alt="register">REGISTER</button> 
         </Link>
         {/* <Link to='/profile-account'> */}
           {/* <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" /> */}

@@ -82,7 +82,7 @@ nav{
 .navList a{
     text-decoration: none;
     color: black;
-    padding: 16px 20px;
+    padding: 12px 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     letter-spacing: -1px;
@@ -93,22 +93,28 @@ nav{
     font-weight: bold;
 }
 
-.active{
-    border-bottom: 3px solid black;
+a.active{
+    color: #fff;
 }
 
-.notActive{
+a.notActive{
     color: black;
 }
 
-.login{
-    background-color: #ACB1D6;
-    
+a button{
+    background-color: transparent;
+    color: black;
+    border: 0;
+    transition: 0.4s;
 }
 
-.log_res2{
-    background-color: #ACB1D6;
+a button:hover{
+    background-color: transparent;
 }
+
+/* .log_res2{
+    background-color: #ACB1D6;
+} */
 
 /* #profileIcon{ */
     /* width: 30px; */
