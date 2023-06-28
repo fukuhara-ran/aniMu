@@ -1,31 +1,52 @@
-export async function Register(params){
-  return fetch("http://localhost:3000/register", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(params),
-    credentials: "include",
-  });
+export async function register(account) {
+  // console.log(JSON.stringify(account));
+  try {
+    const response = await fetch("http://localhost:3000/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(account),
+      credentials: "include",
+    });
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 }
 
-export async function Login(params){
-  return fetch("http://localhost:3000/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(params),
-    credentials: "include",
-  });
+export async function login(account) {
+  // console.log(JSON.stringify(account));
+  try {
+    const response = await fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(account),
+      credentials: "include",
+    });
+    return response;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 }
-
-export async function Logout(){
-  return fetch("http://localhost:3000/logout", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    credentials: "include",
-  });
+export async function logout(account) {
+  // console.log(JSON.stringify(account));
+  try {
+    const response = await fetch("http://localhost:3000/logout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(account),
+      credentials: "include",
+    });
+    return response;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 }
