@@ -7,6 +7,30 @@ import r_arrow from "../assets/r-arrow.svg"
 import Header from "../components/Header";
 import videoo from "../assets/animemv.mp4" // coba masang video menggunakan iframe
 
+const axios = require('axios');
+require('dotenv').config();
+
+// Mendapatkan kunci API dari file konfigurasi
+const apiKey = process.env.API_KEY;
+
+// Contoh rute untuk mendapatkan detail anime berdasarkan ID
+app.get('/anime/:id', async (req, res) => {
+  const animeId = req.params.id;
+  try {
+    const response = await axios.get(`https://api.myanimelist.net/v2/anime/${animeId}`, {
+      headers: {
+        'Authorization': `Bearer ${apiKey}`
+      }
+    });
+
+    // Mengolah respons dan mengirimkannya ke klien
+    res.json(response.data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Terjadi kesalahan saat memproses permintaan.' });
+  }
+})
+
 export default function Streaming () {
     return (
       <>
@@ -17,7 +41,10 @@ export default function Streaming () {
               <h1>STREAMING ANIMU</h1>
             </div>
             <div className="streams">
-              <iframe src={videoo} frameBorder="0" allowFullScreen></iframe>
+              <iframe src={videoo} frameBorder="0" allowFullScreen>
+            
+
+              </iframe>
             </div>
             <div className="title">
               <img src={imgAnime} alt="" />
