@@ -24,17 +24,6 @@ function App() {
   const [loadingState, SetLoadingState] = useState(false);
   const [search, setSearch] = useState([]);
   // const [genre, SetGenre] = useState([]);
-  
-  //! Async method
-  // async function getTopAnime(){
-  //   try {
-  //     const resTop = await fetch('https://api.jikan.moe/v4/top/anime?type=tv&filter=airing')
-  //     const resDataTop = await resTop.json();
-  //     SetTopAnime(resDataTop.data.slice(0,6));
-  //   } catch (error) {
-  //     console.log(`ERROR: ${error}`);
-  //   }
-  // }
 
   //!Axios
   const fetchData = () => {

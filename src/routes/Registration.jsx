@@ -1,19 +1,20 @@
 import "../components/Registration.css"
-import { Link, redirect, Form } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Register } from "../api/auth";
 
-export const signupAction = async ({ request }) => {
-  const data = Object.fromEntries(await request.formData());
-  const response = await Register(data);
-  const body = await response.json();
-  return redirect("/");
-};
-
 export default function Registration () {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    const response = await Register(data);
+    const body = await response.json();
+    // Redirect logic here
+  };
   return (
     <>
       <div className="register">
-        <Form className="registerForm" method="post">
+        <form className="registerForm" method="post" onSubmit={handleSubmit}>
           <h2>Registrasi ANIMU</h2>
           <div className="fill">
             <input type="text" name="username" placeholder="Username" required={true}/>
@@ -34,7 +35,7 @@ export default function Registration () {
               untuk terikat dengan Syarat Layanan dan Kebijakan Privasi
             </p>
           </div>
-        </Form>
+        </form>
       </div>
     </>
   );
