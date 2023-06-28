@@ -1,5 +1,5 @@
 import "../components/Registration.css"
-import { Link, redirect } from "react-router-dom"
+import { Link, redirect, Form } from "react-router-dom"
 import { Register } from "../api/auth";
 
 export const signupAction = async ({ request }) => {
@@ -13,7 +13,7 @@ export default function Registration () {
   return (
     <>
       <div className="register">
-        <form className="registerForm" method="post">
+        <Form className="registerForm" method="post">
           <h2>Registrasi ANIMU</h2>
           <div className="fill">
             <input type="text" name="username" placeholder="Username" required={true}/>
@@ -34,7 +34,7 @@ export default function Registration () {
               untuk terikat dengan Syarat Layanan dan Kebijakan Privasi
             </p>
           </div>
-        </form>
+        </Form>
       </div>
     </>
   );

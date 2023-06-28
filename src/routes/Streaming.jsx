@@ -7,29 +7,29 @@ import r_arrow from "../assets/r-arrow.svg"
 import Header from "../components/Header";
 import videoo from "../assets/animemv.mp4" // coba masang video menggunakan iframe
 
-const axios = require('axios');
-require('dotenv').config();
+// const axios = require('axios');
+// require('dotenv').config();
 
-// Mendapatkan kunci API dari file konfigurasi
-const apiKey = process.env.API_KEY;
+// // Mendapatkan kunci API dari file konfigurasi
+// const apiKey = process.env.API_KEY;
 
 // Contoh rute untuk mendapatkan detail anime berdasarkan ID
-app.get('/anime/:id', async (req, res) => {
-  const animeId = req.params.id;
-  try {
-    const response = await axios.get(`https://api.myanimelist.net/v2/anime/${animeId}`, {
-      headers: {
-        'Authorization': `Bearer ${apiKey}`
-      }
-    });
+// app.get('/anime/:id', async (req, res) => {
+//   const animeId = req.params.id;
+//   try {
+//     const response = await axios.get(`https://api.myanimelist.net/v2/anime/${animeId}`, {
+//       headers: {
+//         'Authorization': `Bearer ${apiKey}`
+//       }
+//     });
 
-    // Mengolah respons dan mengirimkannya ke klien
-    res.json(response.data);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Terjadi kesalahan saat memproses permintaan.' });
-  }
-})
+//     // Mengolah respons dan mengirimkannya ke klien
+//     res.json(response.data);
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ error: 'Terjadi kesalahan saat memproses permintaan.' });
+//   }
+// })
 
 export default function Streaming () {
     return (
