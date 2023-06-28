@@ -101,6 +101,15 @@ nav{
     color: black;
 }
 
-#profileIcon{
-    width: 30px;
+.login{
+    background-color: #ACB1D6;
+    
 }
+
+.log_res2{
+    background-color: #ACB1D6;
+}
+
+/* #profileIcon{ */
+    /* width: 30px; */
+/* } */

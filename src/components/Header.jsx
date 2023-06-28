@@ -1,5 +1,5 @@
 import logo from "../assets/ANIMU_RILL2.png";
-import personLogo from "../assets/person.svg"
+// import personLogo from "../assets/person.svg"
 import searchIcon from "/search.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
@@ -8,7 +8,6 @@ import { NavLink } from "react-router-dom";
 
 function Header({getDataFromSearch}) {
   const [inputValue, SetInputValue] = useState('');
-
   const navigation = [
     {name: 'Anime Terbaru', href: '/anime-terbaru'},
     {name: 'Genre', href: '/genre'},
@@ -52,9 +51,17 @@ function Header({getDataFromSearch}) {
                 ))}
           
         </ul>
-        <Link to='/profile-account'>
-          <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
+
+        
+        <Link to='/login' className="log">
+          <button className="login" alt="login">LOGIN</button>
         </Link>
+        <Link to='/registration' className="res">
+           <button className="register" alt="register">REGISTER</button> 
+        </Link>
+        {/* <Link to='/profile-account'> */}
+          {/* <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" /> */}
+        {/* </Link> */}
       </div>
     </nav>
   );

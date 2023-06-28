@@ -34,7 +34,7 @@ export default function SearchResult ({search, top}) {
 
           <div className="pageNav">
             <div className="pageNumber">
-              <button><img src={arrow} alt="" /></button>
+              <button><img src={arrow} style= {{transform: "rotate(180deg)"}} alt="" /></button>
               <button>1</button>
               <button>2</button>
               <button>3</button>
