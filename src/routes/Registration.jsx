@@ -22,6 +22,7 @@ export default function Registration () {
         navigate('/');
       } else {
         setError(response.error);
+        navigate('/404');
       }
     } catch (error) {
       console.error("Registration error:", error);

@@ -19,6 +19,7 @@ export default function Login() {
         navigate('/');
       } else {
         setError(response.error);
+        navigate('/404');
       }
     } catch (error) {
       console.error("Registration error:", error);

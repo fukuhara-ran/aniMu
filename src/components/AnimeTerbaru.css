@@ -28,7 +28,7 @@
 
 /* Container Anime */
 .containerNewAnime {
-    margin-left: 12px;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
