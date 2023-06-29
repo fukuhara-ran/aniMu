@@ -1,5 +1,5 @@
 import logo from "../assets/ANIMU_RILL2.png";
-// import personLogo from "../assets/person.svg"
+import personLogo from "../assets/foto_profil.jpeg"
 import searchIcon from "/search.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
@@ -53,15 +53,15 @@ function Header({getDataFromSearch}) {
         </ul>
 
         
-        <Link to='/login' className="log">
+        {/* <Link to='/login' className="log">
           <button className="loginButtonHeader" alt="login">LOGIN</button>
         </Link>
         <Link to='/register' className="res">
            <button className="registerButtonHeader" alt="register">REGISTER</button> 
-        </Link>
-        {/* <Link to='/profile-account'>
-          <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
         </Link> */}
+        <Link to='/profile-account'>
+          <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
+        </Link>
       </div>
     </nav>
   );
