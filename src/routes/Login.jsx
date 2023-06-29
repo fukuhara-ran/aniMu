@@ -4,35 +4,25 @@ import { Link, useNavigate } from "react-router-dom";
 import { login } from "../api/auth";
 
 export default function Login() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
     try {
-      const response = await login({ username, password });
-
-      if (response) {
-        const { registeredUsername, registeredPassword } = response;
-        if (
-          username === registeredUsername &&
-          password === registeredPassword
-        ) {
-          console.log("Login successful!");
-          navigate("/");
-        } else {
-          setError("Invalid username or password");
-          console.log(setError);
-        }
+      const response = await login(data);
+      console.log(response);
+      if (response.ok) {
+        console.log("Registration successful!");
+        navigate('/');
       } else {
         setError(response.error);
       }
     } catch (error) {
-      console.error("Login error:", error);
-      setError("An error occurred during login.");
+      console.error("Registration error:", error);
+      setError("An error occurred during Registration.")
     }
   };
 
@@ -45,17 +35,13 @@ export default function Login() {
             type="text"
             name="username"
             placeholder="Username"
-            value={username}
             required={true}
-            onChange={(e) => setUsername(e.target.value)}
           />
           <input
             type="password"
             name="password"
             placeholder="Password"
-            value={password}
             required={true}
-            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <button className="loginButton" type="submit">

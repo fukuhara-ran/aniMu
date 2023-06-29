@@ -4,29 +4,28 @@ import { Link, useNavigate } from "react-router-dom"
 import { register } from "../api/auth";
 
 export default function Registration () {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [username, setUsername] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
     try {
-      const response = await register({ username, email, password });
-
-      // Check for successful signup
-      if (response) {
-        // Redirect or perform any other action upon successful signup
+      const response = await register(data);
+      console.log(response);
+      if (response.code === 201) {
         console.log("Registration successful!");
         navigate('/');
       } else {
-        setError(response.error); // Set error message if signup failed
+        setError(response.error);
       }
     } catch (error) {
       console.error("Registration error:", error);
-      setError("An error occurred during Registration."); // Set generic error message
+      setError("An error occurred during Registration.")
     }
   };
   return (
@@ -35,12 +34,9 @@ export default function Registration () {
         <form className="registerForm" method="post" onSubmit={handleSubmit}>
           <h2>Registrasi ANIMU</h2>
           <div className="fill">
-            <input type="text" name="username" placeholder="Username" value={username} required={true}
-            onChange={(e) => setUsername(e.target.value)}/>
-            <input type="text" name="email" placeholder="Email" value={email} required={true}
-            onChange={((e) => setEmail(e.target.value))}/>
-            <input type="password" name="password" placeholder="Password" value={password} required={true}
-            onChange={(e) => setPassword(e.target.value)}/>
+            <input type="text" name="username" placeholder="Username" required={true}/>
+            <input type="text" name="email" placeholder="Email" required={true}/>
+            <input type="password" name="password" placeholder="Password" required={true}/>
           </div>
           <button type="submit" className="registerButton">
             Registrasi

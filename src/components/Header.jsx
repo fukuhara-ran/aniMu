@@ -56,7 +56,7 @@ function Header({getDataFromSearch}) {
         <Link to='/login' className="log">
           <button className="loginButtonHeader" alt="login">LOGIN</button>
         </Link>
-        <Link to='/registration' className="res">
+        <Link to='/register' className="res">
            <button className="registerButtonHeader" alt="register">REGISTER</button> 
         </Link>
         {/* <Link to='/profile-account'> */}
