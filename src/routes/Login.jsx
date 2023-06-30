@@ -15,15 +15,15 @@ export default function Login() {
       const response = await login(data);
       console.log(response);
       if (response.ok) {
-        console.log("Registration successful!");
+        console.log("Login successful!");
         navigate('/');
       } else {
         setError(response.error);
         navigate('/404');
       }
     } catch (error) {
-      console.error("Registration error:", error);
-      setError("An error occurred during Registration.")
+      console.error("Login error:", error);
+      setError("An error occurred during Login.")
     }
   };
 
