@@ -91,6 +91,7 @@ nav{
 
 .navList a:hover{
     font-weight: bold;
+    transform: translateY(-5px);
 }
 
 a.active{
