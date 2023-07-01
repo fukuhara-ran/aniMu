@@ -1,10 +1,15 @@
 import Footer from "../components/Footer";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../components/ProfileAccount.css'
 import Photo from '../assets/basic-photo-profile.png'
 import Header from "../components/Header";
+import { logout } from "../api/auth";
 
 export default function ProfileAccount () {
+    const handleLogout = async () => {
+        await logout();
+    }
+
     return(
         <>
         <Header/>
@@ -21,7 +26,6 @@ export default function ProfileAccount () {
                     <br />
                     <input type="text" id="name"/>
                     <br />
-
                     <label htmlFor="gender">Gender</label>
                     <select name="gender" id="gender">
                         <option value="not specified">Not Specified</option>
@@ -36,7 +40,9 @@ export default function ProfileAccount () {
 
                 <div className="buttonAction">
                     <button>Save</button>
-                    <button>Log Out</button>
+                    <Link to='/'>
+                        <button onClick={handleLogout}>Log Out</button>
+                    </Link>
                 </div>
             </div>
         </section>

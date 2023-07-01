@@ -33,18 +33,15 @@ export async function login(account) {
     return null;
   }
 }
-export async function logout(account) {
-  // console.log(JSON.stringify(account));
+export async function logout() {
   try {
     const response = await fetch("http://localhost:3000/logout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(account),
       credentials: "include",
     });
-    return response;
   } catch (error) {
     console.log(error);
     return null;
