@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 // import discussion from "../assets/dicussion.png";
 import Header from "../components/Header";
 
-export default function CommunityDiscussion () {
+export default function CommunityDiscussion() {
   return (
     <>
-    <Header/>
+      <Header />
       <section className="containerCommunity">
         <div className="contentCommunity">
           <div className="mainContentCommunity">
@@ -98,12 +98,14 @@ export default function CommunityDiscussion () {
               placeholder="Search discussion"
               className="searchBar"
             />
-            <Link to='/community'>
+            <Link to="/community">
               <img src={searchIcon} alt="" />
             </Link>
           </div>
 
-          <Link to='/start-discussion'><button className="newDiscussion">Start New Discussion</button></Link>
+          <Link to="/start-discussion">
+            <button className="newDiscussion">Start New Discussion</button>
+          </Link>
         </aside>
       </section>
       <Footer />
