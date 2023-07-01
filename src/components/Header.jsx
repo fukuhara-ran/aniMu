@@ -1,15 +1,15 @@
 import logo from "../assets/ANIMU_RILL2.png";
-// import personLogo from "../assets/person.svg";
+import personLogo from "../assets/foto_profil.jpeg";
 import searchIcon from "/search.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-// import { getUserDetails } from "../api/profile";
+import { getUserDetails } from "../api/profile";
 
 function Header({ getDataFromSearch }) {
   const [inputValue, SetInputValue] = useState("");
-  // const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);
   const navigation = [
     { name: "Anime Terbaru", href: "/anime-terbaru" },
     { name: "Genre", href: "/genre" },
@@ -17,18 +17,20 @@ function Header({ getDataFromSearch }) {
     { name: "Help", href: "/help" },
   ];
 
-  // useEffect(() => {
-  //   try {
-  //     async function fetchData() {
-  //       const { data } = await getUserDetails();
-  //       setUser(data);
-  //     }
-  //     fetchData();
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }, []);
-  // console.log(user);
+  useEffect(() => {
+    try {
+      async function fetchData() {
+        const { data } = await getUserDetails();
+        //console.log(`Ini sudah di header: ${data}`);
+        setUser(data);
+      }
+      fetchData();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
+  console.log(user);
   const handleSubmit = (e) => {
     e.preventDefault();
     getDataFromSearch(inputValue);
@@ -66,20 +68,29 @@ function Header({ getDataFromSearch }) {
             </NavLink>
           ))}
         </ul>
-
-        <Link to="/login" className="log">
-          <button className="loginButtonHeader" alt="login">
-            LOGIN
-          </button>
-        </Link>
-        <Link to="/register" className="res">
-          <button className="registerButtonHeader" alt="register">
-            REGISTER
-          </button>
-        </Link>
-        {/* <Link to='/profile-account'>
-      <img id="profileIcon" src={personLogo} className="logo" alt="Profile icon" />
-    </Link> */}
+        {user == null ? (
+          <>
+            <Link to="/login" className="log">
+              <button className="loginButtonHeader" alt="login">
+                LOGIN
+              </button>
+            </Link>
+            <Link to="/register" className="res">
+              <button className="registerButtonHeader" alt="register">
+                REGISTER
+              </button>
+            </Link>
+          </>
+        ) : (
+          <Link to="/profile-account">
+            <img
+              id="profileIcon"
+              src={personLogo}
+              className="logo"
+              alt="Profile icon"
+            />
+          </Link>
+        )}
       </div>
     </nav>
   );
