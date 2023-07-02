@@ -18,7 +18,7 @@ export default function SearchResult ({search, top}) {
     axios.all([getRecentAnime]).then(
       axios.spread((...allData) => {
        const allDataRecent = allData[0].data;
-       SetRecentAnime(allDataRecent.slice(0,10));   
+       SetRecentAnime(allDataRecent.slice(0,20));   
       })
     )
   }
