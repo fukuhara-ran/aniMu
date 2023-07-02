@@ -62,17 +62,6 @@ export default function SearchResult ({search, top}) {
                 ):""
               }
           </div>
-
-          <div className="pageNav">
-            <div className="pageNumber">
-              <button><img src={arrow} style= {{transform: "rotate(180deg)"}} alt="" /></button>
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button><img src={arrow} alt="" /></button>
-            </div>
-        </div>
         </div>
 
         <aside>
