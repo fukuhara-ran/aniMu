@@ -15,16 +15,18 @@ export async function getUserDetails() {
   }
 }
 
-export async function updateUserInfo() {
+export async function updateUser(account) {
+  // console.log(JSON.stringify(account));
   try {
     const response = await fetch("http://localhost:3000/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(account),
       credentials: "include",
     });
-    return response.json();
+    return response;
   } catch (error) {
     console.log(error);
     return null;

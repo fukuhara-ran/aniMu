@@ -4,11 +4,10 @@ import { Link, useNavigate } from "react-router-dom"
 import { register } from "../api/auth";
 
 export default function Registration () {
-  // const [username, setUsername] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [updatedUser, setUpdatedUser] = useState({ name: "", gender: "", about: "" });
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -27,6 +26,7 @@ export default function Registration () {
     } catch (error) {
       console.error("Registration error:", error);
       setError("An error occurred during Registration.")
+      navigate('/404')
     }
   };
   return (

@@ -24,6 +24,7 @@ export default function Login() {
     } catch (error) {
       console.error("Login error:", error);
       setError("An error occurred during Login.")
+      navigate('/404')
     }
   };
 
