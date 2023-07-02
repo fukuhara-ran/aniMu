@@ -2,8 +2,6 @@ import "../components/AnimeTerbaru.css";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import l_arrow from "../assets/l-arrow.svg"
-import r_arrow from "../assets/r-arrow.svg"
 import Header from "../components/Header";
 
 export default function AnimeTerbaru ({ top,page }) {
@@ -32,16 +30,9 @@ export default function AnimeTerbaru ({ top,page }) {
           </div>
 
           <div className="pageNav">
-            <div className="pageNumber">
-              <button><img src={l_arrow} alt="" /></button>
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button>5</button>
-              <button><img src={r_arrow} alt="" /></button>
+              <button >Previous</button>
+              <button >Next</button>
             </div>
-        </div>
         </div>
 
         <aside>
