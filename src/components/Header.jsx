@@ -41,17 +41,9 @@ function Header({ getDataFromSearch }) {
         <Link to="/">
           <img id="navTittle" src={logo} alt="" />
         </Link>
-        <form id="search" onSubmit={handleSubmit}>
-          <input
-            type="search"
-            placeholder="Search"
-            id="searchBar"
-            onChange={(e) => SetInputValue(e.target.value)}
-          />
-          <button id="searchBtn">
-            <img id="searchIcon" src={searchIcon} alt="Search icon" />
-          </button>
-        </form>
+      </div>
+      <div className="gotoSearch">
+        <Link to="/search-result">Go Search Anime</Link>
       </div>
       <div id="rightNav">
         <ul className="navList">

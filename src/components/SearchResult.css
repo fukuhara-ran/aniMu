@@ -15,6 +15,8 @@
 
 /* Heading */
 .heading-Search-Result {
+    display: flex;
+    gap: 15px;
     background-color: #A0C1D1;
     padding: 5px;
 }

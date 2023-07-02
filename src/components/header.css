@@ -18,7 +18,7 @@ nav{
 #leftNav{
     display: flex;
     align-items: center;
-    width: 45%;
+    /* width: 45%; */
 }
 #navTittle{
     font-family: 'Arvo', serif;
@@ -26,44 +26,21 @@ nav{
 }
 #leftNav img#navTittle{
     height: 45px;
-    /* padding-top: 30px; */
 }
-#search{
-    display: flex;
-    margin-left: 50px;
-    width: 350px;
-    height: 25px;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+
+.gotoSearch{
+    transition: 0.4s;
+    border: 1px solid black;
+    padding: 4px 20px;
 }
-#searchBar{
-    padding-left: 10px;
-    width: 90%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    font-size: 15px;
-}
-#searchBar:focus{
-    outline: none;
-}
-#searchBtn{
-    height: 100%;
-    width: 10%;
-    background: transparent;
-    color: black;
-    border: none;
-    border-left: 1px solid black;
-}
-#searchIcon{
-    align-items: center;
-    padding-top: 2px;
+.gotoSearch:hover{
+    border: 2px solid white;
+    padding: 4px 20px;
 }
 
 /* Right Navbar */
 #rightNav{
-    width: 55%;
+    /* width: 55%; */
     display: flex;
     gap: 30px;
     align-items: center;
@@ -74,7 +51,6 @@ nav{
     display: flex;
     list-style: none;
     gap: 40px;
-    /* height: 100%; */
     align-items: center;
 }
 
@@ -104,19 +80,24 @@ a.notActive{
 }
 
 a button{
-    background-color: transparent;
-    color: black;
+    color: white;
     border: 0;
     transition: 0.4s;
+    width: 85px;
+    height: 30px;
+}
+
+a button.loginButtonHeader{
+    background-color: #636363;
+}
+
+a button.registerButtonHeader{
+    background-color: #8294C4;
 }
 
 a button:hover{
     background-color: transparent;
 }
-
-/* .log_res2{
-    background-color: #ACB1D6;
-} */
 
 #profileIcon{
     width: 40px;
