@@ -21,7 +21,6 @@ function Header({ getDataFromSearch }) {
     try {
       async function fetchData() {
         const { data } = await getUserDetails();
-        //console.log(`Ini sudah di header: ${data}`);
         setUser(data);
       }
       fetchData();

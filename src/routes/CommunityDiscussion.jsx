@@ -1,12 +1,15 @@
 import Footer from "../components/Footer";
 import searchIcon from "/search.svg";
-import Profile from "../assets/person.svg";
+import Profile from "../assets/foto_profil.jpeg";
 import "../components/CommunityDiscussion.css";
 import { Link } from "react-router-dom";
 // import discussion from "../assets/dicussion.png";
 import Header from "../components/Header";
+// import { useState, useEffect } from "react";
+// import { comment } from "../api/discussion";
 
 export default function CommunityDiscussion() {
+
   return (
     <>
       <Header />
