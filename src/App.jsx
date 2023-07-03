@@ -93,7 +93,7 @@ function App() {
         <Route path='/profile-account' element={<ProfileAccount/>}/>
         <Route path='/about-us' element={<AboutUs/>}/>
         {/* <Route path='/profile-account' element={<ProfileAccount/>}/> */}
-        <Route path='/404' element={<Page404/>}/>
+        <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>  
     </>

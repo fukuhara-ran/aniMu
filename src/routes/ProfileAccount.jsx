@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { logout } from "../api/auth";
 import { getUserDetails } from "../api/profile";
 import Page404 from "./Page404";
-import { updateUser } from "../api/profile";
+import { updateUserInfo } from "../api/profile";
 
 export default function ProfileAccount() {
   const [user, setUser] = useState(null);
@@ -35,19 +35,18 @@ export default function ProfileAccount() {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
     try {
-      const response = await updateUser(data);
-      if (response.ok) {
-        console.log("Registration successful!");
+      const response = await updateUserInfo(data);
+      console.log(`ini response ${response}`);
+      if (response.code === 200) {
+        console.log("Change have been saved");
         navigate("/profile-account");
       } else {
         setError(response.error);
-        navigate("/404");
         console.log(error);
       }
     } catch (error) {
       console.error("Registration error:", error);
       setError("An error occurred during Registration.");
-      navigate("/404");
     }
   };
 
@@ -68,7 +67,7 @@ export default function ProfileAccount() {
                 <h4 className="subHeadingProfile">Person Profile</h4>
                 <label htmlFor="name">Name</label>
                 <br />
-                <input type="text" id="name" defaultValue={user?.name} />
+                <input type="text" id="name" name="name" defaultValue={user?.name}/>
                 <br />
                 <label htmlFor="gender">Gender</label>
                 <select name="gender" id="gender" defaultValue={user?.gender}>
@@ -90,7 +89,7 @@ export default function ProfileAccount() {
               </div>
 
               <div className="buttonAction">
-                <button>Save</button>
+                <button type="submit">Save</button>
                 <Link to="/">
                   <button onClick={handleLogout}>Log Out</button>
                 </Link>

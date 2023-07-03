@@ -15,7 +15,7 @@ export async function getUserDetails() {
   }
 }
 
-export async function updateUser(account) {
+export async function updateUserInfo(account) {
   // console.log(JSON.stringify(account));
   try {
     const response = await fetch("http://localhost:3000/update", {
@@ -26,7 +26,7 @@ export async function updateUser(account) {
       body: JSON.stringify(account),
       credentials: "include",
     });
-    return response;
+    return await response.json();
   } catch (error) {
     console.log(error);
     return null;
