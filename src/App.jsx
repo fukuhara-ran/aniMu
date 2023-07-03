@@ -13,6 +13,7 @@ import StartDiscussions from './routes/StartDiscussions'
 import Streaming from './routes/Streaming'
 import ProfileAccount from './routes/ProfileAccount'
 import Page404 from './routes/Page404'
+import AboutUs from './routes/Aboutus'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -90,6 +91,7 @@ function App() {
         <Route path='/start-discussion' element={<StartDiscussions/>}/>
         <Route path='/streaming' element={<Streaming/>}/>
         <Route path='/profile-account' element={<ProfileAccount/>}/>
+        <Route path='/about-us' element={<AboutUs/>}/>
         {/* <Route path='/profile-account' element={<ProfileAccount/>}/> */}
         <Route path='/404' element={<Page404/>}/>
       </Routes>
