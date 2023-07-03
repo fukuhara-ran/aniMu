@@ -20,12 +20,10 @@ export default function Registration () {
         navigate('/');
       } else {
         setError(response.error);
-        navigate('/404');
       }
     } catch (error) {
       console.error("Registration error:", error);
       setError("An error occurred during Registration.")
-      navigate('/404')
     }
   };
   return (

@@ -12,13 +12,13 @@ export default function SearchResult ({search, top}) {
   const [filteredList, setFilteredList] = useState([]);
 
   const fetchData = () => {
-    const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release?type=1'
+    const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release?type'
     const getRecentAnime = axios.get(resRecent)
     
     axios.all([getRecentAnime]).then(
       axios.spread((...allData) => {
        const allDataRecent = allData[0].data;
-       SetRecentAnime(allDataRecent.slice(0,20));   
+       SetRecentAnime(allDataRecent.slice(0,10));   
       })
     )
   }
@@ -51,7 +51,7 @@ export default function SearchResult ({search, top}) {
                 filteredList.map((anime,id)=>{
                   return(
                     <div className="animeList" key={id}>
-                    <Link to="genre"><img src={anime.animeImg} alt="" /></Link>
+                    <Link to="/profile-content"><img src={anime.animeImg} alt="" /></Link>
                     <div className="desc-Search-Result">
                       <h4><Link to="anime-terbaru">{anime.animeTitle}</Link></h4>
                       <p>Eps {anime.episodeNum}</p>
