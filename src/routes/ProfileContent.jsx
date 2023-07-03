@@ -1,4 +1,5 @@
 import "../components/ProfileContent.css"
+import crunchyroll from "../assets/crunchyroll.png"
 import Footer from "../components/Footer"
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
@@ -17,7 +18,17 @@ export default function ProfileContent ({eps}) {
           <br />
           <br />
           <p className="genre"><b>Genre : </b>Action, Fantasy, Adventure</p>
+          <div className="urlStreaming">
+            <div className="heading-urlStreaming">
+              <h3>Streaming : </h3>
+            </div>
+            <Link className="webStreaming" to="https://www.crunchyroll.com/">
+              <img src={crunchyroll} alt="" />
+              <h4>Crunchyroll</h4>
+            </Link>
+          </div>
         </div>
+
       </div>
       <div className="pembatasKanan">  
         <h3 className="tittle">Anime Terbaru</h3>

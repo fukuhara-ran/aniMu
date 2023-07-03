@@ -79,6 +79,21 @@
     position: relative;
     left: 14px;
 }
+.urlStreaming {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    font-size: 15px;
+}
+.urlStreaming .heading-urlStreaming{
+    margin-bottom: 5px;
+}
+.urlStreaming .webStreaming {
+    display: flex;
+}
+.urlStreaming .webStreaming img {
+    height: 25px;
+}
 
 /* Side Box */
 .pembatasKanan{
