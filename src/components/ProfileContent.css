@@ -50,50 +50,65 @@
 
 .pembatasKiri .animeProfile{
     margin-bottom: 100px;
-
+    padding-left: 10px;
 }
 
 .judul{
     /* font-family: 'Inter', sans-serif; */
-    font-size: 30px;
     letter-spacing: 0.5px;
     position: relative;
+    font-size: 27px;
     /* top: 0; */
-    left: 14px;
+    /* left: 14px; */
+    display: center;
+    text-align: center;
+    margin-top: 35px;
 }
+
 .sinopsis{
     display: flex;
     flex-direction: column;
     /* font-family: 'Inter', sans-serif; */
     font-size: 15px;
     letter-spacing: 0.5px;
-    line-height: 1.5;
-    margin-top: 15px;
+    line-height: 1.3;
+    margin-top: 5px;
     position: relative;
     left: 14px;
     width: 90%;
     /* font-weight: 500; */
+    text-align: justify;
 }
 .genre{
     /* font-family: 'Inter', sans-serif; */
     position: relative;
     left: 14px;
 }
+.genre b {
+    font-style: bold;
+    font-size: 18px;
+}
 .urlStreaming {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 14px;
     font-size: 15px;
 }
 .urlStreaming .heading-urlStreaming{
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 .urlStreaming .webStreaming {
     display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 8px;
 }
 .urlStreaming .webStreaming img {
-    height: 25px;
+    height: 29px;
+    margin-right: 5px;
 }
+/* .urlStreaming .webStreaming .title-platform {
+    text-align: center;
+} */
 
 /* Side Box */
 .pembatasKanan{
