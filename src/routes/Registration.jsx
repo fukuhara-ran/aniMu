@@ -6,7 +6,6 @@ import { register } from "../api/auth";
 export default function Registration () {
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const [updatedUser, setUpdatedUser] = useState({ name: "", gender: "", about: "" });
 
 
   const handleSubmit = async (event) => {

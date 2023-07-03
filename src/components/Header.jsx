@@ -29,7 +29,7 @@ function Header({ getDataFromSearch }) {
     }
   }, []);
 
-  console.log(user);
+  // console.log(user);
   const handleSubmit = (e) => {
     e.preventDefault();
     getDataFromSearch(inputValue);
