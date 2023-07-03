@@ -31,6 +31,7 @@ export default function ProfileContent ({eps}) {
                     <div className="sideText">
                       <h3>Kimetsu No Yaiba</h3>
                       <p><b>Genre : <i>{anime.genres}</i></b></p>
+                      {/* kurang genres yg nggak nampak */}
                       <p>Episode : {anime.episodeNum}</p>
                     </div>
                   </div>
