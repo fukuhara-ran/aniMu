@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
 
-export default function ProfileContent () {
+export default function ProfileContent ({eps}) {
   return (
     <>
     <Header/>
@@ -19,9 +19,38 @@ export default function ProfileContent () {
           <p className="genre"><b>Genre : </b>Action, Fantasy, Adventure</p>
         </div>
       </div>
-      <div className="pembatasKanan">
+      <div className="pembatasKanan">  
         <h3 className="tittle">Anime Terbaru</h3>
-        <Link className="cardLink" href="">
+        {
+          eps ? (
+            eps.map((anime,id)=>{
+              return(
+                <Link className="cardLink" href="">
+                  <div className="animeCard">
+                    <img className="sideImg" src={anime.animeImg} alt="anime_image" />
+                    <div className="sideText">
+                      <h3>Kimetsu No Yaiba</h3>
+                      <p><b>Genre : <i>{anime.genres}</i></b></p>
+                      <p>Episode : {anime.episodeNum}</p>
+                    </div>
+                  </div>
+                </Link>
+                // <div className="cardLink" key={id}>
+                //   <div className="animmeCard">
+                //   <Link className="sideImg" to='profile-content'><img src={anime.animeImg} alt="" /></Link>
+                //   <div className="descNewAnime">
+                //     <h4><Link to='profile-content'>{anime.animeTitle}</Link></h4>
+                //     <p>Episode : {anime.episodeNum}</p>
+                //     <p>Version : {anime.subOrDub}</p>
+                //   </div>
+                //   </div>
+                // </div>
+              )
+            })
+          ):""
+        }
+        
+        {/* <Link className="cardLink" href="">
           <div className="animeCard">
             <img className="sideImg" src="/src/assets/kny.jpg" alt="anime_image" />
             <div className="sideText">
@@ -50,7 +79,7 @@ export default function ProfileContent () {
               <p>Episode : 5</p>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </section>
     <Footer/>   
