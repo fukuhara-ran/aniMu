@@ -80,7 +80,7 @@ export default function ProfileAccount() {
                 <label htmlFor="aboutMe">About Me</label>
                 <br />
                 <textarea
-                  name="aboutMe"
+                  name="about"
                   id="aboutMe"
                   cols="80"
                   rows="6"
