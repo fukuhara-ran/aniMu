@@ -1,5 +1,7 @@
 import "../components/ProfileContent.css"
-import crunchyroll from "../assets/crunchyroll.png"
+import crunchyroll from "../assets/icon-crunchyroll.png"
+import youtube from "../assets/icon-youtube.png"
+import netflix from "../assets/icon-netflix.png"
 import Footer from "../components/Footer"
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
@@ -12,19 +14,27 @@ export default function ProfileContent ({eps}) {
       <div className="pembatasKiri">
         <img className="animeImage" src="/src/assets/kny.jpg" alt="anime_image" />
         <div className="animeProfile">
-          <h2 className="judul">Kimetsu No Yaiba</h2>
+          <h1 className="judul">Kimetsu No Yaiba</h1>
           <p className="sinopsis">Sejak dahulu kala, ada banyak rumor tentang iblis pemakan manusia yang bersembunyi di hutan. Karena itu, penduduk setempat tak pernah berani keluar saat malam hari. Legenda mengatakan bahwa Pemburu Iblis juga berkeliaran di malam hari dan memburu iblis yang haus darah. Bagi Tanjirou, hal itu adalah kenangan terburuknya.<br /><br />
           Sejak kematian ayahnya, Tanjirou menggantikan ayahnya untuk memenuhi kebutuhan keluarganya. Meski kehidupan mereka sangat berat, mereka merasakan kebahagiaan yang luar biasa. Tapi, kebahagiaan itu hancur saat Tanjirou melihat keluarganya dibantai. Tidak hanya itu, satu-satunya keluarganya yang selamat, adik perempuannya, Nezuko, berubah menjadi Iblis. Tapi, Nezuko masih menunjukkan tanda-tanda emosi dan pemikiran manusia. Perjalanan Tanjirou untuk melawan iblis dan mengembalikan adiknya menjadi manusia akhirnya dimulai.</p>
           <br />
-          <br />
-          <p className="genre"><b>Genre : </b>Action, Fantasy, Adventure</p>
+          <p className="genre"><b>GENRE : </b>Action, Fantasy, Adventure</p>
           <div className="urlStreaming">
             <div className="heading-urlStreaming">
-              <h3>Streaming : </h3>
+              <h3> Platform Streaming : </h3>
             </div>
+            <Link className="webStreaming" to="https://www.youtube.com/@MuseAsia">
+              <img src={youtube} alt="" />
+              {/* <div className="title-platform"><h4>Youtube</h4></div> */}
+              <h4>Youtube</h4>
+            </Link>
             <Link className="webStreaming" to="https://www.crunchyroll.com/">
               <img src={crunchyroll} alt="" />
               <h4>Crunchyroll</h4>
+            </Link>
+            <Link className="webStreaming" to="https://www.netflix.com/id-en/">
+              <img src={netflix} alt="" />
+              <h4>Netflix</h4>
             </Link>
           </div>
         </div>
