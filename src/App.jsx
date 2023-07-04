@@ -80,7 +80,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent eps={recentEps}/>}/>
-        <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} page={recentPage}/>}/>
+        <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} animeData={recentPage}/>}/>
         <Route path='/genre' element={<Genre/>}/>
         <Route path='/community' element={<Community/>}/>
         <Route path='/help' element={<Help/>}/>

@@ -6,8 +6,9 @@ import PropTypes from "prop-types";
 import Header from "../components/Header";
 import axios from 'axios';
 
-export default function AnimeTerbaru({ top, page }) {
+export default function AnimeTerbaru({ top, animeData }) {
 
+  const [page, setAnimeData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function AnimeTerbaru({ top, page }) {
     setCurrentPage((prevPage) => prevPage + 1);
   };
 
-  console.log(page);
+  console.log(animeData);
 
   return (
     <>
@@ -51,8 +52,8 @@ export default function AnimeTerbaru({ top, page }) {
             <h4>Terbaru</h4>
           </div>
           <div className="containerNewAnime">
-            {page.length > 0
-              ? page.map((anime, id) => {
+            {animeData.length > 0
+              ? animeData.map((anime, id) => {
                 return (
                   <div className="animeList" key={id}>
                     <Link to="/profile-content"><img src={anime.animeImg} alt="" /></Link>
@@ -90,7 +91,7 @@ export default function AnimeTerbaru({ top, page }) {
                     <Link to='/profile-content'><img src={anime.images.jpg.large_image_url} alt="animeImage" /></Link>
                     <div className="descTopAnime">
                       <h4><Link to='/profile-content'>{anime.title}</Link></h4>
-                      <p>Genre: Action, Adventure</p>
+                      <p>Genre : Action, Adventure</p>
                     </div>
                   </div>
                 );
@@ -106,5 +107,5 @@ export default function AnimeTerbaru({ top, page }) {
 
 AnimeTerbaru.propTypes = {
   top: PropTypes.array.isRequired,
-  page: PropTypes.array.isRequired,
+  animeData: PropTypes.array.isRequired,
 };
