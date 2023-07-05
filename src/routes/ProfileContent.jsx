@@ -9,7 +9,7 @@ import Header from "../components/Header"
 export default function ProfileContent ({eps}) {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <section id="profileAnim">
       <div className="pembatasKiri">
         <img className="animeImage" src="/src/assets/kny.jpg" alt="anime_image" />

@@ -1,5 +1,6 @@
 import logo from "../assets/ANIMU_RILL2.png";
 import personLogo from "../assets/foto_profil.jpeg";
+import searchIcon from "/search.svg"
 import { Link } from "react-router-dom";
 import "./header.css";
 import { useState, useEffect } from "react";
@@ -41,9 +42,23 @@ function Header({ getDataFromSearch }) {
           <img id="navTittle" src={logo} alt="" />
         </Link>
       </div>
-      <div className="gotoSearch">
-        <Link to="/search-result">Go Search Anime</Link>
+      <div className="Searching">
+        <form id="search" onSubmit={handleSubmit}>
+            <input type="search" placeholder="Search" id="searchBar" onChange={e => SetInputValue(e.target.value)}/>
+        </form>
+        <div className="iconSearch">
+          <Link to="/search-result">
+            <button id="searchBtn">
+                <img id="searchIcon" src={searchIcon} alt="Search icon" />
+            </button>        
+          </Link>
+        </div>
       </div>
+      
+      
+      {/* <div className="gotoSearch">
+        <Link to="/search-result">Go Search Anime</Link>
+      </div> */}
       <div id="rightNav">
         <ul className="navList">
           {navigation.map((item) => (

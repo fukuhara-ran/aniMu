@@ -44,7 +44,7 @@ const Table = () => {
 const Aboutus = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div>
         <br />
         <br />

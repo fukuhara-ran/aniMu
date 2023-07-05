@@ -26,7 +26,7 @@ export default function Community() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="containerCommunity">
         <div className="contentCommunity">
           <div className="headingContent">

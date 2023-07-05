@@ -34,7 +34,7 @@ import videoo from "../assets/animemv.mp4" // coba masang video menggunakan ifra
 export default function Streaming () {
     return (
       <>
-      <Header/>
+      {/* <Header/> */}
         <section className="container">
           <div className="content-Streaming">
             <div className="heading-streaming">

@@ -8,7 +8,7 @@ import Header from "../components/Header";
 export default function Help () {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <div>
         <div className="head-Container">
           <div className="logo">

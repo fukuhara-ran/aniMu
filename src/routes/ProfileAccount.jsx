@@ -56,7 +56,7 @@ export default function ProfileAccount() {
         <Page404 />
       ) : (
         <>
-          <Header />
+          {/* <Header /> */}
 
           <section className="containerProfile">
             <div className="photoProfile">

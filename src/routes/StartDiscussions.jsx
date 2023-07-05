@@ -31,7 +31,7 @@ export default function StartDiscussions() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="containerCommunity">
         <div className="contentCommunity">
           <h1>Animu New Discussion</h1>

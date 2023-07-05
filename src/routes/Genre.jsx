@@ -7,7 +7,7 @@ import Header from "../components/Header";
 export default function Genre () {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <div className="backGenre">
       <div className="containerGenre">
         <div className="headerGenre">

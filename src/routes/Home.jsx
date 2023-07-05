@@ -7,7 +7,7 @@ import Header from "../components/Header";
 export default function Home ({top, recent, eps}) {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
       <section className="container">
         <div className="content">
 

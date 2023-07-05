@@ -45,7 +45,7 @@ export default function AnimeTerbaru({ top, animeData }) {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section id="container">
         <div className="contentNewAnime">
           <div className="headingNewAnime">

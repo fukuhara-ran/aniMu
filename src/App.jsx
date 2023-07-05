@@ -17,6 +17,8 @@ import AboutUs from './routes/Aboutus'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import Header from './components/Header'
+
 function App() {
   const [topAnime, SetTopAnime] = useState([]);
   const [recentAnime, SetRecentAnime] = useState([]);
@@ -77,6 +79,7 @@ function App() {
   return (
     <>
     <Router>
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
         <Route path='/profile-content' element={<ProfileContent eps={recentEps}/>}/>

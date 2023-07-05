@@ -27,8 +27,26 @@ nav{
 #leftNav img#navTittle{
     height: 45px;
 }
+.Searching {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+#search input {
+    height: 25px;
+    width: 150px;
+}
 
-.gotoSearch{
+.iconSearch {
+    padding-left: 10px;
+}
+.iconSearch button {
+    height: 25px;
+    width: 25px;
+    /* padding-left: 10px; */
+}
+
+/* .gotoSearch{
     transition: 0.4s;
     border: 1px solid black;
     padding: 4px 20px;
@@ -36,7 +54,7 @@ nav{
 .gotoSearch:hover{
     border: 2px solid white;
     padding: 4px 20px;
-}
+} */
 
 /* Right Navbar */
 #rightNav{
