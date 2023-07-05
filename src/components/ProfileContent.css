@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #8294C4;
+    background: #a9a9a9;
 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #ACB1D6; 
+    background: #555; 
 }
 
 /* Main content */

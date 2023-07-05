@@ -50,6 +50,12 @@ section.containerCommunity{
     border: 0;
     padding: 10px 40px;
     cursor: pointer;
+    align-items: center;
+}
+
+.start-discuss{
+    display: flex;
+    width: fit-content;
 }
 
 .start-discuss:hover{
