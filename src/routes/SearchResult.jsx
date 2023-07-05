@@ -42,7 +42,7 @@ export default function SearchResult ({search, top}) {
       <section id="container">
         <div className="content-Search-Result">
           <div className="heading-Search-Result">
-            <h4>Search Anime</h4>
+            <h4>Search Result Anime</h4>
             {/* <input id="search-box" onChange={filterBySearch} /> */}
           </div>
           <div className="container-Search-Result">

@@ -33,16 +33,19 @@ nav{
     align-items: center;
 }
 #search input {
-    height: 25px;
-    width: 150px;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
 }
 
 .iconSearch {
-    padding-left: 10px;
+    padding-left: 3px;
+    /* background-color: #fff; */
 }
 .iconSearch button {
     height: 25px;
     width: 25px;
+    background-color: #fff;
     /* padding-left: 10px; */
 }
 
