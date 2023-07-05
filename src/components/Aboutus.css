@@ -1,15 +1,21 @@
 .head {
     padding-left: 40px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: bold;
 }
 .table-container {
     padding-left: 40px;
     width: 80%;
     overflow-x: auto;
+    font-family: 'Poppins';
+    
   }
   
   .table {
     width: 100%;
     border-collapse: collapse;
+    
   }
   
   .table th,
@@ -18,10 +24,12 @@
     text-align: left;
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
+    
   }
   
   .table th {
     background-color: #f2f2f2;
+    
   }
 
   
