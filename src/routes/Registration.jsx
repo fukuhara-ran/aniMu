@@ -43,7 +43,7 @@ export default function Registration () {
           Sudah ada akun? <Link to="/login">Login</Link>
           </p>
           <div className="cekPrivasi">
-            <input type="checkbox" name="check" />
+            <input type="checkbox" name="check" required={true}/>
             <p className="cekKeterangan">
               Saya telah berusia 13 tahun ke atas. Dengan login, anda telah
               mengetahui dan menyetujui bahwa Anda telah membaca dan menyetujui

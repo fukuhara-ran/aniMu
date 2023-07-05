@@ -12,8 +12,8 @@ function Header({ getDataFromSearch }) {
   const [user, setUser] = useState(null);
   const navigation = [
     { name: "Anime Terbaru", href: "/anime-terbaru" },
-    { name: "Genre", href: "/genre" },
     { name: "Community", href: "/community" },
+    { name: "About Us", href: "/about-us" },
     { name: "Help", href: "/help" },
   ];
 

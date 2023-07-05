@@ -12,7 +12,7 @@ export default function SearchResult ({search, top}) {
   const [filteredList, setFilteredList] = useState([]);
 
   const fetchData = () => {
-    const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release?type'
+    const resRecent = 'https://gogoanime-api-production-630c.up.railway.app/recent-release'
     const getRecentAnime = axios.get(resRecent)
     
     axios.all([getRecentAnime]).then(

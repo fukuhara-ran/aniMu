@@ -72,6 +72,7 @@ export default function ProfileAccount() {
                 <label htmlFor="gender">Gender</label>
                 <select name="gender" id="gender" defaultValue={user?.gender}>
                   <option value="not specified">Not Specified</option>
+                  
                   <option value="man">Man</option>
                   <option value="woman">Woman</option>
                 </select>
