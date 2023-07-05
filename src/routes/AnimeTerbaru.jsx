@@ -8,6 +8,7 @@ import axios from 'axios';
 
 export default function AnimeTerbaru({ top, animeData }) {
 
+  const [page, setAnimeData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -27,18 +28,6 @@ export default function AnimeTerbaru({ top, animeData }) {
     fetchData();
   }, [currentPage]);
 
-  const setAnimeData = (data) => {
-    const processedData = data.map((anime) => {
-      return {
-        animeImg: anime.images.jpg.large_image_url,
-        animeTitle: anime.title,
-        episodeNum: anime.episodes
-      };
-    });
-
-    return processedData;
-  };
-
   const goToPreviousPage = () => {
     setCurrentPage((prevPage) => {
       if (prevPage > 1) {
@@ -52,6 +41,8 @@ export default function AnimeTerbaru({ top, animeData }) {
     setCurrentPage((prevPage) => prevPage + 1);
   };
 
+  console.log(animeData);
+
   return (
     <>
       <Header />
@@ -61,30 +52,30 @@ export default function AnimeTerbaru({ top, animeData }) {
             <h4>Terbaru</h4>
           </div>
           <div className="containerNewAnime">
-            {animeData.length > 0 ? (
-              animeData.map((anime, id) => (
-                <div className="animeList" key={id}>
-                  <Link to="/profile-content">
-                    <img src={anime.animeImg} alt="" />
-                  </Link>
-                  <div className="descNewAnime">
-                    <h4>
-                      <Link to="/profile-content">{anime.animeTitle}</Link>
-                    </h4>
-                    <p>Eps {anime.episodeNum}</p>
+            {animeData.length > 0
+              ? animeData.map((anime, id) => {
+                return (
+                  <div className="animeList" key={id}>
+                    <Link to="/profile-content"><img src={anime.animeImg} alt="" /></Link>
+                    <div className="descNewAnime">
+                      <h4><Link to="/profile-content">{anime.animeTitle}</Link></h4>
+                      <p>Eps {anime.episodeNum}</p>
+                    </div>
                   </div>
-                </div>
-              ))
-            ) : (
-              <p>No anime data available.</p>
-            )}
+                );
+              })
+              : ""}
           </div>
 
           <div className="pageNav">
             {currentPage > 1 && (
-              <button onClick={goToPreviousPage}>Previous</button>
+              <button onClick={goToPreviousPage}>
+                Previous
+              </button>
             )}
-            <button onClick={goToNextPage}>Next</button>
+            <button onClick={goToNextPage}>
+              Next
+            </button>
           </div>
         </div>
 
@@ -93,23 +84,19 @@ export default function AnimeTerbaru({ top, animeData }) {
             <h3>Top Anime</h3>
           </div>
           <div className="listTopAnime">
-            {top ? (
-              top.map((anime) => (
-                <div className="topAnime" key={anime.mal_id}>
-                  <Link to="/profile-content">
-                    <img src={anime.images.jpg.large_image_url} alt="animeImage" />
-                  </Link>
-                  <div className="descTopAnime">
-                    <h4>
-                      <Link to="/profile-content">{anime.title}</Link>
-                    </h4>
-                    <p>Genre: Action, Adventure</p>
+            {top
+              ? top.map((anime) => {
+                return (
+                  <div className="topAnime" key={anime.mal_id}>
+                    <Link to='/profile-content'><img src={anime.images.jpg.large_image_url} alt="animeImage" /></Link>
+                    <div className="descTopAnime">
+                      <h4><Link to='/profile-content'>{anime.title}</Link></h4>
+                      <p>Genre : Action, Adventure</p>
+                    </div>
                   </div>
-                </div>
-              ))
-            ) : (
-              <p>No top anime data available.</p>
-            )}
+                );
+              })
+              : ""}
           </div>
         </aside>
       </section>
