@@ -1,6 +1,5 @@
 import logo from "../assets/ANIMU_RILL2.png";
 import personLogo from "../assets/foto_profil.jpeg";
-import searchIcon from "/search.svg";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { useState, useEffect } from "react";

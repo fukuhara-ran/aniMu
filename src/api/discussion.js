@@ -33,3 +33,19 @@ export async function reply(discussion) {
   }
 }
 
+export async function getComment() {
+  try {
+    const response = await fetch("http://localhost:3000/komen", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+    console.log(JSON.stringify(response));
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}

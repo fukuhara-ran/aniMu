@@ -50,8 +50,7 @@ export default function ProfileContent ({eps}) {
                   <div className="animeCard">
                     <img className="sideImg" src={anime.animeImg} alt="anime_image" />
                     <div className="sideText">
-                      <h3>Kimetsu No Yaiba</h3>
-                      <p><b>Genre : <i>{anime.genres}</i></b></p>
+                      <h3>{anime.animeTitle}</h3>
                       {/* kurang genres yg nggak nampak */}
                       <p>Episode : {anime.episodeNum}</p>
                     </div>

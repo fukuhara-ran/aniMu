@@ -7,7 +7,6 @@ export async function getUserDetails() {
       },
       credentials: "include",
     });
-    //console.log(responseJson.data);
     return response.json();
   } catch (error) {
     console.log(error);
