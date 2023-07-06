@@ -38,7 +38,7 @@ h1 {
 .box-2 textarea {
     font-style: italic;
     padding: 5px;
-    width: 640px;
+    width: 540px;
     height: 60px;
     background-color: #8294C4;
     border: 1px solid black;
@@ -54,7 +54,7 @@ h1 {
     font-style: italic;
     padding: 5px;
     margin: 10px;
-    width: 640px;
+    width: 540px;
     height: 190px;
     background-color: #8294C4;
     border: 1px solid black;
@@ -68,7 +68,7 @@ h1 {
 .submit-button {
     font-style: italic;
     background-color: #8294C4;  
-    margin-left: 610px;
+    margin-left: 508px;
     padding: 15px 50px;
     float: right;
     border: 1px solid black;
