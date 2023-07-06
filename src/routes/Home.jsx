@@ -23,7 +23,7 @@ export default function Home ({top, recent, eps, getDataFromSearch }) {
                   return(
                     <div className="ongoingAnime" key={id}>
                       <Link to={`profile-content/${anime.animeId}`}><img src={anime.animeImg} alt={anime.animeImg}/></Link>
-                      <h4><Link to='profile-content'>{anime.animeTitle}</Link></h4>
+                      <h4><Link to={`profile-content/${anime.animeId}`}>{anime.animeTitle}</Link></h4>
                     </div>
                   )
                 })
