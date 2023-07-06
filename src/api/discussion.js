@@ -37,3 +37,21 @@ export async function getComment() {
   const response = await fetch("http://localhost:3000/komen");
   return await response.json();
 }
+
+export async function getCommentById(id) {
+  // console.log(JSON.stringify(id));
+  try {
+    const response = await fetch(`http://localhost:3000/comment/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+    // console.log(response);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}
