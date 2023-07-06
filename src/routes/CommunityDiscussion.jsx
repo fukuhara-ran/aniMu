@@ -8,11 +8,11 @@ import Header from "../components/Header";
 // import { useState, useEffect } from "react";
 // import { comment } from "../api/discussion";
 
-export default function CommunityDiscussion() {
+export default function CommunityDiscussion({ getDataFromSearch }) {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <section className="containerCommunity">
         <div className="contentCommunity">
           <div className="mainContentCommunity">

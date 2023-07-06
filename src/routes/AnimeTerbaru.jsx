@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Header from "../components/Header";
 import axios from 'axios';
 
-export default function AnimeTerbaru({ top, animeData }) {
+export default function AnimeTerbaru({ top, animeData, getDataFromSearch }) {
 
   const [page, setAnimeData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -45,7 +45,7 @@ export default function AnimeTerbaru({ top, animeData }) {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <section id="container">
         <div className="contentNewAnime">
           <div className="headingNewAnime">

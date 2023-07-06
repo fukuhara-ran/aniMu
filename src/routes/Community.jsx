@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import { getComment } from "../api/discussion";
 import { useState, useEffect } from "react";
 
-export default function Community() {
+export default function Community({ getDataFromSearch }) {
   const [comment, SetComment] = useState();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Community() {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <section className="containerCommunity">
         <div className="contentCommunity">
           <div className="headingContent">

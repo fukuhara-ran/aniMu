@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Header from "../components/Header";
 
-export default function Home ({top, recent, eps}) {
+export default function Home ({top, recent, eps, getDataFromSearch }) {
   return (
     <>
-    {/* <Header/> */}
+    <Header getDataFromSearch = {getDataFromSearch}/>
       <section className="container">
         <div className="content">
 

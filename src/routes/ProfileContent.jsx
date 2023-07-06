@@ -6,10 +6,10 @@ import Footer from "../components/Footer"
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
 
-export default function ProfileContent ({eps}) {
+export default function ProfileContent ({eps, getDataFromSearch }) {
   return (
     <>
-    {/* <Header/> */}
+    <Header getDataFromSearch = {getDataFromSearch}/>
     <section id="profileAnim">
       <div className="pembatasKiri">
         <img className="animeImage" src="/src/assets/kny.jpg" alt="anime_image" />
@@ -46,7 +46,7 @@ export default function ProfileContent ({eps}) {
           eps ? (
             eps.map((anime,id)=>{
               return(
-                <Link className="cardLink" href="">
+                <Link className="cardLink" href="" key={id}>
                   <div className="animeCard">
                     <img className="sideImg" src={anime.animeImg} alt="anime_image" />
                     <div className="sideText">

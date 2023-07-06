@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import axios from 'axios'
 
-export default function SearchResult ({search, top}) {
+export default function SearchResult ({search, top, getDataFromSearch }) {
   // const [recentAnime, SetRecentAnime] = useState([]);
   // const [filteredList, setFilteredList] = useState([]);
 
@@ -38,7 +38,7 @@ export default function SearchResult ({search, top}) {
 
   return (
     <>
-    {/* <Header/> */}
+    <Header getDataFromSearch = {getDataFromSearch}/>
       <section id="container">
         <div className="content-Search-Result">
           <div className="heading-Search-Result">
@@ -54,7 +54,7 @@ export default function SearchResult ({search, top}) {
                     <Link to="/profile-content"><img src={anime.animeImg} alt="" /></Link>
                     <div className="desc-Search-Result">
                       <h4><Link to="anime-terbaru">{anime.animeTitle}</Link></h4>
-                      <p>Eps {anime.episodeNum}</p>
+                      <p>{anime.status}</p>
                     </div>
                   </div>
                   )

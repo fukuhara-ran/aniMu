@@ -6,7 +6,7 @@ import { comment } from "../api/discussion";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-export default function StartDiscussions() {
+export default function StartDiscussions({ getDataFromSearch }) {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ export default function StartDiscussions() {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <section className="containerCommunity">
         <div className="contentCommunity">
           <h1>Animu New Discussion</h1>

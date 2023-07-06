@@ -9,7 +9,7 @@ import { getUserDetails } from "../api/profile";
 import Page404 from "./Page404";
 import { updateUserInfo } from "../api/profile";
 
-export default function ProfileAccount() {
+export default function ProfileAccount({ getDataFromSearch }) {
   const [user, setUser] = useState(null);
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ export default function ProfileAccount() {
         <Page404 />
       ) : (
         <>
-          {/* <Header /> */}
+          <Header getDataFromSearch = {getDataFromSearch}/>
 
           <section className="containerProfile">
             <div className="photoProfile">

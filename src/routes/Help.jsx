@@ -5,10 +5,10 @@ import "../components/Help.css";
 import Footer from "../components/Footer"
 import Header from "../components/Header";
 
-export default function Help () {
+export default function Help ({ getDataFromSearch }) {
   return (
     <>
-    {/* <Header/> */}
+    <Header getDataFromSearch = {getDataFromSearch}/>
     <div>
         <div className="head-Container">
           <div className="logo">

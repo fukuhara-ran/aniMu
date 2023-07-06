@@ -16,7 +16,6 @@ import Page404 from './routes/Page404'
 import AboutUs from './routes/Aboutus'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-
 import Header from './components/Header'
 
 function App() {
@@ -79,23 +78,22 @@ function App() {
   return (
     <>
     <Router>
-      <Header getDataFromSearch = {getDataFromSearch}/>
+      {/* <Header getDataFromSearch = {getDataFromSearch}/> */}
       <Routes>
-        <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps}/>}/>
-        <Route path='/profile-content' element={<ProfileContent eps={recentEps}/>}/>
-        <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} animeData={recentPage}/>}/>
-        <Route path='/genre' element={<Genre/>}/>
-        <Route path='/community' element={<Community/>}/>
-        <Route path='/help' element={<Help/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Registration/>}/>
-        <Route path='/search-result' element={<SearchResult search={search} top={topAnime}/>} />
-        <Route path='/community-discussion' element={<CommunityDiscussion/>}/>
-        <Route path='/start-discussion' element={<StartDiscussions/>}/>
-        <Route path='/streaming' element={<Streaming/>}/>
-        <Route path='/profile-account' element={<ProfileAccount/>}/>
-        <Route path='/about-us' element={<AboutUs/>}/>
-        {/* <Route path='/profile-account' element={<ProfileAccount/>}/> */}
+        <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps} getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/profile-content' element={<ProfileContent eps={recentEps} getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} animeData={recentPage} getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/genre' element={<Genre getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/community' element={<Community getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/help' element={<Help getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/login' element={<Login getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/register' element={<Registration getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/search-result' element={<SearchResult search={search} top={topAnime} getDataFromSearch = {getDataFromSearch}/>} />
+        <Route path='/community-discussion' element={<CommunityDiscussion getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/start-discussion' element={<StartDiscussions getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/streaming' element={<Streaming getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/profile-account' element={<ProfileAccount getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/about-us' element={<AboutUs getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>  

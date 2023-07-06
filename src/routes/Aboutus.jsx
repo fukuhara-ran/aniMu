@@ -41,10 +41,10 @@ const Table = () => {
   );
 };
 
-const Aboutus = () => {
+const Aboutus = ({ getDataFromSearch }) => {
   return (
     <>
-      {/* <Header /> */}
+      <Header getDataFromSearch = {getDataFromSearch}/>
       <div>
         <br />
         <br />
