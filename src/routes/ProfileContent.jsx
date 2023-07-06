@@ -5,16 +5,24 @@ import netflix from "../assets/icon-netflix.png"
 import Footer from "../components/Footer"
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
+import { useParams } from 'react-router-dom';
+
 
 export default function ProfileContent ({eps, getDataFromSearch }) {
+  const { animeId } = useParams();
+  const selectedAnime = eps.find(anime => anime.animeId === animeId);
+  if(!selectedAnime){
+    return <p>Anime tak ditemukan</p>;
+  }
+
   return (
     <>
     <Header getDataFromSearch = {getDataFromSearch}/>
     <section id="profileAnim">
       <div className="pembatasKiri">
-        <img className="animeImage" src="/src/assets/kny.jpg" alt="anime_image" />
+        <img className="animeImage" src={selectedAnime.animeImg} alt={selectedAnime.animeImg} />
         <div className="animeProfile">
-          <h1 className="judul">Kimetsu No Yaiba</h1>
+          <h1 className="judul">{selectedAnime.animeTitle}</h1>
           <p className="sinopsis">Sejak dahulu kala, ada banyak rumor tentang iblis pemakan manusia yang bersembunyi di hutan. Karena itu, penduduk setempat tak pernah berani keluar saat malam hari. Legenda mengatakan bahwa Pemburu Iblis juga berkeliaran di malam hari dan memburu iblis yang haus darah. Bagi Tanjirou, hal itu adalah kenangan terburuknya.<br /><br />
           Sejak kematian ayahnya, Tanjirou menggantikan ayahnya untuk memenuhi kebutuhan keluarganya. Meski kehidupan mereka sangat berat, mereka merasakan kebahagiaan yang luar biasa. Tapi, kebahagiaan itu hancur saat Tanjirou melihat keluarganya dibantai. Tidak hanya itu, satu-satunya keluarganya yang selamat, adik perempuannya, Nezuko, berubah menjadi Iblis. Tapi, Nezuko masih menunjukkan tanda-tanda emosi dan pemikiran manusia. Perjalanan Tanjirou untuk melawan iblis dan mengembalikan adiknya menjadi manusia akhirnya dimulai.</p>
           <br />

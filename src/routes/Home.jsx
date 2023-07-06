@@ -53,7 +53,7 @@ export default function Home ({top, recent, eps, getDataFromSearch }) {
                     <div className="newAnime" key={id}>
                       <Link to='profile-content'><img src={anime.animeImg} alt="" /></Link>
                       <div className="descNewAnime">
-                        <h4><Link to='profile-content'>{anime.animeTitle}</Link></h4>
+                        <h4><Link to={`profile-content/${anime.animeId}`}>{anime.animeTitle}</Link></h4>
                         <p>Episode : {anime.episodeNum}</p>
                         <p>Version : {anime.subOrDub}</p>
                       </div>
