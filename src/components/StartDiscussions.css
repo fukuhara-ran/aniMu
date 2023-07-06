@@ -2,81 +2,71 @@ h1 {
   padding-bottom: 20px;
 }
 
+.title-start {
+  font-style: italic;
+}
+
 .ContainerDiscussion {
+  border: 5px solid #acb1d6;
   padding: 20px;
-  background-color: #ACB1D6;
   width: auto;
 }
 
 .boxDiscussion {
-    display: flex;
-    flex-wrap: wrap;  
+  display: flex;
+  flex-wrap: wrap;
 }
 .ContainerDiscussion h4 {
-    font-style: italic;
-    margin-bottom: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
 }
-
 
 .box-1 {
-    width: 80px;
-    height: 80px;
-    background-color: #8294C4;
-    border: 1px solid black;
-    margin: 10px;
+  width: 130px;
+  height: 170px;
+  border: 1px solid black;
+  margin: 10px;
 }
 
-.box-1 img{
-    height: 79px;
-    width: fit-content;
-}
-
-.box-2{
-    padding-top:10px;
+.box-1 img {
+  height: 169px;
+  width: 129px;
 }
 
 .box-2 textarea {
-    font-style: italic;
-    padding: 5px;
-    width: 540px;
-    height: 60px;
-    background-color: #8294C4;
-    border: 1px solid black;
-    margin: 10px;
+  font-style: italic;
+  padding: 5px;
+  width: 480px;
+  height: 60px;
+  border: 1px solid black;
+  margin: 10px;
 }
 
-.box-3 {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-}
-.box-4 textarea{
-    font-style: italic;
-    padding: 5px;
-    margin: 10px;
-    width: 540px;
-    height: 190px;
-    background-color: #8294C4;
-    border: 1px solid black;
+.box-4 textarea {
+  font-style: italic;
+  padding: 5px;
+  margin: 10px;
+  width: 480px;
+  height: 190px;
+  border: 1px solid black;
 }
 
 .submit {
-    text-align: right;
-    padding-right: 20px;
+  text-align: right;
+  padding-right: 20px;
 }
 
 .submit-button {
-    font-style: italic;
-    background-color: #8294C4;  
-    margin-left: 508px;
-    padding: 15px 50px;
-    float: right;
-    border: 1px solid black;
+  color: white;
+  font-style: italic;
+  background-color: #8294c4;
+  margin-left: 498px;
+  padding: 10px 50px;
+  float: right;
+  border: 1px solid black;
 }
 
 .submit-button:hover {
-    background-color: #A0C1D1;
-    color: black;
+  background-color: #a0c1d1;
+  color: black;
 }
-
-

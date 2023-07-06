@@ -36,21 +36,21 @@ export default function StartDiscussions({ getDataFromSearch }) {
         <div className="contentCommunity">
           <h1>Animu New Discussion</h1>
           <div className="ContainerDiscussion">
-            <h4>START A NEW DISCUSSION</h4>
+            <h1 className="title-start">Make your own creative text</h1>
             <form className="boxDiscussion" method="post" onSubmit={handleSubmit}>
               <div className="box-1">
                 <img src={profile} alt="" />
               </div>
+              <div className="col-start">
               <div className="box-2">
                 <textarea
-                  placeholder="enter a title"
+                  placeholder="Think your  title"
                   id=""
                   cols="300"
                   rows="10"
                   name="title"
                 ></textarea>
               </div>
-              <div className="box-3"></div>
               <div className="box-4">
                 <textarea
                   placeholder="say something"
@@ -59,6 +59,7 @@ export default function StartDiscussions({ getDataFromSearch }) {
                   rows="10"
                   name="content"
                 ></textarea>
+              </div>
               </div>
               <button className="submit-button" id="" type="submit">
                 Submit
