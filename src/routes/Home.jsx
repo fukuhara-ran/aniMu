@@ -22,7 +22,7 @@ export default function Home ({top, recent, eps, getDataFromSearch }) {
                 recent.map((anime,id)=>{
                   return(
                     <div className="ongoingAnime" key={id}>
-                      <Link to='profile-content'><img src={anime.animeImg} alt="anime thumbnail"/></Link>
+                      <Link to={`profile-content/${anime.animeId}`}><img src={anime.animeImg} alt={anime.animeImg}/></Link>
                       <h4><Link to='profile-content'>{anime.animeTitle}</Link></h4>
                     </div>
                   )
@@ -51,7 +51,7 @@ export default function Home ({top, recent, eps, getDataFromSearch }) {
                 eps.map((anime,id)=>{
                   return(
                     <div className="newAnime" key={id}>
-                      <Link to='profile-content'><img src={anime.animeImg} alt="" /></Link>
+                      <Link to={`profile-content/${anime.animeId}`}><img src={anime.animeImg} alt={anime.animeImg} /></Link>
                       <div className="descNewAnime">
                         <h4><Link to={`profile-content/${anime.animeId}`}>{anime.animeTitle}</Link></h4>
                         <p>Episode : {anime.episodeNum}</p>
