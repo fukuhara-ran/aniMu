@@ -16,6 +16,7 @@ import Page404 from './routes/Page404'
 import AboutUs from './routes/Aboutus'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import StartReply from './routes/StartReply'
 import Header from './components/Header'
 
 function App() {
@@ -90,11 +91,12 @@ function App() {
         <Route path='/login' element={<Login getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/register' element={<Registration getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/search-result' element={<SearchResult search={search} top={topAnime} getDataFromSearch = {getDataFromSearch}/>} />
-        <Route path='/community-discussion' element={<CommunityDiscussion getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/community-discussion/:commentId' element={<CommunityDiscussion getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/start-discussion' element={<StartDiscussions getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/streaming' element={<Streaming getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/profile-account' element={<ProfileAccount getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/about-us' element={<AboutUs getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/start-reply/:commentId' element={<StartReply/>}/>
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </Router>  

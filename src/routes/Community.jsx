@@ -67,7 +67,7 @@ export default function Community({ getDataFromSearch }) {
 
             <div className="listDicussion">
               {comment?.map((i) => (
-                <Link to="/community-discussion" key={i.commentId}>
+                <Link to={'/community-discussion/' + i.commentId} key={i.commentId}>
                   <div className="discussion">
                     <img src={discussion} alt="" />
                     <h4>{i.title}</h4>

@@ -4,12 +4,30 @@ import Profile from "../assets/foto_profil.jpeg";
 import "../components/CommunityDiscussion.css";
 import { Link } from "react-router-dom";
 // import discussion from "../assets/dicussion.png";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
-// import { useState, useEffect } from "react";
-// import { comment } from "../api/discussion";
+import { useParams } from "react-router-dom";
+import { comment, getCommentById } from "../api/discussion";
 
 export default function CommunityDiscussion({ getDataFromSearch }) {
+  const { commentId } = useParams();
+  const [ data, setData ] = useState([]);
 
+  
+  const fetchData = async () => {
+    const data = await getCommentById(commentId);
+    setData(data);
+  };
+  
+  useEffect(() => {
+    try {
+      fetchData();
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+  console.log(data);
+  
   return (
     <>
       <Header getDataFromSearch = {getDataFromSearch}/>
@@ -106,7 +124,7 @@ export default function CommunityDiscussion({ getDataFromSearch }) {
             </Link>
           </div>
 
-          <Link to="/start-discussion">
+          <Link to={"/start-reply/" + comment.commentId}>
             <button className="newDiscussion">Start New Discussion</button>
           </Link>
         </aside>

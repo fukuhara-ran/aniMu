@@ -38,17 +38,18 @@ export async function getComment() {
   return await response.json();
 }
 
-export async function getCommentById(id) {
+export async function getCommentById(commentId) {
   // console.log(JSON.stringify(id));
   try {
-    const response = await fetch(`http://localhost:3000/comment/${id}`, {
-      method: "GET",
+    const response = await fetch('http://localhost:3000/comment/id/:commentId', {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(commentId),
       credentials: "include",
     });
-    // console.log(response);
+    console.log(JSON.stringify(response))
     return await response.json();
   } catch (error) {
     console.log(error);
