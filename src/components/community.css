@@ -65,6 +65,7 @@ section.containerCommunity{
 
 .listDicussion{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-between;
@@ -84,10 +85,16 @@ section.containerCommunity{
 .discussion{
     padding: 15px 15px;
     background-color: #ACB1D6;
-    width: 320px;
+    width: 520px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.discussion .imgTitleDisc{
+    display: flex;
+    align-items: center;
+    gap: 45px;
 }
 
 .discussion:hover{
