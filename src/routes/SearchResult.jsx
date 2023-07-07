@@ -51,9 +51,9 @@ export default function SearchResult ({search, top, getDataFromSearch }) {
                 search.map((anime,id)=>{
                   return(
                     <div className="animeList" key={id}>
-                    <Link to="/profile-content"><img src={anime.animeImg} alt="" /></Link>
+                    <Link to={`profile-content/${anime.animeId}`}><img src={anime.animeImg} alt={anime.animeImg} /></Link>
                     <div className="desc-Search-Result">
-                      <h4><Link to="anime-terbaru">{anime.animeTitle}</Link></h4>
+                      <h4><Link to={`profile-content/${anime.animeId}`}>{anime.animeTitle}</Link></h4>
                       <p>{anime.status}</p>
                     </div>
                   </div>

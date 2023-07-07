@@ -82,6 +82,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home top={topAnime} recent={recentAnime} eps={recentEps} getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/profile-content/:animeId' element={<ProfileContent eps={recentEps} getDataFromSearch = {getDataFromSearch}/>}/>
+        <Route path='/search-result/profile-content/:animeId' element={<ProfileContent eps={recentEps} getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/anime-terbaru' element={<AnimeTerbaru top={topAnime} animeData={recentPage} getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/genre' element={<Genre getDataFromSearch = {getDataFromSearch}/>}/>
         <Route path='/community' element={<Community getDataFromSearch = {getDataFromSearch}/>}/>
