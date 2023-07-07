@@ -40,7 +40,9 @@ section.containerCommunity{
 
 .mainContentCommunity .subHeadingDiscussion{
     display: flex;
+    width: 71%;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
     margin: 16px 0 12px 0;
 }
