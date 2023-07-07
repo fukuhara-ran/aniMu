@@ -69,8 +69,10 @@ export default function Community({ getDataFromSearch }) {
               {comment?.map((i) => (
                 <Link to={'/community-discussion/' + i.commentId} key={i.commentId}>
                   <div className="discussion">
+                  <div className="imgTitleDisc">
                     <img src={discussion} alt="" />
                     <h4>{i.title}</h4>
+                  </div>
                     <p>Diposting oleh : {i.user.name}</p>
                   </div>
                 </Link>
@@ -78,16 +80,20 @@ export default function Community({ getDataFromSearch }) {
 
               {/* <Link to='/community-discussion'>
             <div className="discussion">
+              <div className="imgTitleDisc">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
+              </div>
               <p>Diposting oleh : Cane Toad</p>
             </div>
           </Link>
 
           <Link to='/community-discussion'>
             <div className="discussion">
+            <div className="imgTitleDisc">
               <img src={discussion} alt="" />
               <h4>Judul Topik</h4>
+              </div>
               <p>Diposting oleh : Cane Toad</p>
             </div>
           </Link> */}
